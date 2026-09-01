@@ -1,0 +1,180 @@
+# Fuentes del diario.
+# peso: 1 a 3 (3 = fuente primaria o de alta señal; suma al puntaje del candidato)
+# bloque: pista de a qué bloque suele aportar la fuente (no es excluyente)
+#   valores: modelos | agentes | herramientas | clinica | futuro | general
+
+feeds:
+  # --- Labs / fuentes primarias ---
+  - nombre: OpenAI News
+    url: https://openai.com/news/rss.xml
+    peso: 3
+    bloque: modelos
+  - nombre: Google AI Blog
+    url: https://blog.google/technology/ai/rss/
+    peso: 3
+    bloque: modelos
+  - nombre: DeepMind Blog
+    url: https://deepmind.google/blog/rss.xml
+    peso: 3
+    bloque: modelos
+  - nombre: Hugging Face Blog
+    url: https://huggingface.co/blog/feed.xml
+    peso: 3
+    bloque: modelos
+  - nombre: AWS Machine Learning Blog
+    url: https://aws.amazon.com/blogs/machine-learning/feed/
+    peso: 2
+    bloque: herramientas
+# blogs.microsoft.com/ai devolvía HTTP 410 (discontinuado); reemplazado por Microsoft Source AI
+  - nombre: Microsoft Source AI
+    url: https://news.microsoft.com/source/topics/ai/feed/
+    peso: 2
+    bloque: modelos
+
+  # --- Medios tech generales con cobertura IA ---
+  - nombre: TechCrunch AI
+    url: https://techcrunch.com/category/artificial-intelligence/feed/
+    peso: 2
+    bloque: general
+  - nombre: The Verge AI
+    url: https://www.theverge.com/rss/ai-artificial-intelligence/index.xml
+    peso: 2
+    bloque: general
+  - nombre: Ars Technica AI
+    url: https://arstechnica.com/ai/feed/
+    peso: 2
+    bloque: general
+  - nombre: VentureBeat AI
+    url: https://venturebeat.com/category/ai/feed/
+    peso: 1
+    bloque: general
+  - nombre: MIT Technology Review AI
+    url: https://www.technologyreview.com/topic/artificial-intelligence/feed
+    peso: 2
+    bloque: futuro
+
+  # --- Voces técnicas / newsletters con RSS ---
+  - nombre: Simon Willison
+    url: https://simonwillison.net/atom/everything/
+    peso: 3
+    bloque: herramientas
+  - nombre: Import AI (Jack Clark)
+    url: https://importai.substack.com/feed
+    peso: 2
+    bloque: futuro
+# LangChain eliminado: descontinuó el RSS al migrar a langchain.com (todas las
+# variantes /rss/ y /feed/ devuelven HTML). Sus anuncios llegan igual por HN y Simon Willison.
+  - nombre: Hacker News (portada)
+    url: https://hnrss.org/frontpage
+    peso: 1
+    bloque: general
+
+  # --- Salud / ensayos clínicos ---
+  - nombre: Fierce Biotech
+    url: https://www.fiercebiotech.com/rss/xml
+    peso: 2
+    bloque: clinica
+# MobiHealthNews y Healthcare IT News eliminados: ambos (HIMSS Media) devuelven
+# HTTP 403 desde clientes no-navegador (Cloudflare); inviable desde GitHub Actions.
+  - nombre: Fierce Healthcare
+    url: https://www.fiercehealthcare.com/rss/xml
+    peso: 2
+    bloque: clinica
+  - nombre: npj Digital Medicine (Nature)
+    url: https://www.nature.com/npjdigitalmed.rss
+    peso: 3
+    bloque: clinica
+  - nombre: STAT News Health Tech
+    url: https://www.statnews.com/category/health-tech/feed/
+    peso: 2
+    bloque: clinica
+  # PubMed: generar la URL desde la interfaz de PubMed (búsqueda + botón "Create RSS")
+  # y pegarla acá. Query sugerida: (artificial intelligence) AND (clinical trial recruitment)
+  # - nombre: PubMed IA + reclutamiento
+  #   url: PEGAR_URL_DE_PUBMED
+  #   peso: 3
+  #   bloque: clinica
+
+# Items cuyo título contenga alguna de estas palabras se descartan antes de puntuar.
+ruido:
+  - webinar
+  - sponsored
+  - patrocinado
+  - "deal of the day"
+  - giveaway
+  - coupon
+  - descuento
+  - "black friday"
+  - "prime day"
+  - horoscope
+  - crossword
+  - "best laptops"
+  - "best phones"
+  - "buying guide"
+  - "gift guide"
+  - "how to watch"
+  - trailer
+  - "top 10"
+  - "top 5"
+
+# Keywords por bloque: coincidencias en título/extracto suman puntaje.
+keywords:
+  modelos:
+    - model
+    - frontier
+    - LLM
+    - release
+    - weights
+    - open source
+    - benchmark
+    - GPT
+    - Claude
+    - Gemini
+    - Llama
+    - Mistral
+    - reasoning
+    - multimodal
+  agentes:
+    - agent
+    - agentic
+    - MCP
+    - tool use
+    - orchestration
+    - autonomous
+    - computer use
+    - browser use
+  herramientas:
+    - launch
+    - API
+    - SDK
+    - IDE
+    - plugin
+    - feature
+    - developer
+    - open source
+    - CLI
+  clinica:
+    - clinical trial
+    - patient recruitment
+    - patient enrollment
+    - FDA
+    - EMA
+    - healthcare
+    - medical
+    - diagnosis
+    - biotech
+    - pharma
+    - decentralized trial
+    - eligibility
+    - screening
+  futuro:
+    - regulation
+    - policy
+    - AGI
+    - safety
+    - alignment
+    - copyright
+    - lawsuit
+    - jobs
+    - economy
+    - energy

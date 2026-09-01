@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Diario IA</title>
+<link rel="stylesheet" href="estilo.css">
+<link rel="alternate" type="application/rss+xml" title="Diario IA" href="feed.xml">
+</head>
+<body>
+<div class="contenedor">
+
+  <header class="cabecera">
+    <span class="logo">Diario <span>IA</span></span>
+    <div class="fecha-mono">Noticias de IA, todos los días</div>
+  </header>
+
+  <section class="panel">
+    <div class="titulo-bloque">Ediciones</div>
+    <ul class="ed-lista">
+      {% for e in ediciones %}
+      <li>
+        <div class="ed-fecha"><a href="ediciones/{{ e.fecha }}.html">{{ e.fecha_legible }}</a></div>
+        {% if e.titulares %}<div class="ed-titulares">{{ e.titulares | join(' · ') }}</div>{% endif %}
+        <div class="ed-total">{{ e.total }} items</div>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <footer class="pie">
+    Diario personal de noticias de IA, generado automáticamente · <a href="feed.xml">RSS</a>
+  </footer>
+
+</div>
+</body>
+</html>

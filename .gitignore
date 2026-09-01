@@ -1,0 +1,17 @@
+# Entorno
+.env
+.env.*
+!.env.example
+
+# Sistema
+.DS_Store
+
+# Python
+.venv/
+__pycache__/
+
+# Salidas intermedias (el email nunca se versiona: contiene la línea privada)
+.out/
+
+# Credenciales locales
+env.local

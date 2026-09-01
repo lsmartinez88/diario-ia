@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Diario IA — {{ fecha_legible }}</title>
+<link rel="stylesheet" href="../estilo.css">
+<link rel="alternate" type="application/rss+xml" title="Diario IA" href="../feed.xml">
+</head>
+<body>
+<div class="contenedor">
+
+  <header class="cabecera">
+    <a class="logo" href="../index.html">Diario <span>IA</span></a>
+    <div class="fecha-mono">Edición {{ fecha }}</div>
+  </header>
+
+  {% if destacado %}
+  <section class="panel panel-destacado destacado">
+    <div class="titulo-bloque">Destacado</div>
+    <div class="titular"><a href="{{ destacado.link }}">{{ destacado.titular }}</a></div>
+    <p class="resumen">{{ destacado.resumen }}</p>
+    <p class="importa"><strong>Por qué importa</strong> — {{ destacado.por_que_importa }}</p>
+    <div class="pie-item">{{ destacado.fuente }} · {{ destacado.fecha }} · <a href="{{ destacado.link }}">fuente</a></div>
+  </section>
+  {% endif %}
+
+  {% if breves %}
+  <section class="panel">
+    <div class="titulo-bloque">En pocas palabras</div>
+    <ul class="breves">
+      {% for b in breves %}
+      <li><span class="marca">▸</span>{{ b.texto }} <a href="{{ b.link }}" class="fuente-brev">[{{ b.fuente }}]</a></li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% for bloque in bloques %}
+  <section class="panel">
+    <div class="titulo-bloque">{{ bloque.nombre }}</div>
+    {% for item in bloque['items'] %}
+    <article class="item">
+      <div class="titular"><span class="numero">{{ item.numero }}</span><a href="{{ item.link }}">{{ item.titular }}</a></div>
+      <p class="resumen">{{ item.resumen }}</p>
+      <p class="importa"><strong>Por qué importa</strong> — {{ item.por_que_importa }}</p>
+      <div class="pie-item">{{ item.fuente }} · {{ item.fecha }} · <a href="{{ item.link }}">fuente</a></div>
+    </article>
+    {% endfor %}
+  </section>
+  {% endfor %}
+
+  {% if prompt_del_dia %}
+  <section class="panel">
+    <div class="titulo-bloque">Prompt del día</div>
+    <div class="titular">{{ prompt_del_dia.titulo }}</div>
+    <div class="prompt-texto">{{ prompt_del_dia.texto }}</div>
+  </section>
+  {% endif %}
+
+  <footer class="pie">
+    Generado automáticamente desde fuentes RSS · <a href="../index.html">Ediciones anteriores</a> · <a href="../feed.xml">RSS</a>
+  </footer>
+
+</div>
+</body>
+</html>

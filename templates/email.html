@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Diario IA — {{ fecha_legible }}</title>
+</head>
+<body style="margin:0; padding:0; background-color:#050B14;" bgcolor="#050B14">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#050B14" style="background-color:#050B14;">
+<tr><td align="center" bgcolor="#050B14" style="background-color:#050B14; padding:24px 8px;">
+
+<table role="presentation" width="640" cellpadding="0" cellspacing="0" border="0" style="width:640px; max-width:100%;">
+
+  <!-- cabecera -->
+  <tr><td bgcolor="#050B14" style="background-color:#050B14; padding:0 4px 16px 4px; border-bottom:1px solid #1B3A5C;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+      <td bgcolor="#050B14" style="background-color:#050B14; font-family:'Arial Narrow',Arial,sans-serif; font-size:24px; letter-spacing:3px; text-transform:uppercase; color:#D6E4F0;">
+        DIARIO <span style="color:#29B6F6;">IA</span>
+      </td>
+      <td align="right" bgcolor="#050B14" style="background-color:#050B14; font-family:Consolas,Menlo,monospace; font-size:14px; letter-spacing:1px; text-transform:uppercase; color:#5A8FB8;">
+        {{ fecha }}
+      </td>
+    </tr>
+    </table>
+  </td></tr>
+
+  <tr><td style="font-size:20px; line-height:20px;" bgcolor="#050B14">&nbsp;</td></tr>
+
+  {% if destacado %}
+  <!-- destacado -->
+  <tr><td bgcolor="#0D2038" style="background-color:#0D2038; border:1px solid #1B3A5C; padding:20px 22px;">
+    <div style="font-family:'Arial Narrow',Arial,sans-serif; font-size:14px; letter-spacing:3px; text-transform:uppercase; color:#29B6F6; padding-bottom:10px;">DESTACADO</div>
+    <div style="font-family:'Arial Narrow',Arial,sans-serif; font-size:21px; letter-spacing:2px; text-transform:uppercase; line-height:1.35;">
+      <a href="{{ destacado.link }}" style="color:#D6E4F0; text-decoration:none;">{{ destacado.titular }}</a>
+    </div>
+    <div style="font-family:Arial,sans-serif; font-size:15px; line-height:1.65; color:#D6E4F0; padding-top:8px;">{{ destacado.resumen }}</div>
+    <div style="font-family:Arial,sans-serif; font-size:14px; line-height:1.6; color:#8AAAC6; padding-top:8px;"><span style="font-family:Consolas,Menlo,monospace; font-size:14px; letter-spacing:1px; text-transform:uppercase; color:#5A8FB8;">POR QU&Eacute; IMPORTA</span> — {{ destacado.por_que_importa }}</div>
+    {% if destacado.aplicacion %}
+    <div style="font-family:Arial,sans-serif; font-size:14px; line-height:1.6; color:#8AAAC6; padding-top:8px;"><span style="font-family:Consolas,Menlo,monospace; font-size:14px; letter-spacing:1px; text-transform:uppercase; color:#29B6F6;">APLICACI&Oacute;N EN RECLUTAMIENTO DE PACIENTES</span> — {{ destacado.aplicacion }}</div>
+    {% endif %}
+    <div style="font-family:Consolas,Menlo,monospace; font-size:14px; letter-spacing:1px; text-transform:uppercase; color:#5A8FB8; padding-top:10px;">{{ destacado.fuente }} · {{ destacado.fecha }} · <a href="{{ destacado.link }}" style="color:#4FC3F7;">fuente</a></div>
+  </td></tr>
+  <tr><td style="font-size:20px; line-height:20px;" bgcolor="#050B14">&nbsp;</td></tr>
+  {% endif %}
+
+  {% if breves %}
+  <!-- en pocas palabras -->
+  <tr><td bgcolor="#0A1628" style="background-color:#0A1628; border:1px solid #1B3A5C; padding:20px 22px;">
+    <div style="font-family:'Arial Narrow',Arial,sans-serif; font-size:14px; letter-spacing:3px; text-transform:uppercase; color:#29B6F6; padding-bottom:10px;">EN POCAS PALABRAS</div>
+    {% for b in breves %}
+    <div style="font-family:Arial,sans-serif; font-size:15px; line-height:1.65; color:#D6E4F0; padding:7px 0; {% if not loop.first %}border-top:1px solid #1B3A5C;{% endif %}">
+      <span style="color:#29B6F6;">&#9656;</span> {{ b.texto }} <a href="{{ b.link }}" style="color:#4FC3F7; font-family:Consolas,Menlo,monospace; font-size:14px;">[{{ b.fuente }}]</a>
+    </div>
+    {% endfor %}
+  </td></tr>
+  <tr><td style="font-size:20px; line-height:20px;" bgcolor="#050B14">&nbsp;</td></tr>
+  {% endif %}
+
+  {% for bloque in bloques %}
+  <tr><td bgcolor="#0A1628" style="background-color:#0A1628; border:1px solid #1B3A5C; padding:20px 22px;">
+    <div style="font-family:'Arial Narrow',Arial,sans-serif; font-size:14px; letter-spacing:3px; text-transform:uppercase; color:#29B6F6; padding-bottom:6px;">{{ bloque.nombre }}</div>
+    {% for item in bloque['items'] %}
+    <div style="padding:14px 0; {% if not loop.first %}border-top:1px solid #1B3A5C;{% endif %}">
+      <div style="font-family:'Arial Narrow',Arial,sans-serif; font-size:17px; letter-spacing:2px; text-transform:uppercase; line-height:1.35;">
+        <span style="font-family:Consolas,Menlo,monospace; font-size:14px; color:#29B6F6;">{{ item.numero }}</span>&nbsp;
+        <a href="{{ item.link }}" style="color:#D6E4F0; text-decoration:none;">{{ item.titular }}</a>
+      </div>
+      <div style="font-family:Arial,sans-serif; font-size:15px; line-height:1.65; color:#D6E4F0; padding-top:6px;">{{ item.resumen }}</div>
+      <div style="font-family:Arial,sans-serif; font-size:14px; line-height:1.6; color:#8AAAC6; padding-top:6px;"><span style="font-family:Consolas,Menlo,monospace; font-size:14px; letter-spacing:1px; text-transform:uppercase; color:#5A8FB8;">POR QU&Eacute; IMPORTA</span> — {{ item.por_que_importa }}</div>
+      {% if item.aplicacion %}
+      <div style="font-family:Arial,sans-serif; font-size:14px; line-height:1.6; color:#8AAAC6; padding-top:6px;"><span style="font-family:Consolas,Menlo,monospace; font-size:14px; letter-spacing:1px; text-transform:uppercase; color:#29B6F6;">APLICACI&Oacute;N EN RECLUTAMIENTO DE PACIENTES</span> — {{ item.aplicacion }}</div>
+      {% endif %}
+      <div style="font-family:Consolas,Menlo,monospace; font-size:14px; letter-spacing:1px; text-transform:uppercase; color:#5A8FB8; padding-top:8px;">{{ item.fuente }} · {{ item.fecha }} · <a href="{{ item.link }}" style="color:#4FC3F7;">fuente</a></div>
+    </div>
+    {% endfor %}
+  </td></tr>
+  <tr><td style="font-size:20px; line-height:20px;" bgcolor="#050B14">&nbsp;</td></tr>
+  {% endfor %}
+
+  {% if prompt_del_dia %}
+  <tr><td bgcolor="#0A1628" style="background-color:#0A1628; border:1px solid #1B3A5C; padding:20px 22px;">
+    <div style="font-family:'Arial Narrow',Arial,sans-serif; font-size:14px; letter-spacing:3px; text-transform:uppercase; color:#29B6F6; padding-bottom:8px;">PROMPT DEL D&Iacute;A</div>
+    <div style="font-family:'Arial Narrow',Arial,sans-serif; font-size:17px; letter-spacing:2px; text-transform:uppercase; color:#D6E4F0;">{{ prompt_del_dia.titulo }}</div>
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:10px;">
+    <tr><td bgcolor="#050B14" style="background-color:#050B14; border:1px solid #1B3A5C; padding:12px 14px; font-family:Consolas,Menlo,monospace; font-size:14px; line-height:1.6; color:#D6E4F0;">{{ prompt_del_dia.texto }}</td></tr>
+    </table>
+  </td></tr>
+  <tr><td style="font-size:20px; line-height:20px;" bgcolor="#050B14">&nbsp;</td></tr>
+  {% endif %}
+
+  <!-- pie -->
+  <tr><td bgcolor="#050B14" style="background-color:#050B14; border-top:1px solid #1B3A5C; padding:14px 4px; font-family:Consolas,Menlo,monospace; font-size:14px; letter-spacing:1px; text-transform:uppercase; color:#5A8FB8;">
+    Generado autom&aacute;ticamente · <a href="{{ url_edicion }}" style="color:#4FC3F7;">Versi&oacute;n web</a> · <a href="{{ base_url }}/" style="color:#4FC3F7;">Ediciones anteriores</a>
+  </td></tr>
+
+</table>
+
+</td></tr>
+</table>
+</body>
+</html>
