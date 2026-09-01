@@ -48,7 +48,7 @@ hay destacado y el estilo de redacción.
 ## Cambiar el modelo
 
 `generar.py` habla con cualquier API compatible con OpenAI. Por defecto usa el
-endpoint de Gemini con `gemini-2.5-flash`. Se cambia por variables de entorno (en
+endpoint de Gemini con `gemini-3.6-flash`. Se cambia por variables de entorno (en
 Actions, como variables o secrets del repo):
 
 - `DIARIO_API_KEY` — API key del proveedor (secret, obligatoria)

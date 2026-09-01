@@ -11,7 +11,7 @@ GitHub Models, el plan original, fue retirado el 2026-07-30.
 Entorno:
   DIARIO_API_KEY   (obligatoria) API key del proveedor
   DIARIO_API_BASE  (opcional) base de la API, default Gemini
-  DIARIO_MODELO    (opcional) modelo, default gemini-2.5-flash
+  DIARIO_MODELO    (opcional) modelo, default gemini-3.6-flash
 
 Uso: python3 scripts/generar.py
 """
@@ -20,6 +20,7 @@ import json
 import os
 import re
 import sys
+import time
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -27,7 +28,7 @@ import requests
 
 RAIZ = Path(__file__).resolve().parent.parent
 API_BASE = os.environ.get("DIARIO_API_BASE", "https://generativelanguage.googleapis.com/v1beta/openai").rstrip("/")
-MODELO = os.environ.get("DIARIO_MODELO", "gemini-2.5-flash")
+MODELO = os.environ.get("DIARIO_MODELO", "gemini-3.6-flash")
 BLOQUES = {"modelos", "agentes", "herramientas", "clinica", "futuro"}
 
 INSTRUCCIONES = """Respondé SOLO con un objeto JSON válido, sin texto alrededor, con esta forma exacta:
@@ -82,21 +83,28 @@ def llamar_modelo(mensajes):
     if not token:
         print("falta DIARIO_API_KEY en el entorno", file=sys.stderr)
         sys.exit(1)
-    r = requests.post(
-        f"{API_BASE}/chat/completions",
-        headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json"},
-        json={
-            "model": MODELO,
-            "messages": mensajes,
-            "temperature": 0.4,
-            "response_format": {"type": "json_object"},
-        },
-        timeout=120,
-    )
-    if r.status_code != 200:
-        print(f"el modelo respondió HTTP {r.status_code}: {r.text[:500]}", file=sys.stderr)
-        sys.exit(1)
-    return r.json()["choices"][0]["message"]["content"]
+    # 429/5xx suelen ser picos pasajeros del free tier: backoff antes de rendirse
+    for espera in (0, 30, 90, 180):
+        if espera:
+            print(f"  modelo saturado, reintento en {espera}s", file=sys.stderr)
+            time.sleep(espera)
+        r = requests.post(
+            f"{API_BASE}/chat/completions",
+            headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json"},
+            json={
+                "model": MODELO,
+                "messages": mensajes,
+                "temperature": 0.4,
+                "response_format": {"type": "json_object"},
+            },
+            timeout=120,
+        )
+        if r.status_code == 200:
+            return r.json()["choices"][0]["message"]["content"]
+        if r.status_code not in (429, 500, 502, 503, 504):
+            break
+    print(f"el modelo respondió HTTP {r.status_code}: {r.text[:500]}", file=sys.stderr)
+    sys.exit(1)
 
 
 def parsear_json(texto):

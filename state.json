@@ -1,0 +1,25 @@
+{
+  "links": [
+    "https://arstechnica.com/tech-policy/2026/08/zlibrary-my-beloved-anthropic-staff-chats-extolling-piracy-cited-in-sony-suit",
+    "https://aws.amazon.com/blogs/machine-learning/connect-an-agentcore-runtime-hosted-mcp-server-to-amazon-quick",
+    "https://aws.amazon.com/blogs/machine-learning/manage-agents-tools-and-skills-at-scale-with-aws-agent-registry",
+    "https://mvakde.github.io/blog/44-on-arc-1",
+    "https://techcrunch.com/2026/08/31/instagram-puts-new-limits-on-undisclosed-ai-profiles",
+    "https://techcrunch.com/2026/08/31/nvidias-3-5b-mediatek-bet-reveals-its-plan-for-tackling-big-techs-ai-chip-buildout",
+    "https://techcrunch.com/2026/08/31/the-pentagon-now-has-its-own-version-of-chatgpt-and-grok",
+    "https://www.nature.com/articles/s41746-026-03174-4",
+    "https://www.statnews.com/2026/09/01/fda-stryker-surgical-cockpit-apple-vr-headset-health-tech",
+    "https://www.theverge.com/tech/986789/linux-debian-generative-ai-policy"
+  ],
+  "ediciones": [
+    {
+      "fecha": "2026-09-01",
+      "titulares": [
+        "Alcanzan 44% en el benchmark ARC-AGI-1 con un costo de 67 centavos por problema",
+        "AWS lanza Agent Registry para catalogar y gobernar agentes de IA corporativos",
+        "Integración de servidores MCP en AWS AgentCore para conectar herramientas externas"
+      ],
+      "total": 10
+    }
+  ]
+}
