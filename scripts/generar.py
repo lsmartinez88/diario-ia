@@ -83,27 +83,35 @@ def llamar_modelo(mensajes):
     if not token:
         print("falta DIARIO_API_KEY en el entorno", file=sys.stderr)
         sys.exit(1)
-    # 429/5xx suelen ser picos pasajeros del free tier: backoff antes de rendirse
+    # 429/5xx y errores de red suelen ser picos pasajeros del free tier:
+    # backoff antes de rendirse
+    ultimo_error = None
     for espera in (0, 30, 90, 180):
         if espera:
-            print(f"  modelo saturado, reintento en {espera}s", file=sys.stderr)
+            print(f"  modelo saturado ({ultimo_error}), reintento en {espera}s", file=sys.stderr)
             time.sleep(espera)
-        r = requests.post(
-            f"{API_BASE}/chat/completions",
-            headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json"},
-            json={
-                "model": MODELO,
-                "messages": mensajes,
-                "temperature": 0.4,
-                "response_format": {"type": "json_object"},
-            },
-            timeout=120,
-        )
+        try:
+            r = requests.post(
+                f"{API_BASE}/chat/completions",
+                headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json"},
+                json={
+                    "model": MODELO,
+                    "messages": mensajes,
+                    "temperature": 0.4,
+                    "response_format": {"type": "json_object"},
+                },
+                timeout=300,
+            )
+        except requests.RequestException as e:
+            ultimo_error = type(e).__name__
+            continue
         if r.status_code == 200:
             return r.json()["choices"][0]["message"]["content"]
         if r.status_code not in (429, 500, 502, 503, 504):
-            break
-    print(f"el modelo respondió HTTP {r.status_code}: {r.text[:500]}", file=sys.stderr)
+            print(f"el modelo respondió HTTP {r.status_code}: {r.text[:500]}", file=sys.stderr)
+            sys.exit(1)
+        ultimo_error = f"HTTP {r.status_code}"
+    print(f"el modelo no respondió tras 4 intentos (último error: {ultimo_error})", file=sys.stderr)
     sys.exit(1)
 
 
