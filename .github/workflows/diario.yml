@@ -16,6 +16,8 @@ concurrency:
 jobs:
   publicar:
     runs-on: ubuntu-latest
+    # Los secrets viven en el environment "Prod" (no como secrets del repo)
+    environment: Prod
     steps:
       - uses: actions/checkout@v4
 
