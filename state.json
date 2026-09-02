@@ -2,16 +2,36 @@
   "links": [
     "https://arstechnica.com/tech-policy/2026/08/zlibrary-my-beloved-anthropic-staff-chats-extolling-piracy-cited-in-sony-suit",
     "https://aws.amazon.com/blogs/machine-learning/connect-an-agentcore-runtime-hosted-mcp-server-to-amazon-quick",
+    "https://aws.amazon.com/blogs/machine-learning/how-t54-built-a-trust-layer-with-amazon-bedrock-agentcore-payments",
     "https://aws.amazon.com/blogs/machine-learning/manage-agents-tools-and-skills-at-scale-with-aws-agent-registry",
+    "https://blog.google/products-and-platforms/products/workspace/google-pics",
+    "https://deepmind.google/blog/introducing-agentic-video-in-gemini",
+    "https://huggingface.co/blog/allenai/benchmirt",
     "https://mvakde.github.io/blog/44-on-arc-1",
+    "https://simonwillison.net/2026/Sep/1/datasette-mcp",
     "https://techcrunch.com/2026/08/31/instagram-puts-new-limits-on-undisclosed-ai-profiles",
     "https://techcrunch.com/2026/08/31/nvidias-3-5b-mediatek-bet-reveals-its-plan-for-tackling-big-techs-ai-chip-buildout",
     "https://techcrunch.com/2026/08/31/the-pentagon-now-has-its-own-version-of-chatgpt-and-grok",
+    "https://techcrunch.com/2026/09/01/chatgpt-health-adds-epic-integration-for-clinicians-to-import-patient-data",
+    "https://techcrunch.com/2026/09/01/open-ais-astra-model-is-on-the-way-and-very-good-at-breaking-into-computer-systems",
     "https://www.nature.com/articles/s41746-026-03174-4",
+    "https://www.nature.com/articles/s41746-026-03186-0",
     "https://www.statnews.com/2026/09/01/fda-stryker-surgical-cockpit-apple-vr-headset-health-tech",
-    "https://www.theverge.com/tech/986789/linux-debian-generative-ai-policy"
+    "https://www.theverge.com/ai-artificial-intelligence/987486/john-deere-jd-ai-chatbot",
+    "https://www.theverge.com/ai-artificial-intelligence/987830/anthropic-claude-fable-mythos-5-1",
+    "https://www.theverge.com/tech/986789/linux-debian-generative-ai-policy",
+    "https://www.theverge.com/tech/987575/apple-openai-destroying-evidence-trade-secrets-lawsuit"
   ],
   "ediciones": [
+    {
+      "fecha": "2026-09-02",
+      "titulares": [
+        "Anthropic lanza Claude Fable 5.1 y abarata el trabajo agéntico hasta un 45%",
+        "Google añade análisis agéntico de video en la familia Gemini",
+        "t54 crea una capa de confianza financiera para transacciones entre agentes autónomos"
+      ],
+      "total": 11
+    },
     {
       "fecha": "2026-09-01",
       "titulares": [
