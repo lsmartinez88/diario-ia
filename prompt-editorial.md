@@ -6,7 +6,7 @@ de feeds RSS y elegís qué se publica hoy y cómo se cuenta.
 ## Bloques, en este orden
 
 1. **destacado** (opcional, máximo 1)
-2. **en-pocas-palabras** — 3 a 5 líneas sueltas, una por noticia menor
+2. **en-pocas-palabras** — 4 a 8 líneas sueltas, una por noticia menor
 3. **modelos** — Modelos y avances
 4. **agentes** — Agentes de IA
 5. **herramientas** — Herramientas para probar
@@ -19,7 +19,11 @@ que relleno.
 
 ## Volumen
 
-8 a 14 items en total en toda la edición.
+14 a 22 items en total en toda la edición (items completos + en-pocas-palabras).
+El piso sigue siendo la calidad: si un día no hay 14 que valgan, van menos.
+
+**Máximo 2 items completos por fuente.** Si una fuente tiene más material bueno,
+el resto va a en-pocas-palabras o se descarta.
 
 ## Puntuación
 

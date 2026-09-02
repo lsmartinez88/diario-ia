@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Pipeline de ingesta: lee los feeds, filtra, deduplica, puntúa y arma candidatos.
 
-Salida: .out/candidatos.json con 30-40 candidatos ordenados por puntaje.
+Salida: .out/candidatos.json con hasta 60 candidatos ordenados por puntaje.
 Uso: python3 scripts/fetch_feeds.py
 """
 
@@ -26,7 +26,8 @@ UA = "Mozilla/5.0 (compatible; diario-ia/1.0; +https://github.com/lsmartinez88/d
 VENTANA_HORAS = 24
 VENTANA_EXTENDIDA_HORAS = 48
 MINIMO_PARA_NO_EXTENDER = 15
-MAX_CANDIDATOS = 40
+MAX_CANDIDATOS = 60
+MAX_POR_FUENTE = 5
 TOP_CON_TEXTO = 10
 
 # Fierce (Biotech/Healthcare) publica fechas fuera de RFC 822, ej: "Aug 31, 2026 4:27pm"
@@ -177,7 +178,16 @@ def main():
         del i["peso"], i["bloque_fuente"]
 
     items.sort(key=lambda x: -x["puntaje"])
-    candidatos = items[:MAX_CANDIDATOS]
+
+    # tope por fuente: que ninguna (p. ej. Xataka, que publica tech general
+    # todo el día) inunde la lista de candidatos
+    conteo, acotados = {}, []
+    for i in items:
+        if conteo.get(i["fuente"], 0) >= MAX_POR_FUENTE:
+            continue
+        conteo[i["fuente"]] = conteo.get(i["fuente"], 0) + 1
+        acotados.append(i)
+    candidatos = acotados[:MAX_CANDIDATOS]
 
     for i in candidatos[:TOP_CON_TEXTO]:
         texto = bajar_texto(i["link"])

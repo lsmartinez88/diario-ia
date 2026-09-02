@@ -177,3 +177,46 @@ a:hover { text-decoration: underline; }
   .titular { font-size: 16px; letter-spacing: 1.5px; }
   .destacado .titular { font-size: 19px; letter-spacing: 2px; }
 }
+
+/* ===== layout de grilla a pantalla completa ===== */
+
+.contenedor-ancho { max-width: 1560px; }
+
+.banda { margin-bottom: 36px; }
+.titulo-banda { display: flex; align-items: center; gap: 14px; margin-bottom: 16px; }
+.titulo-banda::after { content: ""; flex: 1; height: 1px; background: var(--linea); }
+
+.grilla {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  gap: 22px;
+}
+.grilla .panel { margin-bottom: 0; display: flex; flex-direction: column; }
+.tarjeta .titular { font-size: 17px; }
+.tarjeta .pie-item { margin-top: auto; padding-top: 10px; }
+
+/* la primera tarjeta de cada bloque es la más importante: más grande y resaltada */
+.tarjeta-principal { background: var(--panel-destacado); }
+.tarjeta-principal::before, .tarjeta-principal::after { width: 20px; height: 20px; }
+@media (min-width: 761px) {
+  .tarjeta-principal { grid-column: span 2; }
+  .tarjeta-principal .titular { font-size: 21px; letter-spacing: 2.5px; }
+}
+
+/* destacado del día: héroe a todo el ancho */
+.hero { padding: 30px 34px; margin-bottom: 36px; }
+.hero .titular { font-size: 28px; letter-spacing: 3px; }
+.hero .resumen { max-width: 70ch; }
+
+/* breves en columnas para usar el ancho */
+.breves-cols { column-count: 3; column-gap: 44px; }
+.breves-cols li { break-inside: avoid; }
+.breves-cols li:nth-child(-n+3) { border-top: 0; }
+
+@media (max-width: 1100px) { .breves-cols { column-count: 2; } }
+@media (max-width: 760px) {
+  .grilla { grid-template-columns: 1fr; }
+  .breves-cols { column-count: 1; }
+  .hero { padding: 18px 16px; }
+  .hero .titular { font-size: 20px; letter-spacing: 2px; }
+}

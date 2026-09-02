@@ -8,7 +8,7 @@
 <link rel="alternate" type="application/rss+xml" title="Diario IA" href="../feed.xml">
 </head>
 <body>
-<div class="contenedor">
+<div class="contenedor contenedor-ancho">
 
   <header class="cabecera">
     <a class="logo" href="../index.html">Diario <span>IA</span></a>
@@ -16,7 +16,7 @@
   </header>
 
   {% if destacado %}
-  <section class="panel panel-destacado destacado">
+  <section class="panel panel-destacado destacado hero">
     <div class="titulo-bloque">Destacado</div>
     <div class="titular"><a href="{{ destacado.link }}">{{ destacado.titular }}</a></div>
     <p class="resumen">{{ destacado.resumen }}</p>
@@ -28,7 +28,7 @@
   {% if breves %}
   <section class="panel">
     <div class="titulo-bloque">En pocas palabras</div>
-    <ul class="breves">
+    <ul class="breves breves-cols">
       {% for b in breves %}
       <li><span class="marca">▸</span>{{ b.texto }} <a href="{{ b.link }}" class="fuente-brev">[{{ b.fuente }}]</a></li>
       {% endfor %}
@@ -37,16 +37,18 @@
   {% endif %}
 
   {% for bloque in bloques %}
-  <section class="panel">
-    <div class="titulo-bloque">{{ bloque.nombre }}</div>
-    {% for item in bloque['items'] %}
-    <article class="item">
-      <div class="titular"><span class="numero">{{ item.numero }}</span><a href="{{ item.link }}">{{ item.titular }}</a></div>
-      <p class="resumen">{{ item.resumen }}</p>
-      <p class="importa"><strong>Por qué importa</strong> — {{ item.por_que_importa }}</p>
-      <div class="pie-item">{{ item.fuente }} · {{ item.fecha }} · <a href="{{ item.link }}">fuente</a></div>
-    </article>
-    {% endfor %}
+  <section class="banda">
+    <div class="titulo-bloque titulo-banda">{{ bloque.nombre }}</div>
+    <div class="grilla">
+      {% for item in bloque['items'] %}
+      <article class="panel tarjeta{% if loop.first %} tarjeta-principal{% endif %}">
+        <div class="titular"><span class="numero">{{ item.numero }}</span><a href="{{ item.link }}">{{ item.titular }}</a></div>
+        <p class="resumen">{{ item.resumen }}</p>
+        <p class="importa"><strong>Por qué importa</strong> — {{ item.por_que_importa }}</p>
+        <div class="pie-item">{{ item.fuente }} · {{ item.fecha }} · <a href="{{ item.link }}">fuente</a></div>
+      </article>
+      {% endfor %}
+    </div>
   </section>
   {% endfor %}
 

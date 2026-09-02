@@ -30,6 +30,18 @@ feeds:
     url: https://news.microsoft.com/source/topics/ai/feed/
     peso: 2
     bloque: modelos
+  - nombre: Mistral News
+    url: https://mistral.ai/news/rss
+    peso: 3
+    bloque: modelos
+  - nombre: NVIDIA Blog
+    url: https://blogs.nvidia.com/feed/
+    peso: 2
+    bloque: modelos
+  - nombre: GitHub Blog AI
+    url: https://github.blog/ai-and-ml/feed/
+    peso: 2
+    bloque: herramientas
 
   # --- Medios tech generales con cobertura IA ---
   - nombre: TechCrunch AI
@@ -52,6 +64,27 @@ feeds:
     url: https://www.technologyreview.com/topic/artificial-intelligence/feed
     peso: 2
     bloque: futuro
+  - nombre: Wired AI
+    url: https://www.wired.com/feed/tag/ai/latest/rss
+    peso: 2
+    bloque: general
+  - nombre: The Decoder
+    url: https://the-decoder.com/feed/
+    peso: 2
+    bloque: general
+  - nombre: The Register AI
+    url: https://www.theregister.com/software/ai_ml/headlines.atom
+    peso: 1
+    bloque: general
+  - nombre: 404 Media
+    url: https://www.404media.co/rss/
+    peso: 1
+    bloque: futuro
+  # Xataka cubre tech general en español; el filtro de keywords se queda con lo de IA
+  - nombre: Xataka
+    url: https://feeds.weblogssl.com/xataka2
+    peso: 1
+    bloque: general
 
   # --- Voces técnicas / newsletters con RSS ---
   - nombre: Simon Willison
@@ -68,6 +101,22 @@ feeds:
     url: https://hnrss.org/frontpage
     peso: 1
     bloque: general
+  - nombre: Latent Space
+    url: https://www.latent.space/feed
+    peso: 2
+    bloque: agentes
+  - nombre: One Useful Thing (Ethan Mollick)
+    url: https://www.oneusefulthing.org/feed
+    peso: 2
+    bloque: futuro
+  - nombre: Interconnects (Nathan Lambert)
+    url: https://www.interconnects.ai/feed
+    peso: 2
+    bloque: modelos
+  - nombre: Sebastian Raschka
+    url: https://magazine.sebastianraschka.com/feed
+    peso: 2
+    bloque: modelos
 
   # --- Salud / ensayos clínicos ---
   - nombre: Fierce Biotech
@@ -87,6 +136,18 @@ feeds:
   - nombre: STAT News Health Tech
     url: https://www.statnews.com/category/health-tech/feed/
     peso: 2
+    bloque: clinica
+  - nombre: Nature Medicine
+    url: https://www.nature.com/nm.rss
+    peso: 3
+    bloque: clinica
+  - nombre: medRxiv Health Informatics
+    url: https://connect.medrxiv.org/medrxiv_xml.php?subject=health_informatics
+    peso: 2
+    bloque: clinica
+  - nombre: Fierce Pharma
+    url: https://www.fiercepharma.com/rss/xml
+    peso: 1
     bloque: clinica
   # PubMed: generar la URL desde la interfaz de PubMed (búsqueda + botón "Create RSS")
   # y pegarla acá. Query sugerida: (artificial intelligence) AND (clinical trial recruitment)

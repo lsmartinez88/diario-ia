@@ -53,8 +53,9 @@ INSTRUCCIONES = """Respondé SOLO con un objeto JSON válido, sin texto alrededo
 
 Reglas duras:
 - Todo link tiene que ser la URL exacta de un candidato de la lista. No inventes ni modifiques URLs.
-- "en_pocas_palabras": 3 a 5 entradas, noticias menores que no merecen item completo. Puede ir vacío.
-- "items": el volumen total de la edición (items + en_pocas_palabras) es de 8 a 14.
+- "en_pocas_palabras": 4 a 8 entradas, noticias menores que no merecen item completo. Puede ir vacío.
+- "items": el volumen total de la edición (items + en_pocas_palabras) es de 14 a 22.
+- Máximo 2 items completos por fuente; el resto de esa fuente va a en_pocas_palabras o se descarta.
 - "destacado": true en máximo UN item, y solo si de verdad califica según los criterios. La mayoría de los días ninguno.
 - "aplicacion" solo aparece en items de bloque "clinica".
 - "prompt_del_dia" es opcional: incluilo solo si se te ocurre uno genuinamente útil ligado a las noticias de hoy; si no, null.
