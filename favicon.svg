@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" fill="#050B14"/>
+  <path d="M6 6h16v3H9v13H6zM58 6v16h-3V9H42V6zM6 58V42h3v13h13v3zM58 58H42v-3h13V42h3z" fill="#29B6F6"/>
+  <text x="32" y="43" font-family="Arial Narrow, Arial, sans-serif" font-size="27" letter-spacing="3" text-anchor="middle" fill="#D6E4F0">IA</text>
+</svg>

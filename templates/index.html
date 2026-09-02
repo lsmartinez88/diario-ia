@@ -4,29 +4,55 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Diario IA</title>
+<meta name="description" content="Diario automatizado de noticias de inteligencia artificial en español: modelos, agentes, herramientas, IA en salud y futuro. Una edición nueva cada mañana.">
+<meta property="og:title" content="Diario IA">
+<meta property="og:description" content="Noticias de IA seleccionadas y resumidas en español, todos los días.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ base_url }}/">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="stylesheet" href="estilo.css">
 <link rel="alternate" type="application/rss+xml" title="Diario IA" href="feed.xml">
 </head>
 <body>
-<div class="contenedor contenedor-ancho">
+<div class="contenedor">
 
   <header class="cabecera">
     <span class="logo">Diario <span>IA</span></span>
     <div class="fecha-mono">Noticias de IA, todos los días</div>
   </header>
 
-  <section class="banda">
-    <div class="titulo-bloque titulo-banda">Ediciones</div>
-    <div class="grilla">
-      {% for e in ediciones %}
-      <article class="panel tarjeta{% if loop.first %} tarjeta-principal{% endif %}">
-        <div class="ed-fecha"><a href="ediciones/{{ e.fecha }}.html">{{ e.fecha_legible }}</a></div>
-        {% if e.titulares %}<div class="ed-titulares">{{ e.titulares | join(' · ') }}</div>{% endif %}
-        <div class="ed-total pie-item">{{ e.total }} items</div>
-      </article>
+  {% if ediciones %}
+  {% set ultima = ediciones[0] %}
+  <section class="panel panel-destacado hero hero-portada">
+    <div class="titulo-bloque">Última edición</div>
+    <div class="titular"><a href="ediciones/{{ ultima.fecha }}.html">{{ ultima.fecha_legible }}</a></div>
+    {% if ultima.titulares %}
+    <ul class="titulares-hero">
+      {% for t in ultima.titulares %}
+      <li><span class="marca">▸</span>{{ t }}</li>
       {% endfor %}
-    </div>
+    </ul>
+    {% endif %}
+    <a class="cta" href="ediciones/{{ ultima.fecha }}.html">Leer la edición completa →</a>
   </section>
+
+  {% if ediciones | length > 1 %}
+  <section class="banda">
+    <div class="titulo-bloque titulo-banda">Ediciones anteriores</div>
+    <ul class="archivo">
+      {% for e in ediciones[1:] %}
+      <li>
+        <a class="archivo-fila" href="ediciones/{{ e.fecha }}.html">
+          <span class="archivo-fecha">{{ e.fecha_legible }}</span>
+          {% if e.titulares %}<span class="archivo-titulares">{{ e.titulares | join(' · ') }}</span>{% endif %}
+          <span class="archivo-total">{{ e.total }} items</span>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+  {% endif %}
 
   <footer class="pie">
     Diario personal de noticias de IA, generado automáticamente · <a href="feed.xml">RSS</a>

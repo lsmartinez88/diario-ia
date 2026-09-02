@@ -4,6 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Diario IA — {{ fecha_legible }}</title>
+<meta name="description" content="Edición del {{ fecha_legible }} del Diario IA: noticias de inteligencia artificial en español, seleccionadas y resumidas a diario.">
+<meta property="og:title" content="Diario IA — {{ fecha_legible }}">
+<meta property="og:description" content="Noticias de IA seleccionadas y resumidas: modelos, agentes, herramientas, salud y futuro.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="{{ url_edicion }}">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
 <link rel="stylesheet" href="../estilo.css">
 <link rel="alternate" type="application/rss+xml" title="Diario IA" href="../feed.xml">
 </head>
@@ -15,8 +21,17 @@
     <div class="fecha-mono">Edición {{ fecha }}</div>
   </header>
 
+  <nav class="nav-bloques" aria-label="Secciones de la edición">
+    {% if breves %}<a href="#breves">En pocas palabras</a>{% endif %}
+    {% for bloque in bloques %}<a href="#{{ bloque.clave }}">{{ bloque.nombre }}</a>{% endfor %}
+    {% if prompt_del_dia %}<a href="#prompt">Prompt del día</a>{% endif %}
+  </nav>
+
   {% if destacado %}
   <section class="panel panel-destacado destacado hero">
+    {% if destacado.imagen %}
+    <div class="tarjeta-img"><img src="{{ destacado.imagen }}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.remove()"></div>
+    {% endif %}
     <div class="titulo-bloque">Destacado</div>
     <div class="titular"><a href="{{ destacado.link }}">{{ destacado.titular }}</a></div>
     <p class="resumen">{{ destacado.resumen }}</p>
@@ -26,7 +41,7 @@
   {% endif %}
 
   {% if breves %}
-  <section class="panel">
+  <section class="panel" id="breves">
     <div class="titulo-bloque">En pocas palabras</div>
     <ul class="breves breves-cols">
       {% for b in breves %}
@@ -37,11 +52,14 @@
   {% endif %}
 
   {% for bloque in bloques %}
-  <section class="banda">
+  <section class="banda" id="{{ bloque.clave }}">
     <div class="titulo-bloque titulo-banda">{{ bloque.nombre }}</div>
     <div class="grilla">
       {% for item in bloque['items'] %}
       <article class="panel tarjeta{% if loop.first %} tarjeta-principal{% endif %}">
+        {% if item.imagen and loop.first %}
+        <div class="tarjeta-img"><img src="{{ item.imagen }}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.remove()"></div>
+        {% endif %}
         <div class="titular"><span class="numero">{{ item.numero }}</span><a href="{{ item.link }}">{{ item.titular }}</a></div>
         <p class="resumen">{{ item.resumen }}</p>
         <p class="importa"><strong>Por qué importa</strong> — {{ item.por_que_importa }}</p>
@@ -53,7 +71,7 @@
   {% endfor %}
 
   {% if prompt_del_dia %}
-  <section class="panel">
+  <section class="panel" id="prompt">
     <div class="titulo-bloque">Prompt del día</div>
     <div class="titular">{{ prompt_del_dia.titulo }}</div>
     <div class="prompt-texto">{{ prompt_del_dia.texto }}</div>

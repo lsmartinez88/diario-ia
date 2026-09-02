@@ -61,6 +61,8 @@ def armar_contexto(edicion, para_email):
             it["numero"] = f"{numero:02d}"
             if not para_email:
                 it.pop("aplicacion", None)  # la aplicación privada nunca va a la web
+            else:
+                it.pop("imagen", None)  # el email va sin imágenes (regla de plantilla)
             numerados.append(it)
         bloques.append({"clave": clave, "nombre": NOMBRES_BLOQUE[clave], "items": numerados})
 

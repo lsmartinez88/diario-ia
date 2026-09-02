@@ -36,6 +36,9 @@ importa: pesa doble en la puntuación editorial.
   remotas ahí.
 - `state.json` guarda links ya publicados (para no repetir) y el índice de
   ediciones (para portada y RSS).
+- Las imágenes de los items salen del propio feed (media RSS/enclosure) o del
+  og:image del artículo; se hotlinkean con `referrerpolicy="no-referrer"` y
+  fallback `onerror`. El modelo nunca elige imágenes y el email va sin ellas.
 
 ## Comandos
 

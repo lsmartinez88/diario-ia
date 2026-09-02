@@ -220,3 +220,146 @@ a:hover { text-decoration: underline; }
   .hero { padding: 18px 16px; }
   .hero .titular { font-size: 20px; letter-spacing: 2px; }
 }
+
+/* ===== diseño v2: navegación, imágenes, portada ===== */
+
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { transition: none !important; }
+}
+
+a:focus-visible {
+  outline: 2px solid var(--cian);
+  outline-offset: 2px;
+}
+
+/* microinteracción de tarjetas */
+.tarjeta { transition: border-color .18s ease; }
+.tarjeta:hover { border-color: var(--cian-tenue); }
+
+/* navegación por bloques dentro de la edición */
+.nav-bloques {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 30px;
+}
+.nav-bloques a {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--cian-tenue);
+  border: 1px solid var(--linea);
+  padding: 6px 12px;
+  transition: color .18s ease, border-color .18s ease;
+}
+.nav-bloques a:hover {
+  color: var(--cian);
+  border-color: var(--cian);
+  text-decoration: none;
+}
+.banda, .panel { scroll-margin-top: 24px; }
+
+/* imágenes de artículo: duotono azul que se revela a color al pasar */
+.tarjeta-img {
+  position: relative;
+  margin: -22px -24px 16px;
+  border-bottom: 1px solid var(--linea);
+  overflow: hidden;
+  background: var(--fondo);
+}
+.tarjeta-img img {
+  display: block;
+  width: 100%;
+  height: 175px;
+  object-fit: cover;
+  filter: grayscale(1) brightness(.82) contrast(1.05);
+  transition: filter .35s ease;
+}
+.tarjeta-principal .tarjeta-img img, .hero .tarjeta-img img { height: 230px; }
+.tarjeta-img::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #29B6F6;
+  opacity: .16;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+  transition: opacity .35s ease;
+}
+.tarjeta:hover .tarjeta-img img, .hero:hover .tarjeta-img img { filter: grayscale(0) brightness(.95) contrast(1); }
+.tarjeta:hover .tarjeta-img::after, .hero:hover .tarjeta-img::after { opacity: 0; }
+.hero .tarjeta-img { margin: -30px -34px 18px; }
+
+/* portada: héroe de la edición del día */
+.hero-portada .titular { font-size: 30px; }
+.titulares-hero { list-style: none; margin-top: 14px; max-width: 90ch; }
+.titulares-hero li { padding: 7px 0; border-top: 1px solid var(--linea); color: var(--texto); }
+.titulares-hero li:first-child { border-top: 0; }
+.titulares-hero .marca { font-family: var(--mono); font-size: 12px; color: var(--cian); margin-right: 8px; }
+
+.cta {
+  display: inline-block;
+  margin-top: 18px;
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--cian);
+  border: 1px solid var(--cian);
+  padding: 10px 18px;
+  transition: background .18s ease, color .18s ease;
+}
+.cta:hover { background: var(--cian); color: var(--fondo); text-decoration: none; }
+
+/* portada: archivo cronológico, una edición por fila */
+.archivo { list-style: none; }
+.archivo li { border-top: 1px solid var(--linea); }
+.archivo li:first-child { border-top: 0; }
+.archivo-fila {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+  padding: 16px 12px;
+  margin: 0 -12px;
+  transition: background .18s ease;
+}
+.archivo-fila:hover { background: var(--panel); text-decoration: none; }
+.archivo-fecha {
+  font-family: var(--narrow);
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--texto);
+  white-space: nowrap;
+  min-width: 250px;
+}
+.archivo-fila:hover .archivo-fecha { color: var(--link); }
+.archivo-titulares {
+  color: var(--texto-2);
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.archivo-total {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--cian-tenue);
+  white-space: nowrap;
+}
+
+@media (max-width: 760px) {
+  .tarjeta-img { margin: -16px -14px 12px; }
+  .hero .tarjeta-img { margin: -18px -16px 14px; }
+  .tarjeta-img img, .tarjeta-principal .tarjeta-img img, .hero .tarjeta-img img { height: 160px; }
+  .hero-portada .titular { font-size: 22px; }
+  .archivo-fila { flex-direction: column; gap: 4px; }
+  .archivo-fecha { min-width: 0; }
+  .archivo-titulares { white-space: normal; }
+}

@@ -95,19 +95,39 @@ def puntuar(item, keywords):
     return item["peso"] * 2 + puntos_kw + recencia, mejor_bloque
 
 
-def bajar_texto(url):
-    """Texto del artículo con trafilatura; si falla, devuelve None sin romper."""
+def imagen_de_entrada(e):
+    """Imagen declarada en el propio feed (media RSS o enclosure), si hay."""
+    for m in e.get("media_content") or []:
+        u = m.get("url", "")
+        if u and ("image" in (m.get("type") or "") or m.get("medium") == "image"
+                  or re.search(r"\.(jpe?g|png|webp|gif)(\?|$)", u, re.I)):
+            return u
+    for m in e.get("media_thumbnail") or []:
+        if m.get("url"):
+            return m["url"]
+    for l in e.get("links") or []:
+        if l.get("rel") == "enclosure" and "image" in (l.get("type") or ""):
+            return l.get("href")
+    return None
+
+
+def bajar_articulo(url):
+    """(texto, og_image) del artículo con trafilatura; si falla, (None, None)."""
     try:
         import trafilatura
 
         bajado = trafilatura.fetch_url(url)
-        if bajado:
-            texto = trafilatura.extract(bajado, include_comments=False, include_tables=False)
-            if texto:
-                return texto[:3000]
+        if not bajado:
+            return None, None
+        texto = trafilatura.extract(bajado, include_comments=False, include_tables=False)
+        m = re.search(r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)', bajado) \
+            or re.search(r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image', bajado)
+        og = html.unescape(m.group(1)) if m else None
+        if og and not og.startswith("http"):
+            og = None
+        return (texto[:3000] if texto else None), og
     except Exception:
-        pass
-    return None
+        return None, None
 
 
 def main():
@@ -142,6 +162,7 @@ def main():
                     "extracto": limpiar_html(e.get("summary", ""))[:500],
                     "fecha": fecha.isoformat(),
                     "fuente": feed["nombre"],
+                    "imagen": imagen_de_entrada(e),
                     "peso": feed.get("peso", 1),
                     "bloque_fuente": feed.get("bloque", "general"),
                 }
@@ -190,9 +211,11 @@ def main():
     candidatos = acotados[:MAX_CANDIDATOS]
 
     for i in candidatos[:TOP_CON_TEXTO]:
-        texto = bajar_texto(i["link"])
+        texto, og = bajar_articulo(i["link"])
         if texto:
             i["texto"] = texto
+        if og and not i.get("imagen"):
+            i["imagen"] = og
 
     salida = RAIZ / ".out"
     salida.mkdir(exist_ok=True)

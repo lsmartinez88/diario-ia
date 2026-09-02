@@ -155,9 +155,10 @@ def validar(data, candidatos_por_link):
             "resumen": it["resumen"].strip(),
             "por_que_importa": it["por_que_importa"].strip(),
             "link": link,
-            # fuente y fecha salen del candidato, no del modelo
+            # fuente, fecha e imagen salen del candidato, no del modelo
             "fuente": candidato["fuente"],
             "fecha": candidato["fecha"][:10],
+            "imagen": candidato.get("imagen"),
             "destacado": destacado,
         }
         if it["bloque"] == "clinica" and isinstance(it.get("aplicacion"), str) and it["aplicacion"].strip():
