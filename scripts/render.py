@@ -48,6 +48,15 @@ def armar_contexto(edicion, para_email):
     destacado = next((i for i in items if i.get("destacado")), None)
     resto = [i for i in items if not i.get("destacado")]
 
+    # apertura de la web: el destacado si hay; si no, la nota de mayor
+    # prioridad editorial abre la edición como nota principal
+    apertura, etiqueta_apertura = destacado, "Destacado"
+    if not para_email and apertura is None and resto:
+        apertura, resto = resto[0], resto[1:]
+        etiqueta_apertura = NOMBRES_BLOQUE.get(apertura["bloque"], "")
+        apertura = dict(apertura)
+        apertura.pop("aplicacion", None)
+
     numero = 0
     bloques = []
     for clave in ORDEN_BLOQUES:
@@ -66,13 +75,19 @@ def armar_contexto(edicion, para_email):
             numerados.append(it)
         bloques.append({"clave": clave, "nombre": NOMBRES_BLOQUE[clave], "items": numerados})
 
+    breves = edicion.get("en_pocas_palabras", [])
+    fuentes = {i["fuente"] for i in items} | {b["fuente"] for b in breves}
     return {
         "fecha": edicion["fecha"],
         "fecha_legible": fecha_legible(edicion["fecha"]),
         "destacado": destacado,
-        "breves": edicion.get("en_pocas_palabras", []),
+        "apertura": apertura,
+        "etiqueta_apertura": etiqueta_apertura,
+        "breves": breves,
         "bloques": bloques,
         "prompt_del_dia": edicion.get("prompt_del_dia"),
+        "total_items": len(items) + len(breves),
+        "num_fuentes": len(fuentes),
         "base_url": BASE_URL,
         "url_edicion": f"{BASE_URL}/ediciones/{edicion['fecha']}.html",
     }
@@ -113,13 +128,7 @@ def main():
 
     env = Environment(loader=FileSystemLoader(RAIZ / "templates"), autoescape=select_autoescape(["html"]))
 
-    # 1. edición del día
-    ctx_web = armar_contexto(edicion, para_email=False)
-    (RAIZ / "ediciones").mkdir(exist_ok=True)
-    pagina = RAIZ / "ediciones" / f"{edicion['fecha']}.html"
-    pagina.write_text(env.get_template("edicion.html").render(**ctx_web))
-
-    # 2. estado: links publicados + índice de ediciones
+    # 1. estado: links publicados + índice de ediciones
     estado_path = RAIZ / "state.json"
     estado = json.loads(estado_path.read_text()) if estado_path.exists() else {}
     links = set(estado.get("links", []))
@@ -137,6 +146,17 @@ def main():
 
     estado = {"links": sorted(links)[-2000:], "ediciones": ediciones}
     estado_path.write_text(json.dumps(estado, ensure_ascii=False, indent=2))
+
+    # 2. edición del día (con número correlativo y link a la anterior)
+    orden = sorted(ediciones, key=lambda e: e["fecha"])
+    idx = next(i for i, e in enumerate(orden) if e["fecha"] == edicion["fecha"])
+    ctx_web = armar_contexto(edicion, para_email=False)
+    ctx_web["numero_edicion"] = idx + 1
+    anterior = orden[idx - 1] if idx else None
+    ctx_web["anterior"] = dict(anterior, fecha_legible=fecha_legible(anterior["fecha"])) if anterior else None
+    (RAIZ / "ediciones").mkdir(exist_ok=True)
+    pagina = RAIZ / "ediciones" / f"{edicion['fecha']}.html"
+    pagina.write_text(env.get_template("edicion.html").render(**ctx_web))
 
     # 3. portada
     vista = [dict(e, fecha_legible=fecha_legible(e["fecha"])) for e in ediciones[:30]]

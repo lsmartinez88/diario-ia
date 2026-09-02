@@ -9,6 +9,7 @@
 <meta property="og:description" content="Noticias de IA seleccionadas y resumidas: modelos, agentes, herramientas, salud y futuro.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="{{ url_edicion }}">
+{% if apertura and apertura.imagen %}<meta property="og:image" content="{{ apertura.imagen }}">{% endif %}
 <link rel="icon" type="image/svg+xml" href="../favicon.svg">
 <link rel="stylesheet" href="../estilo.css">
 <link rel="alternate" type="application/rss+xml" title="Diario IA" href="../feed.xml">
@@ -18,7 +19,10 @@
 
   <header class="cabecera">
     <a class="logo" href="../index.html">Diario <span>IA</span></a>
-    <div class="fecha-mono">Edición {{ fecha }}</div>
+    <div class="fecha-mono">
+      {% if numero_edicion %}Edición Nº {{ '%03d' % numero_edicion }} · {% endif %}{{ fecha }}
+      {% if total_items %} · {{ total_items }} items · {{ num_fuentes }} fuentes{% endif %}
+    </div>
   </header>
 
   <nav class="nav-bloques" aria-label="Secciones de la edición">
@@ -27,27 +31,33 @@
     {% if prompt_del_dia %}<a href="#prompt">Prompt del día</a>{% endif %}
   </nav>
 
-  {% if destacado %}
-  <section class="panel panel-destacado destacado hero">
-    {% if destacado.imagen %}
-    <div class="tarjeta-img"><img src="{{ destacado.imagen }}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.remove()"></div>
-    {% endif %}
-    <div class="titulo-bloque">Destacado</div>
-    <div class="titular"><a href="{{ destacado.link }}">{{ destacado.titular }}</a></div>
-    <p class="resumen">{{ destacado.resumen }}</p>
-    <p class="importa"><strong>Por qué importa</strong> — {{ destacado.por_que_importa }}</p>
-    <div class="pie-item">{{ destacado.fuente }} · {{ destacado.fecha }} · <a href="{{ destacado.link }}">fuente</a></div>
-  </section>
-  {% endif %}
+  {% if apertura %}
+  <section class="region-apertura{% if not breves %} sin-aside{% endif %}">
 
-  {% if breves %}
-  <section class="panel" id="breves">
-    <div class="titulo-bloque">En pocas palabras</div>
-    <ul class="breves breves-cols">
-      {% for b in breves %}
-      <li><span class="marca">▸</span>{{ b.texto }} <a href="{{ b.link }}" class="fuente-brev">[{{ b.fuente }}]</a></li>
-      {% endfor %}
-    </ul>
+    <article class="panel lead{% if destacado %} panel-destacado{% endif %}{% if not apertura.imagen %} lead-sinimg{% endif %}">
+      {% if apertura.imagen %}
+      <div class="lead-img"><img src="{{ apertura.imagen }}" alt="" referrerpolicy="no-referrer" onerror="this.closest('.lead').classList.add('lead-sinimg'); this.parentNode.remove()"></div>
+      {% endif %}
+      <div class="lead-cuerpo">
+        <div class="titulo-bloque">{{ etiqueta_apertura }}</div>
+        <div class="titular"><a href="{{ apertura.link }}">{{ apertura.titular }}</a></div>
+        <p class="resumen">{{ apertura.resumen }}</p>
+        <p class="importa"><strong>Por qué importa</strong> — {{ apertura.por_que_importa }}</p>
+        <div class="pie-item">{{ apertura.fuente }} · {{ apertura.fecha }} · <a href="{{ apertura.link }}">fuente</a></div>
+      </div>
+    </article>
+
+    {% if breves %}
+    <aside class="panel aside-breves" id="breves">
+      <div class="titulo-bloque">En pocas palabras</div>
+      <ul class="breves">
+        {% for b in breves %}
+        <li><span class="marca">▸</span>{{ b.texto }} <a href="{{ b.link }}" class="fuente-brev">[{{ b.fuente }}]</a></li>
+        {% endfor %}
+      </ul>
+    </aside>
+    {% endif %}
+
   </section>
   {% endif %}
 
@@ -77,6 +87,13 @@
     <div class="prompt-texto">{{ prompt_del_dia.texto }}</div>
   </section>
   {% endif %}
+
+  <nav class="nav-ediciones" aria-label="Otras ediciones">
+    {% if anterior %}
+    <a href="{{ anterior.fecha }}.html">← {{ anterior.fecha_legible }}</a>
+    {% else %}<span></span>{% endif %}
+    <a href="../index.html">Todas las ediciones</a>
+  </nav>
 
   <footer class="pie">
     Generado automáticamente desde fuentes RSS · <a href="../index.html">Ediciones anteriores</a> · <a href="../feed.xml">RSS</a>

@@ -16,6 +16,7 @@ Entorno:
 Uso: python3 scripts/generar.py
 """
 
+import html
 import json
 import os
 import re
@@ -28,7 +29,7 @@ import requests
 
 RAIZ = Path(__file__).resolve().parent.parent
 API_BASE = os.environ.get("DIARIO_API_BASE", "https://generativelanguage.googleapis.com/v1beta/openai").rstrip("/")
-MODELO = os.environ.get("DIARIO_MODELO", "gemini-3.6-flash")
+MODELO = os.environ.get("DIARIO_MODELO", "gemini-3.8-flash")
 BLOQUES = {"modelos", "agentes", "herramientas", "clinica", "futuro"}
 
 INSTRUCCIONES = """Respondé SOLO con un objeto JSON válido, sin texto alrededor, con esta forma exacta:
@@ -188,6 +189,23 @@ def validar(data, candidatos_por_link):
     return {"items": limpios, "en_pocas_palabras": breves, "prompt_del_dia": prompt_dia}, None
 
 
+def completar_imagenes(items):
+    """Busca el og:image de los items que quedaron sin imagen del feed."""
+    for it in items:
+        if it.get("imagen"):
+            continue
+        try:
+            r = requests.get(it["link"], timeout=20, headers={"User-Agent": "Mozilla/5.0 (compatible; diario-ia/1.0)"})
+            m = re.search(r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)', r.text) \
+                or re.search(r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image', r.text)
+            if m:
+                url = html.unescape(m.group(1))
+                if url.startswith("http"):
+                    it["imagen"] = url
+        except requests.RequestException:
+            continue
+
+
 def main():
     candidatos = json.loads((RAIZ / ".out" / "candidatos.json").read_text())["candidatos"]
     editorial = (RAIZ / "prompt-editorial.md").read_text()
@@ -226,6 +244,7 @@ def main():
         print("el modelo no devolvió una edición válida tras el reintento; no se publica", file=sys.stderr)
         return 1
 
+    completar_imagenes(edicion["items"])
     edicion["fecha"] = datetime.now(timezone.utc).date().isoformat()
     edicion["modelo"] = MODELO
     (RAIZ / ".out" / "edicion.json").write_text(json.dumps(edicion, ensure_ascii=False, indent=2))

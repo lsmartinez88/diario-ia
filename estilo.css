@@ -363,3 +363,78 @@ a:focus-visible {
   .archivo-fecha { min-width: 0; }
   .archivo-titulares { white-space: normal; }
 }
+
+/* ===== diseño v3: apertura editorial de la edición ===== */
+
+/* región de apertura: nota principal + columna de breves */
+.region-apertura {
+  display: grid;
+  grid-template-columns: 2.1fr 1fr;
+  gap: 22px;
+  align-items: start;
+  margin-bottom: 36px;
+}
+.region-apertura.sin-aside { grid-template-columns: 1fr; }
+.region-apertura .panel { margin-bottom: 0; }
+
+/* nota principal horizontal: imagen + cuerpo */
+.lead { display: grid; grid-template-columns: 1fr 1.15fr; padding: 0; overflow: hidden; }
+.lead-img { position: relative; border-right: 1px solid var(--linea); background: var(--fondo); }
+.lead-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  object-fit: cover;
+  filter: grayscale(1) brightness(.82) contrast(1.05);
+  transition: filter .35s ease;
+}
+.lead-img::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #29B6F6;
+  opacity: .16;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+  transition: opacity .35s ease;
+}
+.lead:hover .lead-img img { filter: grayscale(0) brightness(.95) contrast(1); }
+.lead:hover .lead-img::after { opacity: 0; }
+.lead-cuerpo { padding: 26px 28px; display: flex; flex-direction: column; }
+.lead .titular { font-size: 25px; letter-spacing: 2.5px; }
+.lead .pie-item { margin-top: auto; padding-top: 12px; }
+.lead-sinimg { grid-template-columns: 1fr; }
+
+/* breves como columna lateral */
+.aside-breves .breves li { padding: 9px 0; }
+
+/* navegación entre ediciones */
+.nav-ediciones {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 44px;
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+.nav-ediciones a {
+  color: var(--cian-tenue);
+  border: 1px solid var(--linea);
+  padding: 10px 16px;
+  transition: color .18s ease, border-color .18s ease;
+}
+.nav-ediciones a:hover { color: var(--cian); border-color: var(--cian); text-decoration: none; }
+
+@media (max-width: 1100px) {
+  .region-apertura { grid-template-columns: 1fr; }
+}
+@media (max-width: 760px) {
+  .lead { grid-template-columns: 1fr; }
+  .lead-img { border-right: 0; border-bottom: 1px solid var(--linea); }
+  .lead-img img { min-height: 0; height: 180px; }
+  .lead-cuerpo { padding: 16px 14px; }
+  .lead .titular { font-size: 19px; letter-spacing: 2px; }
+}
