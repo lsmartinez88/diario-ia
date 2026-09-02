@@ -60,9 +60,13 @@ Actions, como variables o secrets del repo):
 | Secret | Qué es |
 | --- | --- |
 | `DIARIO_API_KEY` | API key de Gemini (gratis en aistudio.google.com) |
-| `GMAIL_USER` | Cuenta de Gmail que envía |
-| `GMAIL_APP_PASSWORD` | App password de Gmail (no la contraseña de la cuenta) |
-| `MAIL_TO` | Destinatario del email |
+| `GMAIL_USER` | (opcional) Cuenta de Gmail que envía |
+| `GMAIL_APP_PASSWORD` | (opcional) App password de Gmail (no la contraseña de la cuenta) |
+| `MAIL_TO` | (opcional) Destinatario del email |
+
+El envío de email está desactivado: mientras los tres secrets de Gmail no
+existan, el workflow publica la web y saltea ese paso. Para activarlo alcanza
+con cargarlos — no hay que tocar código.
 
 ## Correr en local
 

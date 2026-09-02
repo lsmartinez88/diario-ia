@@ -50,9 +50,17 @@ jobs:
           git pull --rebase origin main
           git push origin main
 
+      # El envío de email está desactivado por ahora: alcanza con la web.
+      # Para activarlo, cargar los secrets GMAIL_USER, GMAIL_APP_PASSWORD y
+      # MAIL_TO; el paso se saltea solo mientras falten.
       - name: Enviar email
         env:
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           MAIL_TO: ${{ secrets.MAIL_TO }}
-        run: python scripts/send_mail.py
+        run: |
+          if [ -z "$GMAIL_USER" ]; then
+            echo "Envío de email desactivado (no hay secrets de Gmail cargados)."
+            exit 0
+          fi
+          python scripts/send_mail.py

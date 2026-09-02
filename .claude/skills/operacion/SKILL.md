@@ -23,12 +23,15 @@ Orden de fallas típicas:
 - **Generación**: HTTP 4xx = problema de key/cuota de Gemini; "no devolvió una
   edición válida" = el modelo falló el JSON dos veces → no se publica (correcto).
 - **Publicar**: "la corrida no produjo cambios" = algo raro antes; mirar el log.
-- **Email**: solo corre si todo lo anterior pasó. Si falla, la web ya quedó
-  publicada — solo se pierde el mail del día.
+- **Email**: DESACTIVADO por decisión del usuario (2026-09-01). El paso se
+  saltea solo mientras no existan los secrets de Gmail; para activarlo, cargar
+  `GMAIL_USER`, `GMAIL_APP_PASSWORD` y `MAIL_TO`. Si algún día falla, la web ya
+  quedó publicada — solo se pierde el mail del día.
 
 ## Secrets del repo (Settings → Secrets → Actions)
 
-`DIARIO_API_KEY` (Gemini), `GMAIL_USER`, `GMAIL_APP_PASSWORD`, `MAIL_TO`.
+`DIARIO_API_KEY` (Gemini). Opcionales, solo para email: `GMAIL_USER`,
+`GMAIL_APP_PASSWORD`, `MAIL_TO`.
 
 ## Cambios frecuentes
 
