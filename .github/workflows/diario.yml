@@ -4,6 +4,8 @@ on:
   schedule:
     # 10:30 UTC = 7:30 en Argentina. GitHub puede demorar la ejecución en horas pico.
     - cron: "30 10 * * *"
+    # Reintento: solo publica si la corrida de la mañana falló (ver guardia abajo)
+    - cron: "30 12 * * *"
   workflow_dispatch:
 
 permissions:
@@ -21,26 +23,44 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-python@v5
+      # Guardia para las corridas programadas: si la edición de hoy ya está
+      # publicada, no hay nada que hacer (el disparo manual siempre corre).
+      - name: ¿Ya salió la edición de hoy?
+        id: guardia
+        run: |
+          if [ "${{ github.event_name }}" = "schedule" ] && [ -f "ediciones/$(date -u +%F).html" ]; then
+            echo "La edición de hoy ya está publicada; nada que hacer."
+            echo "saltear=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "saltear=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - if: steps.guardia.outputs.saltear != 'true'
+        uses: actions/setup-python@v5
         with:
           python-version: "3.12"
           cache: pip
 
       - name: Instalar dependencias
+        if: steps.guardia.outputs.saltear != 'true'
         run: pip install -r requirements.txt
 
       - name: Ingesta de feeds
+        if: steps.guardia.outputs.saltear != 'true'
         run: python scripts/fetch_feeds.py
 
       - name: Selección y redacción
+        if: steps.guardia.outputs.saltear != 'true'
         env:
           DIARIO_API_KEY: ${{ secrets.DIARIO_API_KEY }}
         run: python scripts/generar.py
 
       - name: Render
+        if: steps.guardia.outputs.saltear != 'true'
         run: python scripts/render.py
 
       - name: Publicar en el repo
+        if: steps.guardia.outputs.saltear != 'true'
         run: |
           git config user.name "diario-ia[bot]"
           git config user.email "diario-ia[bot]@users.noreply.github.com"
@@ -56,6 +76,7 @@ jobs:
       # Para activarlo, cargar los secrets GMAIL_USER, GMAIL_APP_PASSWORD y
       # MAIL_TO; el paso se saltea solo mientras falten.
       - name: Enviar email
+        if: steps.guardia.outputs.saltear != 'true'
         env:
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}

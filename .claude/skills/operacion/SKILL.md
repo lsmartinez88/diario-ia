@@ -22,6 +22,10 @@ Orden de fallas típicas:
 - **Ingesta**: un feed caído no rompe nada (se loguea y sigue); cero candidatos sí.
 - **Generación**: HTTP 4xx = problema de key/cuota de Gemini; "no devolvió una
   edición válida" = el modelo falló el JSON dos veces → no se publica (correcto).
+  Los 503 de pico de demanda se reintentan con backoff sobre el primario y después
+  sobre `gemini-flash-lite-latest` (env `DIARIO_MODELO_FALLBACK`). Si aun así
+  falla, hay un cron de reintento a las 12:30 UTC que solo publica si la edición
+  del día no existe todavía (guardia en el workflow; el disparo manual siempre corre).
 - **Publicar**: "la corrida no produjo cambios" = algo raro antes; mirar el log.
 - **Email**: DESACTIVADO por decisión del usuario (2026-09-01). El paso se
   saltea solo mientras no existan los secrets de Gmail; para activarlo, cargar

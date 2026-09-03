@@ -30,6 +30,8 @@ import requests
 RAIZ = Path(__file__).resolve().parent.parent
 API_BASE = os.environ.get("DIARIO_API_BASE", "https://generativelanguage.googleapis.com/v1beta/openai").rstrip("/")
 MODELO = os.environ.get("DIARIO_MODELO", "gemini-3.8-flash")
+# alias que Google mantiene apuntando al flash-lite vigente; no queda obsoleto
+MODELO_FALLBACK = os.environ.get("DIARIO_MODELO_FALLBACK", "gemini-flash-lite-latest")
 BLOQUES = {"modelos", "agentes", "herramientas", "clinica", "futuro"}
 
 INSTRUCCIONES = """Respondé SOLO con un objeto JSON válido, sin texto alrededor, con esta forma exacta:
@@ -85,35 +87,38 @@ def llamar_modelo(mensajes):
     if not token:
         print("falta DIARIO_API_KEY en el entorno", file=sys.stderr)
         sys.exit(1)
-    # 429/5xx y errores de red suelen ser picos pasajeros del free tier:
-    # backoff antes de rendirse
+    # 429/5xx y errores de red suelen ser picos pasajeros del free tier: backoff
+    # sobre el modelo primario y, si sigue saturado, se pasa al de fallback
     ultimo_error = None
-    for espera in (0, 30, 90, 180):
-        if espera:
-            print(f"  modelo saturado ({ultimo_error}), reintento en {espera}s", file=sys.stderr)
-            time.sleep(espera)
-        try:
-            r = requests.post(
-                f"{API_BASE}/chat/completions",
-                headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json"},
-                json={
-                    "model": MODELO,
-                    "messages": mensajes,
-                    "temperature": 0.4,
-                    "response_format": {"type": "json_object"},
-                },
-                timeout=300,
-            )
-        except requests.RequestException as e:
-            ultimo_error = type(e).__name__
-            continue
-        if r.status_code == 200:
-            return r.json()["choices"][0]["message"]["content"]
-        if r.status_code not in (429, 500, 502, 503, 504):
-            print(f"el modelo respondió HTTP {r.status_code}: {r.text[:500]}", file=sys.stderr)
-            sys.exit(1)
-        ultimo_error = f"HTTP {r.status_code}"
-    print(f"el modelo no respondió tras 4 intentos (último error: {ultimo_error})", file=sys.stderr)
+    for modelo in (MODELO, MODELO_FALLBACK):
+        if modelo != MODELO:
+            print(f"  {MODELO} sigue saturado, paso al fallback {modelo}", file=sys.stderr)
+        for espera in (0, 30, 90):
+            if espera:
+                print(f"  modelo saturado ({ultimo_error}), reintento en {espera}s", file=sys.stderr)
+                time.sleep(espera)
+            try:
+                r = requests.post(
+                    f"{API_BASE}/chat/completions",
+                    headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json"},
+                    json={
+                        "model": modelo,
+                        "messages": mensajes,
+                        "temperature": 0.4,
+                        "response_format": {"type": "json_object"},
+                    },
+                    timeout=300,
+                )
+            except requests.RequestException as e:
+                ultimo_error = type(e).__name__
+                continue
+            if r.status_code == 200:
+                return r.json()["choices"][0]["message"]["content"]
+            if r.status_code not in (429, 500, 502, 503, 504):
+                print(f"el modelo respondió HTTP {r.status_code}: {r.text[:500]}", file=sys.stderr)
+                sys.exit(1)
+            ultimo_error = f"HTTP {r.status_code}"
+    print(f"ningún modelo respondió (último error: {ultimo_error})", file=sys.stderr)
     sys.exit(1)
 
 
