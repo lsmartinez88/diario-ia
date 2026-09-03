@@ -23,11 +23,8 @@ feeds:
     bloque: modelos
   # Fuentes especiales de Hugging Face vía API JSON (tipo: distinto de rss;
   # el lector correspondiente vive en fetch_feeds.py)
-  - nombre: HF Daily Papers
-    tipo: hf_papers
-    url: https://huggingface.co/api/daily_papers
-    peso: 2
-    bloque: modelos
+# HF Daily Papers dado de baja (2026-09-03): papers demasiado específicos para
+# el diario. El lector hf_papers sigue en fetch_feeds.py por si se reactiva.
   - nombre: HF Modelos en tendencia
     tipo: hf_trending
     url: https://huggingface.co/api/models?sort=trendingScore
