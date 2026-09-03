@@ -25,6 +25,11 @@ def check(feed):
         r = requests.get(url, timeout=TIMEOUT, headers={"User-Agent": UA})
         if r.status_code != 200:
             return (nombre, url, f"HTTP {r.status_code}", 0, None)
+        if feed.get("tipo", "rss") != "rss":
+            # fuente API JSON (Hugging Face): alcanza con que responda y tenga items
+            datos = r.json()
+            n = len(datos) if isinstance(datos, list) else 0
+            return (nombre, url, "OK", n, datetime.now(timezone.utc))
         parsed = feedparser.parse(r.content)
         if parsed.bozo and not parsed.entries:
             return (nombre, url, f"no parsea ({type(parsed.bozo_exception).__name__})", 0, None)

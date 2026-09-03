@@ -67,15 +67,85 @@ def fecha_de_entrada(entrada):
     return None
 
 
+def crudo(feed, titulo, link, extracto, fecha, imagen=None):
+    return {
+        "titulo": titulo,
+        "link": normalizar_url(link),
+        "extracto": extracto[:500],
+        "fecha": fecha.isoformat(),
+        "fuente": feed["nombre"],
+        "imagen": imagen,
+        "peso": feed.get("peso", 1),
+        "bloque_fuente": feed.get("bloque", "general"),
+    }
+
+
+def items_rss(feed):
+    r = requests.get(feed["url"], timeout=TIMEOUT, headers={"User-Agent": UA})
+    if r.status_code != 200:
+        raise RuntimeError(f"HTTP {r.status_code}")
+    items = []
+    for e in feedparser.parse(r.content).entries:
+        fecha = fecha_de_entrada(e)
+        link, titulo = e.get("link"), limpiar_html(e.get("title", ""))
+        if fecha and link and titulo:
+            items.append(crudo(feed, titulo, link, limpiar_html(e.get("summary", "")),
+                               fecha, imagen_de_entrada(e)))
+    return items
+
+
+def items_hf_papers(feed):
+    """Daily Papers de Hugging Face (sin RSS público; API JSON)."""
+    r = requests.get("https://huggingface.co/api/daily_papers?limit=15",
+                     timeout=TIMEOUT, headers={"User-Agent": UA})
+    r.raise_for_status()
+    items = []
+    for p in r.json():
+        paper = p.get("paper") or {}
+        crudo_fecha = paper.get("submittedOnDailyAt") or paper.get("publishedAt")
+        if not (paper.get("id") and paper.get("title") and crudo_fecha):
+            continue
+        fecha = datetime.fromisoformat(crudo_fecha.replace("Z", "+00:00"))
+        extracto = limpiar_html(paper.get("summary", "")).replace("\n", " ")
+        items.append(crudo(feed, limpiar_html(paper["title"]),
+                           f"https://huggingface.co/papers/{paper['id']}",
+                           extracto, fecha, p.get("thumbnail")))
+    return items
+
+
+def items_hf_trending(feed):
+    """Modelos en tendencia del Hub; solo los creados en las últimas 2 semanas
+    (la noticia es el lanzamiento, no la popularidad sostenida). La fecha del
+    candidato es el snapshot de hoy; state.json evita que se repitan."""
+    r = requests.get("https://huggingface.co/api/models?sort=trendingScore&limit=10",
+                     timeout=TIMEOUT, headers={"User-Agent": UA})
+    r.raise_for_status()
+    ahora = datetime.now(timezone.utc)
+    items = []
+    for m in r.json():
+        creado = m.get("createdAt")
+        if not (m.get("id") and creado):
+            continue
+        creado = datetime.fromisoformat(creado.replace("Z", "+00:00"))
+        if (ahora - creado).days > 14:
+            continue
+        extracto = (f"Modelo {m.get('pipeline_tag') or 'de propósito general'} publicado el "
+                    f"{creado:%Y-%m-%d}; hoy en tendencia en Hugging Face con "
+                    f"{m.get('likes', 0)} likes y {m.get('downloads', 0)} descargas.")
+        items.append(crudo(feed, f"Nuevo modelo en tendencia: {m['id']}",
+                           f"https://huggingface.co/{m['id']}", extracto, ahora))
+    return items[:8]
+
+
+LECTORES = {"rss": items_rss, "hf_papers": items_hf_papers, "hf_trending": items_hf_trending}
+
+
 def leer_feed(feed):
     try:
-        r = requests.get(feed["url"], timeout=TIMEOUT, headers={"User-Agent": UA})
-        if r.status_code != 200:
-            return feed, [], f"HTTP {r.status_code}"
-        parsed = feedparser.parse(r.content)
-        return feed, parsed.entries, None
+        lector = LECTORES[feed.get("tipo", "rss")]
+        return feed, lector(feed), None
     except Exception as e:
-        return feed, [], type(e).__name__
+        return feed, [], f"{type(e).__name__}: {e}"[:120]
 
 
 def puntuar(item, keywords):
@@ -145,28 +215,11 @@ def main():
 
     ahora = datetime.now(timezone.utc)
     crudos = []
-    for feed, entradas, error in resultados:
+    for feed, items_feed, error in resultados:
         if error:
             print(f"  aviso: {feed['nombre']} falló ({error}), sigo sin él", file=sys.stderr)
             continue
-        for e in entradas:
-            fecha = fecha_de_entrada(e)
-            link = e.get("link")
-            titulo = limpiar_html(e.get("title", ""))
-            if not (fecha and link and titulo):
-                continue
-            crudos.append(
-                {
-                    "titulo": titulo,
-                    "link": normalizar_url(link),
-                    "extracto": limpiar_html(e.get("summary", ""))[:500],
-                    "fecha": fecha.isoformat(),
-                    "fuente": feed["nombre"],
-                    "imagen": imagen_de_entrada(e),
-                    "peso": feed.get("peso", 1),
-                    "bloque_fuente": feed.get("bloque", "general"),
-                }
-            )
+        crudos.extend(items_feed)
 
     def dentro_de(horas):
         limite = ahora - timedelta(hours=horas)

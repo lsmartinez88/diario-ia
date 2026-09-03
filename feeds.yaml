@@ -21,6 +21,18 @@ feeds:
     url: https://huggingface.co/blog/feed.xml
     peso: 3
     bloque: modelos
+  # Fuentes especiales de Hugging Face vía API JSON (tipo: distinto de rss;
+  # el lector correspondiente vive en fetch_feeds.py)
+  - nombre: HF Daily Papers
+    tipo: hf_papers
+    url: https://huggingface.co/api/daily_papers
+    peso: 2
+    bloque: modelos
+  - nombre: HF Modelos en tendencia
+    tipo: hf_trending
+    url: https://huggingface.co/api/models?sort=trendingScore
+    peso: 2
+    bloque: modelos
   - nombre: AWS Machine Learning Blog
     url: https://aws.amazon.com/blogs/machine-learning/feed/
     peso: 2

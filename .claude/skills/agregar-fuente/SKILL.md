@@ -16,6 +16,15 @@ description: Agregar, reemplazar o dar de baja un feed RSS en feeds.yaml. Usar c
 3. Agregar a `feeds.yaml` con `nombre`, `url`, `peso` (1–3) y `bloque`
    (modelos | agentes | herramientas | clinica | futuro | general).
 
+## Fuentes sin RSS (tipo especial)
+
+Para sitios con API JSON en vez de RSS, `feeds.yaml` acepta `tipo:` y el lector
+vive en `LECTORES` de `fetch_feeds.py`. Existen `hf_papers` (Daily Papers de
+Hugging Face, con thumbnail como imagen) y `hf_trending` (modelos del Hub creados
+en los últimos 14 días que hoy están en tendencia; la fecha del candidato es el
+snapshot del día y `state.json` evita repeticiones). Para una fuente nueva de este
+estilo: escribir un lector que devuelva items con `crudo(...)` y registrarlo.
+
 ## Criterio de peso
 
 - 3: fuente primaria (blog del lab, revista peer-reviewed, voz técnica de referencia).
