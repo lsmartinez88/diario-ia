@@ -1,10 +1,13 @@
 {
   "links": [
+    "https://arstechnica.com/ai/2026/09/four-major-ai-models-suffer-rare-overlapping-downtime",
     "https://arstechnica.com/tech-policy/2026/08/zlibrary-my-beloved-anthropic-staff-chats-extolling-piracy-cited-in-sony-suit",
     "https://arstechnica.com/tech-policy/2026/09/trump-may-be-forced-to-reveal-secret-rules-feds-use-for-ai-safety-testing",
     "https://aws.amazon.com/blogs/machine-learning/connect-an-agentcore-runtime-hosted-mcp-server-to-amazon-quick",
     "https://aws.amazon.com/blogs/machine-learning/manage-agents-tools-and-skills-at-scale-with-aws-agent-registry",
+    "https://aws.amazon.com/blogs/machine-learning/migrate-agentic-workloads-to-amazon-bedrock-agentcore",
     "https://blog.google/products-and-platforms/products/workspace/google-pics",
+    "https://blogs.nvidia.com/blog/local-ai-ifa-next-gen-agents-nv-pair-rtx-spark",
     "https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face",
     "https://deepmind.google/blog/introducing-agentic-video-in-gemini",
     "https://mvakde.github.io/blog/44-on-arc-1",
@@ -19,12 +22,18 @@
     "https://techcrunch.com/2026/09/02/openai-faces-30-more-lawsuits-tied-to-tumbler-ridge-shooting",
     "https://techcrunch.com/2026/09/02/psa-amazons-shopping-ai-can-now-tell-you-if-that-message-is-a-scam",
     "https://techcrunch.com/2026/09/02/u-s-government-sides-with-openai-on-issue-of-training-llms-on-copyrighted-material",
+    "https://techcrunch.com/2026/09/03/meta-is-paying-to-peek-at-how-you-use-their-latest-ai-model",
+    "https://techcrunch.com/2026/09/03/nvidia-confirms-it-will-buy-hugging-face-for-12-9-billion",
     "https://the-decoder.com/anthropic-ramps-up-claude-infrastructure-with-35-billion-lambda-deal",
     "https://the-decoder.com/gemini-3-8-flash-is-googles-third-budget-model-in-six-weeks-while-frontier-models-remain-mia",
+    "https://the-decoder.com/gpt-6-astra-is-the-first-model-making-openai-willing-to-declare-the-agi-era",
     "https://the-decoder.com/meta-closes-in-on-the-top-with-muse-spark-1-3-and-undercuts-rivals-on-price",
+    "https://the-decoder.com/nvidia-wants-your-home-network-to-work-like-a-mini-data-center-for-local-ai",
     "https://the-decoder.com/us-military-adds-chatgpt-and-grok-to-ai-platform-genai-mil",
     "https://www.404media.co/podcast-we-spoke-to-an-amazon-worker-destroying-books-for-ai",
+    "https://www.fiercebiotech.com/biotech/pfizer-offloads-scrapped-seagen-adc-medicus-pharma-1b-deal",
     "https://www.fiercebiotech.com/biotech/sec-fda-sign-info-sharing-agreement-signal-market-insider-trading",
+    "https://www.fiercebiotech.com/research/psilocybin-proves-promising-neuropathic-pain-study-mice",
     "https://www.fiercehealthcare.com/ai-and-machine-learning/chatgpt-healthcare-unveils-new-integrations-epic-ehr-public-health-data",
     "https://www.fiercehealthcare.com/finance/scancom-raises-220m-build-largest-medical-imaging-network-us",
     "https://www.latent.space/p/pr-not-welcome",
@@ -35,14 +44,25 @@
     "https://www.statnews.com/2026/09/01/fda-stryker-surgical-cockpit-apple-vr-headset-health-tech",
     "https://www.statnews.com/2026/09/02/why-transfyr-tackles-dumb-problems-intersection-bio-ai-prognosis",
     "https://www.statnews.com/2026/09/03/tempo-fda-pilor-generative-ai-medical-device-regulation",
+    "https://www.technologyreview.com/2026/09/04/1143452/drone-data-wild-west",
     "https://www.theverge.com/ai-artificial-intelligence/987830/anthropic-claude-fable-mythos-5-1",
     "https://www.theverge.com/policy/988228/nyc-ai-restrictions-in-schools-chatbot-ban",
     "https://www.theverge.com/tech/986789/linux-debian-generative-ai-policy",
+    "https://www.theverge.com/tech/990006/this-nas-company-wants-to-run-your-local-smart-home",
     "https://www.wired.com/story/openai-astra-first-ai-model-with-critical-cyber-abilities",
     "https://www.xataka.com/robotica-e-ia/espanola-multiverse-ha-lanzado-modelo-ia-avanzado-europa-todo-apunta-a-que-casi-clon-modelo-chino-glm-5-2",
     "https://www.xataka.com/robotica-e-ia/no-hay-lenguaje-ahi-fuera-atlas-quiere-hacer-mundo-fisico-que-llm-hicieron-internet"
   ],
   "ediciones": [
+    {
+      "fecha": "2026-09-04",
+      "titulares": [
+        "Nvidia adquiere Hugging Face por 12.900 millones de dólares",
+        "OpenAI lanza GPT-6 Astra y declara oficialmente la llegada de la era AGI",
+        "Ugreen lanza HomeAgent, una plataforma local de hogar inteligente con IA en dispositivo"
+      ],
+      "total": 11
+    },
     {
       "fecha": "2026-09-03",
       "titulares": [
