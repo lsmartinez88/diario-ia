@@ -5,8 +5,15 @@
     <link>https://lsmartinez88.github.io/diario-ia/</link>
     <description>Diario personal de noticias de IA, generado a diario.</description>
     <language>es</language>
-    <lastBuildDate>Fri, 04 Sep 2026 10:41:11 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 05 Sep 2026 10:37:18 +0000</lastBuildDate>
     <atom:link href="https://lsmartinez88.github.io/diario-ia/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Diario IA — 5 de septiembre de 2026</title>
+      <link>https://lsmartinez88.github.io/diario-ia/ediciones/2026-09-05.html</link>
+      <guid isPermaLink="true">https://lsmartinez88.github.io/diario-ia/ediciones/2026-09-05.html</guid>
+      <pubDate>Sat, 05 Sep 2026 11:00:00 +0000</pubDate>
+      <description>OpenAI lanza GPT-6 Astra con menor tasa de alucinaciones y mejoras clave en razonamiento · AWS introduce control operativo automatizado para cargas de trabajo con HyperPod InstantStart · Nuevas políticas de ciclo de vida para gestionar la memoria en Amazon Bedrock AgentCore</description>
+    </item>
     <item>
       <title>Diario IA — 4 de septiembre de 2026</title>
       <link>https://lsmartinez88.github.io/diario-ia/ediciones/2026-09-04.html</link>
