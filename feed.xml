@@ -5,8 +5,15 @@
     <link>https://lsmartinez88.github.io/diario-ia/</link>
     <description>Diario personal de noticias de IA, generado a diario.</description>
     <language>es</language>
-    <lastBuildDate>Sat, 05 Sep 2026 10:37:18 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 06 Sep 2026 10:38:01 +0000</lastBuildDate>
     <atom:link href="https://lsmartinez88.github.io/diario-ia/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Diario IA — 6 de septiembre de 2026</title>
+      <link>https://lsmartinez88.github.io/diario-ia/ediciones/2026-09-06.html</link>
+      <guid isPermaLink="true">https://lsmartinez88.github.io/diario-ia/ediciones/2026-09-06.html</guid>
+      <pubDate>Sun, 06 Sep 2026 11:00:00 +0000</pubDate>
+      <description>OpenAI avanza con GPT-6 Astra orientado a desarrolladores · Comercializan la eliminación de vallas de seguridad en modelos open-weight · Agentes autónomos de OpenAI alteran miles de entradas en una wiki histórica</description>
+    </item>
     <item>
       <title>Diario IA — 5 de septiembre de 2026</title>
       <link>https://lsmartinez88.github.io/diario-ia/ediciones/2026-09-05.html</link>
