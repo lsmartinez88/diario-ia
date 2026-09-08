@@ -1,6 +1,7 @@
 {
   "links": [
     "https://arstechnica.com/ai/2026/09/four-major-ai-models-suffer-rare-overlapping-downtime",
+    "https://arstechnica.com/features/2026/09/the-ai-data-center-boom-is-causing-new-accountability-problems",
     "https://arstechnica.com/tech-policy/2026/08/zlibrary-my-beloved-anthropic-staff-chats-extolling-piracy-cited-in-sony-suit",
     "https://arstechnica.com/tech-policy/2026/09/trump-may-be-forced-to-reveal-secret-rules-feds-use-for-ai-safety-testing",
     "https://aws.amazon.com/blogs/machine-learning/connect-an-agentcore-runtime-hosted-mcp-server-to-amazon-quick",
@@ -11,11 +12,14 @@
     "https://blog.google/products-and-platforms/products/workspace/google-pics",
     "https://blogs.nvidia.com/blog/local-ai-ifa-next-gen-agents-nv-pair-rtx-spark",
     "https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face",
+    "https://danluu.com/agentic-testing",
     "https://deepmind.google/blog/introducing-agentic-video-in-gemini",
     "https://engineering.atspotify.com/2026/9/portal-by-spotify-cut-my-claude-code-token-usage-by-90",
     "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration",
+    "https://github.com/TauricResearch/TradingAgents",
     "https://github.com/timgordontg/engrim",
     "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+    "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier",
     "https://mvakde.github.io/blog/44-on-arc-1",
     "https://openai.com/index/ai-native-company-workflows",
     "https://openai.com/index/supporting-independent-journalism-in-ukraine",
@@ -27,6 +31,7 @@
     "https://simonwillison.net/2026/Sep/5/blender-coding-agents-macos",
     "https://simonwillison.net/2026/Sep/5/introducing-gpt-6-astra-for-developers",
     "https://simonwillison.net/2026/Sep/6/research-acceleration-the-view-inside-openai",
+    "https://simonwillison.net/2026/Sep/7/creepy-crawlies",
     "https://techcrunch.com/2026/08/31/instagram-puts-new-limits-on-undisclosed-ai-profiles",
     "https://techcrunch.com/2026/08/31/nvidias-3-5b-mediatek-bet-reveals-its-plan-for-tackling-big-techs-ai-chip-buildout",
     "https://techcrunch.com/2026/08/31/the-pentagon-now-has-its-own-version-of-chatgpt-and-grok",
@@ -38,12 +43,16 @@
     "https://techcrunch.com/2026/09/05/openai-confirms-wiki-incident-says-its-working-on-a-framework-for-more-disclosure",
     "https://techcrunch.com/2026/09/05/seattle-times-and-newsday-are-the-latest-publications-to-sue-openai-and-microsoft",
     "https://techcrunch.com/2026/09/06/authors-push-back-as-publishers-and-agents-seek-share-of-anthropic-settlement",
+    "https://the-decoder.com/ai-designed-drug-appears-to-turn-back-the-bodys-biological-clock-in-early-trial",
     "https://the-decoder.com/anthropic-ramps-up-claude-infrastructure-with-35-billion-lambda-deal",
     "https://the-decoder.com/artificial-analysis-overhauls-its-intelligence-index-after-gpt-6-astra-scoring-drew-skepticism",
     "https://the-decoder.com/chatbots-built-an-echo-chamber-of-one-and-now-psychiatry-has-to-decide-if-ai-psychosis-exists",
+    "https://the-decoder.com/chatgpt-claws-back-web-traffic-share-to-55-5-percent-as-geminis-brief-comeback-fades",
     "https://the-decoder.com/gemini-3-8-flash-is-googles-third-budget-model-in-six-weeks-while-frontier-models-remain-mia",
     "https://the-decoder.com/google-brings-ai-music-generation-directly-into-the-gemini-app-with-its-new-lyria-3-5-model",
+    "https://the-decoder.com/gpt-6-astra-beat-portal-start-to-finish-without-human-help-in-under-24-hours",
     "https://the-decoder.com/gpt-6-astra-is-the-first-model-making-openai-willing-to-declare-the-agi-era",
+    "https://the-decoder.com/how-ai-wiped-out-an-entire-industry-in-nairobi",
     "https://the-decoder.com/meta-closes-in-on-the-top-with-muse-spark-1-3-and-undercuts-rivals-on-price",
     "https://the-decoder.com/metas-new-real-time-audio-model-is-the-foundation-for-ai-assistants-that-never-stop-listening",
     "https://the-decoder.com/nvidia-wants-your-home-network-to-work-like-a-mini-data-center-for-local-ai",
@@ -62,11 +71,14 @@
     "https://www.medrxiv.org/content/10.64898/2026.08.28.26361585v1?rss=1",
     "https://www.medrxiv.org/content/10.64898/2026.08.28.26361588v1?rss=1",
     "https://www.nature.com/articles/s41591-026-04633-x",
+    "https://www.nature.com/articles/s41591-026-04641-x",
     "https://www.nature.com/articles/s41746-026-03108-0",
     "https://www.nature.com/articles/s41746-026-03131-1",
     "https://www.nature.com/articles/s41746-026-03174-4",
     "https://www.nature.com/articles/s41746-026-03177-1",
     "https://www.nature.com/articles/s41746-026-03186-0",
+    "https://www.nature.com/articles/s41746-026-03200-5",
+    "https://www.nature.com/articles/s41746-026-03201-4",
     "https://www.nature.com/articles/s41746-026-03202-3",
     "https://www.statnews.com/2026/09/01/fda-stryker-surgical-cockpit-apple-vr-headset-health-tech",
     "https://www.statnews.com/2026/09/02/why-transfyr-tackles-dumb-problems-intersection-bio-ai-prognosis",
@@ -85,6 +97,15 @@
     "https://www.xataka.com/robotica-e-ia/para-jensen-huang-agi-ha-llegado-gpt-6-astra-problema-que-no-primera-vez-que-dice"
   ],
   "ediciones": [
+    {
+      "fecha": "2026-09-08",
+      "titulares": [
+        "Mistral levanta 3.000 millones de euros en su ronda Serie D y apunta al open-weight de frontera",
+        "GPT-6 Astra supera el videojuego Portal de forma autónoma en menos de un día",
+        "Lanzan framework de trading financiero basado en multi-agentes con LLMs"
+      ],
+      "total": 12
+    },
     {
       "fecha": "2026-09-07",
       "titulares": [

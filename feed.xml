@@ -5,8 +5,15 @@
     <link>https://lsmartinez88.github.io/diario-ia/</link>
     <description>Diario personal de noticias de IA, generado a diario.</description>
     <language>es</language>
-    <lastBuildDate>Mon, 07 Sep 2026 10:43:45 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 08 Sep 2026 10:40:06 +0000</lastBuildDate>
     <atom:link href="https://lsmartinez88.github.io/diario-ia/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Diario IA — 8 de septiembre de 2026</title>
+      <link>https://lsmartinez88.github.io/diario-ia/ediciones/2026-09-08.html</link>
+      <guid isPermaLink="true">https://lsmartinez88.github.io/diario-ia/ediciones/2026-09-08.html</guid>
+      <pubDate>Tue, 08 Sep 2026 11:00:00 +0000</pubDate>
+      <description>Mistral levanta 3.000 millones de euros en su ronda Serie D y apunta al open-weight de frontera · GPT-6 Astra supera el videojuego Portal de forma autónoma en menos de un día · Lanzan framework de trading financiero basado en multi-agentes con LLMs</description>
+    </item>
     <item>
       <title>Diario IA — 7 de septiembre de 2026</title>
       <link>https://lsmartinez88.github.io/diario-ia/ediciones/2026-09-07.html</link>
