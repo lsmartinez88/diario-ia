@@ -2,10 +2,14 @@
   "links": [
     "https://arstechnica.com/ai/2026/09/four-major-ai-models-suffer-rare-overlapping-downtime",
     "https://arstechnica.com/features/2026/09/the-ai-data-center-boom-is-causing-new-accountability-problems",
+    "https://arstechnica.com/science/2026/09/googles-ai-weather-model-now-uses-more-raw-satellite-data",
+    "https://arstechnica.com/security/2026/09/microsoft-patches-a-record-972-vulnerabilities-112-of-them-critical",
     "https://arstechnica.com/tech-policy/2026/08/zlibrary-my-beloved-anthropic-staff-chats-extolling-piracy-cited-in-sony-suit",
     "https://arstechnica.com/tech-policy/2026/09/trump-may-be-forced-to-reveal-secret-rules-feds-use-for-ai-safety-testing",
+    "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-feature-store-introduces-updaterecord-for-feature-level-writes",
     "https://aws.amazon.com/blogs/machine-learning/connect-an-agentcore-runtime-hosted-mcp-server-to-amazon-quick",
     "https://aws.amazon.com/blogs/machine-learning/designing-lifecycle-policies-for-agentcore-memory",
+    "https://aws.amazon.com/blogs/machine-learning/how-hpe-zerto-built-an-agentic-troubleshooting-system-with-amazon-bedrock",
     "https://aws.amazon.com/blogs/machine-learning/manage-agents-tools-and-skills-at-scale-with-aws-agent-registry",
     "https://aws.amazon.com/blogs/machine-learning/migrate-agentic-workloads-to-amazon-bedrock-agentcore",
     "https://aws.amazon.com/blogs/machine-learning/run-agent-driven-amazon-sagemaker-hyperpod-operations-with-instantstart",
@@ -13,6 +17,7 @@
     "https://blogs.nvidia.com/blog/local-ai-ifa-next-gen-agents-nv-pair-rtx-spark",
     "https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face",
     "https://danluu.com/agentic-testing",
+    "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome",
     "https://deepmind.google/blog/introducing-agentic-video-in-gemini",
     "https://engineering.atspotify.com/2026/9/portal-by-spotify-cut-my-claude-code-token-usage-by-90",
     "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration",
@@ -22,6 +27,8 @@
     "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier",
     "https://mvakde.github.io/blog/44-on-arc-1",
     "https://openai.com/index/ai-native-company-workflows",
+    "https://openai.com/index/codex-quantum-computing-experiments",
+    "https://openai.com/index/introducing-chatgpt-images-2-5",
     "https://openai.com/index/supporting-independent-journalism-in-ukraine",
     "https://simonwillison.net/2026/Sep/1/codex-libreoffice",
     "https://simonwillison.net/2026/Sep/1/datasette-mcp",
@@ -32,6 +39,7 @@
     "https://simonwillison.net/2026/Sep/5/introducing-gpt-6-astra-for-developers",
     "https://simonwillison.net/2026/Sep/6/research-acceleration-the-view-inside-openai",
     "https://simonwillison.net/2026/Sep/7/creepy-crawlies",
+    "https://simonwillison.net/2026/Sep/8/on-navier-stokes",
     "https://techcrunch.com/2026/08/31/instagram-puts-new-limits-on-undisclosed-ai-profiles",
     "https://techcrunch.com/2026/08/31/nvidias-3-5b-mediatek-bet-reveals-its-plan-for-tackling-big-techs-ai-chip-buildout",
     "https://techcrunch.com/2026/08/31/the-pentagon-now-has-its-own-version-of-chatgpt-and-grok",
@@ -43,6 +51,8 @@
     "https://techcrunch.com/2026/09/05/openai-confirms-wiki-incident-says-its-working-on-a-framework-for-more-disclosure",
     "https://techcrunch.com/2026/09/05/seattle-times-and-newsday-are-the-latest-publications-to-sue-openai-and-microsoft",
     "https://techcrunch.com/2026/09/06/authors-push-back-as-publishers-and-agents-seek-share-of-anthropic-settlement",
+    "https://techcrunch.com/2026/09/08/chrome-is-now-shipping-updates-every-2-weeks-as-ai-changes-the-security-landscape",
+    "https://techcrunch.com/2026/09/08/mistral-raises-e3b-as-sovereign-ai-becomes-big-business",
     "https://the-decoder.com/ai-designed-drug-appears-to-turn-back-the-bodys-biological-clock-in-early-trial",
     "https://the-decoder.com/anthropic-ramps-up-claude-infrastructure-with-35-billion-lambda-deal",
     "https://the-decoder.com/artificial-analysis-overhauls-its-intelligence-index-after-gpt-6-astra-scoring-drew-skepticism",
@@ -66,6 +76,7 @@
     "https://www.fiercebiotech.com/research/psilocybin-proves-promising-neuropathic-pain-study-mice",
     "https://www.fiercehealthcare.com/ai-and-machine-learning/chatgpt-healthcare-unveils-new-integrations-epic-ehr-public-health-data",
     "https://www.fiercehealthcare.com/finance/scancom-raises-220m-build-largest-medical-imaging-network-us",
+    "https://www.fiercehealthcare.com/health-tech/forus-secures-150m-series-c-3b-valuation",
     "https://www.latent.space/p/grok-bot",
     "https://www.latent.space/p/pr-not-welcome",
     "https://www.medrxiv.org/content/10.64898/2026.08.28.26361585v1?rss=1",
@@ -83,10 +94,13 @@
     "https://www.statnews.com/2026/09/01/fda-stryker-surgical-cockpit-apple-vr-headset-health-tech",
     "https://www.statnews.com/2026/09/02/why-transfyr-tackles-dumb-problems-intersection-bio-ai-prognosis",
     "https://www.statnews.com/2026/09/03/tempo-fda-pilor-generative-ai-medical-device-regulation",
+    "https://www.statnews.com/2026/09/09/ai-healthcare-limitations-emergency-room-study-medical-scribe-impact",
     "https://www.technologyreview.com/2026/09/04/1143452/drone-data-wild-west",
     "https://www.theverge.com/ai-artificial-intelligence/987830/anthropic-claude-fable-mythos-5-1",
     "https://www.theverge.com/ai-artificial-intelligence/990060/altman-apologizes-messy-astra-rollout",
+    "https://www.theverge.com/ai-artificial-intelligence/990313/anthropic-class-action-lawsuit-pricing-subscription-plans",
     "https://www.theverge.com/ai-artificial-intelligence/990932/seattle-times-newsday-lawsuit-openai-microsoft",
+    "https://www.theverge.com/ai-artificial-intelligence/991927/anthropic-ai-kill-all-humans",
     "https://www.theverge.com/policy/988228/nyc-ai-restrictions-in-schools-chatbot-ban",
     "https://www.theverge.com/policy/990267/microsoft-openai-new-york-times-authors-lawsuit",
     "https://www.theverge.com/tech/986789/linux-debian-generative-ai-policy",
@@ -97,6 +111,15 @@
     "https://www.xataka.com/robotica-e-ia/para-jensen-huang-agi-ha-llegado-gpt-6-astra-problema-que-no-primera-vez-que-dice"
   ],
   "ediciones": [
+    {
+      "fecha": "2026-09-09",
+      "titulares": [
+        "OpenAI resuelve un problema del milenio con un modelo no anunciado y desata controversia",
+        "OpenAI presenta ChatGPT Images 2.5 junto a una nueva herramienta de dibujo directo",
+        "DeepMind mapea posibles mutaciones del genoma humano con AlphaGenome Atlas"
+      ],
+      "total": 14
+    },
     {
       "fecha": "2026-09-08",
       "titulares": [
