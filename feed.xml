@@ -5,8 +5,15 @@
     <link>https://lsmartinez88.github.io/diario-ia/</link>
     <description>Diario personal de noticias de IA, generado a diario.</description>
     <language>es</language>
-    <lastBuildDate>Thu, 10 Sep 2026 10:40:30 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 11 Sep 2026 10:47:36 +0000</lastBuildDate>
     <atom:link href="https://lsmartinez88.github.io/diario-ia/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Diario IA — 11 de septiembre de 2026</title>
+      <link>https://lsmartinez88.github.io/diario-ia/ediciones/2026-09-11.html</link>
+      <guid isPermaLink="true">https://lsmartinez88.github.io/diario-ia/ediciones/2026-09-11.html</guid>
+      <pubDate>Fri, 11 Sep 2026 11:00:00 +0000</pubDate>
+      <description>OpenAI lanza la beta pública de Agents API para construir procesos autónomos · DeepSeek presenta V4.1-Flash para reducir drásticamente el uso de memoria en agentes · OpenAI libera la API de GPT-Live-1 para procesamiento de voz full-duplex</description>
+    </item>
     <item>
       <title>Diario IA — 10 de septiembre de 2026</title>
       <link>https://lsmartinez88.github.io/diario-ia/ediciones/2026-09-10.html</link>
