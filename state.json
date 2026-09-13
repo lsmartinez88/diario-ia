@@ -1,5 +1,6 @@
 {
   "links": [
+    "https://agentsdock.net",
     "https://arstechnica.com/ai/2026/09/four-major-ai-models-suffer-rare-overlapping-downtime",
     "https://arstechnica.com/features/2026/09/the-ai-data-center-boom-is-causing-new-accountability-problems",
     "https://arstechnica.com/science/2026/09/googles-ai-weather-model-now-uses-more-raw-satellite-data",
@@ -31,6 +32,8 @@
     "https://github.com/TauricResearch/TradingAgents",
     "https://github.com/timgordontg/engrim",
     "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+    "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+    "https://huggingface.co/nex-agi/Nex-N2.5-mini",
     "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier",
     "https://mvakde.github.io/blog/44-on-arc-1",
     "https://openai.com/index/ai-native-company-workflows",
@@ -70,7 +73,9 @@
     "https://techcrunch.com/2026/09/08/mistral-raises-e3b-as-sovereign-ai-becomes-big-business",
     "https://techcrunch.com/2026/09/10/anthropic-details-distillation-campaigns-from-alibaba-moonshot-ai-and-deepseek",
     "https://techcrunch.com/2026/09/11/openais-feud-with-mathematicians-is-only-escalating",
+    "https://techcrunch.com/2026/09/12/openais-sam-altman-says-it-would-be-ill-advised-to-go-public-in-2026",
     "https://the-decoder.com/ai-designed-drug-appears-to-turn-back-the-bodys-biological-clock-in-early-trial",
+    "https://the-decoder.com/ai-models-written-reasoning-steps-correspond-to-distinct-internal-patterns-a-new-study-finds",
     "https://the-decoder.com/anthropic-built-an-economic-model-that-frames-its-ceos-bleakest-job-forecasts-as-an-outlier-scenario",
     "https://the-decoder.com/anthropic-ramps-up-claude-infrastructure-with-35-billion-lambda-deal",
     "https://the-decoder.com/artificial-analysis-overhauls-its-intelligence-index-after-gpt-6-astra-scoring-drew-skepticism",
@@ -79,6 +84,7 @@
     "https://the-decoder.com/gemini-3-8-flash-is-googles-third-budget-model-in-six-weeks-while-frontier-models-remain-mia",
     "https://the-decoder.com/google-brings-ai-music-generation-directly-into-the-gemini-app-with-its-new-lyria-3-5-model",
     "https://the-decoder.com/googles-new-ai-model-predicts-the-future-from-sales-data-weather-and-discount-schedules",
+    "https://the-decoder.com/gpt-6-astra-appears-to-show-a-step-change-in-spatial-reasoning-based-on-early-benchmarks",
     "https://the-decoder.com/gpt-6-astra-beat-portal-start-to-finish-without-human-help-in-under-24-hours",
     "https://the-decoder.com/gpt-6-astra-is-the-first-model-making-openai-willing-to-declare-the-agi-era",
     "https://the-decoder.com/how-ai-wiped-out-an-entire-industry-in-nairobi",
@@ -94,6 +100,7 @@
     "https://the-decoder.com/stripping-safety-guardrails-from-open-weight-ai-models-is-now-a-turnkey-commercial-service",
     "https://the-decoder.com/suno-launches-v6-music-models-built-with-warner-bmg-and-believe",
     "https://the-decoder.com/top-ai-spenders-cut-per-employee-costs-by-nearly-10-percent-in-august",
+    "https://the-decoder.com/two-year-university-study-finds-banning-ai-from-classrooms-leaves-students-worse-off",
     "https://the-decoder.com/us-military-adds-chatgpt-and-grok-to-ai-platform-genai-mil",
     "https://www.404media.co/podcast-we-spoke-to-an-amazon-worker-destroying-books-for-ai",
     "https://www.404media.co/we-did-not-invite-you-citizens-rage-at-town-hall-over-proposed-nuclear-ai-data-center",
@@ -105,10 +112,14 @@
     "https://www.fiercehealthcare.com/ai-and-machine-learning/chatgpt-healthcare-unveils-new-integrations-epic-ehr-public-health-data",
     "https://www.fiercehealthcare.com/finance/scancom-raises-220m-build-largest-medical-imaging-network-us",
     "https://www.fiercehealthcare.com/health-tech/forus-secures-150m-series-c-3b-valuation",
+    "https://www.fiercepharma.com/pharma/astrazeneca-etcamah-flunks-first-line-breast-cancer-trial-adding-oral-serds-failure-record",
+    "https://www.latent.space/p/forward-deployed-engineer-best-practices",
     "https://www.latent.space/p/grok-bot",
     "https://www.latent.space/p/pr-not-welcome",
     "https://www.medrxiv.org/content/10.64898/2026.08.28.26361585v1?rss=1",
     "https://www.medrxiv.org/content/10.64898/2026.08.28.26361588v1?rss=1",
+    "https://www.nature.com/articles/s41591-026-04488-2",
+    "https://www.nature.com/articles/s41591-026-04587-0",
     "https://www.nature.com/articles/s41591-026-04633-x",
     "https://www.nature.com/articles/s41591-026-04641-x",
     "https://www.nature.com/articles/s41591-026-04703-0",
@@ -137,6 +148,8 @@
     "https://www.theverge.com/ai-artificial-intelligence/991927/anthropic-ai-kill-all-humans",
     "https://www.theverge.com/ai-artificial-intelligence/993465/universal-music-elevenlabs-ai",
     "https://www.theverge.com/ai-artificial-intelligence/994207/chatgpt-new-mexico-lawyer-fined-murder-appeal",
+    "https://www.theverge.com/ai-artificial-intelligence/994337/anthropic-ceo-slow-down-ai-development",
+    "https://www.theverge.com/ai-artificial-intelligence/994383/openais-rogue-ai-rubygems-hack",
     "https://www.theverge.com/policy/988228/nyc-ai-restrictions-in-schools-chatbot-ban",
     "https://www.theverge.com/policy/990267/microsoft-openai-new-york-times-authors-lawsuit",
     "https://www.theverge.com/tech/986789/linux-debian-generative-ai-policy",
@@ -144,12 +157,22 @@
     "https://www.theverge.com/tech/991809/amazon-prime-video-ai-lip-sync-dubbing",
     "https://www.theverge.com/tech/992919/apple-siri-ai-audio-intelligence-privacy",
     "https://www.theverge.com/tech/993974/meta-ai-prompt-invasive-suggestions",
+    "https://www.wired.com/story/ai-agents-are-thirsty-for-power",
     "https://www.wired.com/story/openai-astra-first-ai-model-with-critical-cyber-abilities",
     "https://www.xataka.com/robotica-e-ia/espanola-multiverse-ha-lanzado-modelo-ia-avanzado-europa-todo-apunta-a-que-casi-clon-modelo-chino-glm-5-2",
     "https://www.xataka.com/robotica-e-ia/no-hay-lenguaje-ahi-fuera-atlas-quiere-hacer-mundo-fisico-que-llm-hicieron-internet",
     "https://www.xataka.com/robotica-e-ia/para-jensen-huang-agi-ha-llegado-gpt-6-astra-problema-que-no-primera-vez-que-dice"
   ],
   "ediciones": [
+    {
+      "fecha": "2026-09-13",
+      "titulares": [
+        "GPT-6 Astra muestra avances iniciales en razonamiento espacial y robótica",
+        "Una herramienta de IA explicable supera a los biomarcadores clásicos en cáncer de pulmón",
+        "La adopción de agentes autónomos dispara la demanda eléctrica en los centros de datos"
+      ],
+      "total": 14
+    },
     {
       "fecha": "2026-09-12",
       "titulares": [
