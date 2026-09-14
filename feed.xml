@@ -5,8 +5,15 @@
     <link>https://lsmartinez88.github.io/diario-ia/</link>
     <description>Diario personal de noticias de IA, generado a diario.</description>
     <language>es</language>
-    <lastBuildDate>Sun, 13 Sep 2026 10:39:18 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 14 Sep 2026 10:42:03 +0000</lastBuildDate>
     <atom:link href="https://lsmartinez88.github.io/diario-ia/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Diario IA — 14 de septiembre de 2026</title>
+      <link>https://lsmartinez88.github.io/diario-ia/ediciones/2026-09-14.html</link>
+      <guid isPermaLink="true">https://lsmartinez88.github.io/diario-ia/ediciones/2026-09-14.html</guid>
+      <pubDate>Mon, 14 Sep 2026 11:00:00 +0000</pubDate>
+      <description>GPT-6 Astra lidera benchmarks de agentes y supera la línea humana en control de drones · Iris-mini e Iris-pro: nuevos agentes de búsqueda de código abierto basados en Qwen · Colaboración multiagente para generar ítems de exámenes médicos</description>
+    </item>
     <item>
       <title>Diario IA — 13 de septiembre de 2026</title>
       <link>https://lsmartinez88.github.io/diario-ia/ediciones/2026-09-13.html</link>
