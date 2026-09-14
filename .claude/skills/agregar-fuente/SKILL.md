@@ -40,7 +40,11 @@ muerta, 403 anti-bot, RSS descontinuado), como los que ya están ahí.
 
 - Sitios de HIMSS (MobiHealthNews, Healthcare IT News) y varios médicos bloquean
   clientes no-navegador con 403: no insistir, no funcionarán desde Actions.
-- Fierce (Biotech/Healthcare) manda fechas no estándar y títulos con HTML:
+- Fierce (Biotech/Healthcare/Pharma) manda fechas no estándar y títulos con HTML:
   `fetch_feeds.py` ya lo maneja; no hace falta tocar nada.
+- Fierce tiene feeds POR SECCIÓN con el patrón `/rss/<seccion>/xml` (marketing y
+  pharma funcionan; ai-and-machine-learning da 403). Sus HTML dan 403: no scrapear.
+- Contenido patrocinado se filtra por URL con la lista `ruido_links` de
+  `feeds.yaml` (ej. `/sponsored/` de Fierce), no por título.
 - El slot de PubMed está comentado en `feeds.yaml` esperando que el usuario genere
   la URL desde la interfaz de PubMed (botón "Create RSS").

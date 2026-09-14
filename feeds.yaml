@@ -158,6 +158,12 @@ feeds:
     url: https://www.fiercepharma.com/rss/xml
     peso: 1
     bloque: clinica
+  # feed por sección (el general solo trae 2-3 notas de marketing por día);
+  # el dedup por URL absorbe el solapamiento entre ambos
+  - nombre: Fierce Pharma Marketing
+    url: https://www.fiercepharma.com/rss/marketing/xml
+    peso: 2
+    bloque: clinica
   # PubMed: generar la URL desde la interfaz de PubMed (búsqueda + botón "Create RSS")
   # y pegarla acá. Query sugerida: (artificial intelligence) AND (clinical trial recruitment)
   # - nombre: PubMed IA + reclutamiento
@@ -166,6 +172,13 @@ feeds:
   #   bloque: clinica
 
 # Items cuyo título contenga alguna de estas palabras se descartan antes de puntuar.
+# Items cuyo LINK contenga alguno de estos fragmentos se descartan (contenido
+# pago/promocional que el título no siempre delata, ej. los "sponsored" de Fierce).
+ruido_links:
+  - /sponsored/
+  - /partner-content/
+  - /brandpost/
+
 ruido:
   - webinar
   - sponsored
@@ -237,6 +250,11 @@ keywords:
     - decentralized trial
     - eligibility
     - screening
+    - patient
+    - campaign
+    - engagement
+    - commercialization
+    - drug launch
   futuro:
     - regulation
     - policy

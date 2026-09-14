@@ -203,6 +203,7 @@ def bajar_articulo(url):
 def main():
     cfg = yaml.safe_load((RAIZ / "feeds.yaml").read_text())
     ruido = [p.lower() for p in cfg.get("ruido", [])]
+    ruido_links = [p.lower() for p in cfg.get("ruido_links", [])]
     keywords = cfg.get("keywords", {})
 
     estado_path = RAIZ / "state.json"
@@ -233,6 +234,7 @@ def main():
         print(f"  pocos items en 24h, extiendo la ventana a {ventana}h", file=sys.stderr)
 
     items = [i for i in items if not any(r in i["titulo"].lower() for r in ruido)]
+    items = [i for i in items if not any(r in i["link"].lower() for r in ruido_links)]
     items = [i for i in items if i["link"] not in publicados]
 
     # dedup: primero por URL exacta normalizada, después por título similar
