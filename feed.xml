@@ -5,8 +5,15 @@
     <link>https://lsmartinez88.github.io/diario-ia/</link>
     <description>Diario personal de noticias de IA, generado a diario.</description>
     <language>es</language>
-    <lastBuildDate>Tue, 15 Sep 2026 10:41:53 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 16 Sep 2026 10:45:08 +0000</lastBuildDate>
     <atom:link href="https://lsmartinez88.github.io/diario-ia/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Diario IA — 16 de septiembre de 2026</title>
+      <link>https://lsmartinez88.github.io/diario-ia/ediciones/2026-09-16.html</link>
+      <guid isPermaLink="true">https://lsmartinez88.github.io/diario-ia/ediciones/2026-09-16.html</guid>
+      <pubDate>Wed, 16 Sep 2026 11:00:00 +0000</pubDate>
+      <description>Google lanza Gemini 3.8 Live para competir en modelos de voz de baja latencia · Mistral y Mozilla se alían para integrar IA local en el navegador Firefox · Meta introduce soporte MCP en WhatsApp Business para gestionar agentes de código</description>
+    </item>
     <item>
       <title>Diario IA — 15 de septiembre de 2026</title>
       <link>https://lsmartinez88.github.io/diario-ia/ediciones/2026-09-15.html</link>
