@@ -111,6 +111,7 @@
     "https://techcrunch.com/2026/09/17/the-faas-plan-to-fix-air-traffic-875-million-worth-of-ai",
     "https://techcrunch.com/2026/09/18/a-new-kind-of-ai-model-from-a-chatgpt-inventor-is-thrilling-developers",
     "https://techcrunch.com/2026/09/18/googles-new-cc-is-an-ai-agent-that-helps-families-run-their-households",
+    "https://techcrunch.com/2026/09/19/vals-backed-by-andreessen-horowitz-is-looking-to-become-the-gold-standard-for-ai-benchmarking",
     "https://the-decoder.com/after-warning-ai-is-too-dangerous-bill-gates-bets-a-billion-on-its-upside",
     "https://the-decoder.com/ai-agent-swarms-are-a-massive-waste-of-tokens-with-zero-quality-gain-says-openai-codex-developer",
     "https://the-decoder.com/ai-conference-iclr-is-drowning-in-abstracts-with-roughly-50000-submissions-before-the-deadline",
@@ -132,6 +133,7 @@
     "https://the-decoder.com/google-launches-gemini-3-8-live-to-take-on-openais-gpt-live-1-at-a-fraction-of-the-cost",
     "https://the-decoder.com/googles-gemini-also-accidentally-hacked-three-real-companies-during-security-testing",
     "https://the-decoder.com/googles-new-ai-model-predicts-the-future-from-sales-data-weather-and-discount-schedules",
+    "https://the-decoder.com/gpt-6-astra-and-claude-fable-turn-robot-arms-into-slapstick-killer-robots-in-new-safety-benchmark",
     "https://the-decoder.com/gpt-6-astra-appears-to-show-a-step-change-in-spatial-reasoning-based-on-early-benchmarks",
     "https://the-decoder.com/gpt-6-astra-beat-portal-start-to-finish-without-human-help-in-under-24-hours",
     "https://the-decoder.com/gpt-6-astra-is-the-first-model-making-openai-willing-to-declare-the-agi-era",
@@ -148,11 +150,15 @@
     "https://the-decoder.com/openais-gpt-6-astra-hallucinates-less-but-remains-vulnerable-to-hidden-prompt-injections",
     "https://the-decoder.com/openais-gpt-live-1-api-lets-developers-build-apps-that-talk-and-listen-at-the-same-time",
     "https://the-decoder.com/openais-new-agents-api-gives-developers-the-infrastructure-behind-codex-and-chatgpt",
+    "https://the-decoder.com/qwen3-8-omni-flash-undercuts-gemini-flash-pricing-while-matching-its-multimodal-benchmarks",
     "https://the-decoder.com/sam-altman-calls-for-pacing-ai-development-but-promises-rapid-progress-will-continue",
+    "https://the-decoder.com/simulated-students-that-make-realistic-mistakes-help-ai-tutors-learn-faster",
     "https://the-decoder.com/stripping-safety-guardrails-from-open-weight-ai-models-is-now-a-turnkey-commercial-service",
     "https://the-decoder.com/suno-launches-v6-music-models-built-with-warner-bmg-and-believe",
     "https://the-decoder.com/top-ai-spenders-cut-per-employee-costs-by-nearly-10-percent-in-august",
+    "https://the-decoder.com/trump-announces-ai-force-and-plans-for-an-ai-czar-as-he-pushes-unchecked-ai-growth",
     "https://the-decoder.com/two-year-university-study-finds-banning-ai-from-classrooms-leaves-students-worse-off",
+    "https://the-decoder.com/unity-launches-official-plugins-for-claude-code-and-openai-codex-to-stop-ai-agents-from-using-outdated-tutorials",
     "https://the-decoder.com/us-and-china-experts-push-for-shared-rules-banning-ai-control-over-nuclear-weapons",
     "https://the-decoder.com/us-military-adds-chatgpt-and-grok-to-ai-platform-genai-mil",
     "https://www.404media.co/inside-project-lily-the-humans-reading-your-chatgpt-chats",
@@ -217,6 +223,7 @@
     "https://www.technologyreview.com/2026/09/04/1143452/drone-data-wild-west",
     "https://www.technologyreview.com/2026/09/10/1141649/powering-ai-is-an-architecture-problem",
     "https://www.technologyreview.com/2026/09/14/1144037/ai-agents-blew-whistle-o-cheating-colleagues",
+    "https://www.theregister.com/devops/2026/09/18/microsoft-agentically-ports-copilot-runtime-to-rust-for-120k/5297549",
     "https://www.theverge.com/ai-artificial-intelligence/987830/anthropic-claude-fable-mythos-5-1",
     "https://www.theverge.com/ai-artificial-intelligence/990060/altman-apologizes-messy-astra-rollout",
     "https://www.theverge.com/ai-artificial-intelligence/990313/anthropic-class-action-lawsuit-pricing-subscription-plans",
@@ -231,6 +238,7 @@
     "https://www.theverge.com/ai-artificial-intelligence/996775/ai-is-feared-globally-as-the-destroyer-of-jobs",
     "https://www.theverge.com/ai-artificial-intelligence/997134/anthropic-claude-code-projects",
     "https://www.theverge.com/ai-artificial-intelligence/997633/openai-microsoft-chatgpt-ai-new-york-times-doom-loop-theft-google-zero",
+    "https://www.theverge.com/ai-artificial-intelligence/997795/google-gemini-rogue-ai-hack",
     "https://www.theverge.com/news/994566/microsoft-humanist-ai-code-of-conduct",
     "https://www.theverge.com/podcast/996412/microsoft-ai-ceo-mustafa-suleyman-regulation-safety-anthropic-claude",
     "https://www.theverge.com/policy/988228/nyc-ai-restrictions-in-schools-chatbot-ban",
@@ -243,14 +251,25 @@
     "https://www.theverge.com/tech/992919/apple-siri-ai-audio-intelligence-privacy",
     "https://www.theverge.com/tech/993974/meta-ai-prompt-invasive-suggestions",
     "https://www.wired.com/story/ai-agents-are-thirsty-for-power",
+    "https://www.wired.com/story/metas-muse-is-better-at-surveilling-than-helping-me",
     "https://www.wired.com/story/new-york-seizes-a-dozen-celebrity-deepfake-websites",
     "https://www.wired.com/story/openai-astra-first-ai-model-with-critical-cyber-abilities",
+    "https://www.xataka.com/componentes/disenar-chip-ia-suele-llevar-anos-openai-encontro-atajo-bastante-obvio-usar-su-propia-ia-para-hacerlo",
     "https://www.xataka.com/empresas-y-economia/jensen-huang-ceo-nvidia-no-necesitamos-nuevas-leyes-no-necesitamos-nuevas-regulaciones",
     "https://www.xataka.com/robotica-e-ia/espanola-multiverse-ha-lanzado-modelo-ia-avanzado-europa-todo-apunta-a-que-casi-clon-modelo-chino-glm-5-2",
     "https://www.xataka.com/robotica-e-ia/no-hay-lenguaje-ahi-fuera-atlas-quiere-hacer-mundo-fisico-que-llm-hicieron-internet",
     "https://www.xataka.com/robotica-e-ia/para-jensen-huang-agi-ha-llegado-gpt-6-astra-problema-que-no-primera-vez-que-dice"
   ],
   "ediciones": [
+    {
+      "fecha": "2026-09-20",
+      "titulares": [
+        "Qwen lanza un modelo multimodal económico para competir contra Gemini Flash",
+        "Google ocultó que Gemini vulneró la seguridad de tres empresas durante test de ciberseguridad",
+        "Microsoft migra el runtime de Copilot a Rust con asistencia de agentes de IA por 120 mil dólares"
+      ],
+      "total": 10
+    },
     {
       "fecha": "2026-09-19",
       "titulares": [
