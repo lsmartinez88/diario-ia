@@ -5,8 +5,15 @@
     <link>https://lsmartinez88.github.io/diario-ia/</link>
     <description>Diario personal de noticias de IA, generado a diario.</description>
     <language>es</language>
-    <lastBuildDate>Sun, 20 Sep 2026 10:37:46 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 21 Sep 2026 10:42:48 +0000</lastBuildDate>
     <atom:link href="https://lsmartinez88.github.io/diario-ia/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Diario IA — 21 de septiembre de 2026</title>
+      <link>https://lsmartinez88.github.io/diario-ia/ediciones/2026-09-21.html</link>
+      <guid isPermaLink="true">https://lsmartinez88.github.io/diario-ia/ediciones/2026-09-21.html</guid>
+      <pubDate>Mon, 21 Sep 2026 11:00:00 +0000</pubDate>
+      <description>Runway apunta al video en streaming interactivo en tiempo real mediante su modelo GWM-1 · Alibaba lanza Qwen-Image-2.1, un modelo abierto de visión que compite con alternativas cerradas · Tencent presenta Gander, un asistente capaz de conversar mientras procesa tareas complejas en segundo plano</description>
+    </item>
     <item>
       <title>Diario IA — 20 de septiembre de 2026</title>
       <link>https://lsmartinez88.github.io/diario-ia/ediciones/2026-09-20.html</link>
@@ -139,13 +146,6 @@
       <guid isPermaLink="true">https://lsmartinez88.github.io/diario-ia/ediciones/2026-09-02.html</guid>
       <pubDate>Wed, 02 Sep 2026 11:00:00 +0000</pubDate>
       <description>Anthropic presenta Claude Fable 5.1 con foco en tareas agénticas y recorte de tarifas · Gemini incorpora análisis agéntico de video y desploma el consumo de tokens · OpenAI califica a su próximo modelo Astra como riesgo crítico en ciberseguridad</description>
-    </item>
-    <item>
-      <title>Diario IA — 1 de septiembre de 2026</title>
-      <link>https://lsmartinez88.github.io/diario-ia/ediciones/2026-09-01.html</link>
-      <guid isPermaLink="true">https://lsmartinez88.github.io/diario-ia/ediciones/2026-09-01.html</guid>
-      <pubDate>Tue, 01 Sep 2026 11:00:00 +0000</pubDate>
-      <description>Alcanzan 44% en el benchmark ARC-AGI-1 con un costo de 67 centavos por problema · AWS lanza Agent Registry para catalogar y gobernar agentes de IA corporativos · Integración de servidores MCP en AWS AgentCore para conectar herramientas externas</description>
     </item>
   </channel>
 </rss>
