@@ -105,6 +105,7 @@
     "https://simonwillison.net/2026/Sep/23/gemini-tts-playground",
     "https://simonwillison.net/2026/Sep/24/datasette",
     "https://simonwillison.net/2026/Sep/25/john-gruber",
+    "https://simonwillison.net/2026/Sep/26/kakapo-party",
     "https://simonwillison.net/2026/Sep/4/rogue-agent-wikis",
     "https://simonwillison.net/2026/Sep/5/blender-coding-agents-macos",
     "https://simonwillison.net/2026/Sep/5/introducing-gpt-6-astra-for-developers",
@@ -150,8 +151,12 @@
     "https://techcrunch.com/2026/09/24/ando-eyes-slack-as-it-builds-team-messaging-platform-for-humans-and-agents-to-work-together",
     "https://techcrunch.com/2026/09/24/prismml-brings-its-tiny-llms-to-qualcomm-powered-smart-glasses",
     "https://techcrunch.com/2026/09/25/astra-and-opus-just-passed-turings-other-test",
+    "https://techcrunch.com/2026/09/26/google-tests-buying-from-walmart-owned-flipkart-through-gemini-and-ai-mode-in-india",
+    "https://techcrunch.com/2026/09/26/i-created-an-interactive-digital-avatar-of-myself-and-you-can-talk-to-it",
+    "https://techcrunch.com/2026/09/26/insurers-claim-ai-is-already-increasing-healthcare-costs",
     "https://the-decoder.com/a-tiny-software-layer-from-lab-grown-neurons-promises-faster-cheaper-ai-video",
     "https://the-decoder.com/after-warning-ai-is-too-dangerous-bill-gates-bets-a-billion-on-its-upside",
+    "https://the-decoder.com/ai-access-makes-people-almost-entirely-unwilling-to-say-i-dont-know-study-finds",
     "https://the-decoder.com/ai-agent-swarms-are-a-massive-waste-of-tokens-with-zero-quality-gain-says-openai-codex-developer",
     "https://the-decoder.com/ai-conference-iclr-is-drowning-in-abstracts-with-roughly-50000-submissions-before-the-deadline",
     "https://the-decoder.com/ai-designed-drug-appears-to-turn-back-the-bodys-biological-clock-in-early-trial",
@@ -171,6 +176,7 @@
     "https://the-decoder.com/elevenlabs-makes-music-v2-5-available-via-app-and-api-with-free-and-pro-tier-options",
     "https://the-decoder.com/eu-president-warns-ai-agents-escaping-their-environment-are-just-a-preview-of-whats-coming",
     "https://the-decoder.com/gemini-3-8-flash-is-googles-third-budget-model-in-six-weeks-while-frontier-models-remain-mia",
+    "https://the-decoder.com/goldman-sachs-expects-big-tech-to-spend-1-2-trillion-on-ai-infrastructure-by-2027-dwarfing-wall-street-estimates",
     "https://the-decoder.com/google-brings-ai-music-generation-directly-into-the-gemini-app-with-its-new-lyria-3-5-model",
     "https://the-decoder.com/google-deepmind-launches-interdisciplinary-institute-to-tackle-the-big-questions-around-agi",
     "https://the-decoder.com/google-deepminds-dream-rsi-helps-ai-agents-improve-by-dreaming-about-past-attempts",
@@ -204,6 +210,7 @@
     "https://the-decoder.com/stripping-safety-guardrails-from-open-weight-ai-models-is-now-a-turnkey-commercial-service",
     "https://the-decoder.com/suno-launches-v6-music-models-built-with-warner-bmg-and-believe",
     "https://the-decoder.com/tencents-gander-aims-to-keep-talking-while-it-works-in-the-background",
+    "https://the-decoder.com/tens-of-thousands-of-security-probes-show-openais-hugging-face-incident-was-just-the-beginning",
     "https://the-decoder.com/top-ai-spenders-cut-per-employee-costs-by-nearly-10-percent-in-august",
     "https://the-decoder.com/trump-announces-ai-force-and-plans-for-an-ai-czar-as-he-pushes-unchecked-ai-growth",
     "https://the-decoder.com/two-year-university-study-finds-banning-ai-from-classrooms-leaves-students-worse-off",
@@ -295,6 +302,7 @@
     "https://www.theverge.com/ai-artificial-intelligence/1000116/google-gemini-business-phone-calls",
     "https://www.theverge.com/ai-artificial-intelligence/1000644/irregular-rogue-ai-cyberattacks-hacking-openai-meta-anthropic-google",
     "https://www.theverge.com/ai-artificial-intelligence/1000758/suno-sony-umg-lawsuit-ai-music",
+    "https://www.theverge.com/ai-artificial-intelligence/1001049/openai-training-pause",
     "https://www.theverge.com/ai-artificial-intelligence/987830/anthropic-claude-fable-mythos-5-1",
     "https://www.theverge.com/ai-artificial-intelligence/990060/altman-apologizes-messy-astra-rollout",
     "https://www.theverge.com/ai-artificial-intelligence/990313/anthropic-class-action-lawsuit-pricing-subscription-plans",
@@ -317,6 +325,7 @@
     "https://www.theverge.com/ai-artificial-intelligence/999470/anthropic-biolab-claude-crispr",
     "https://www.theverge.com/news/1000532/microsoft-copilot-super-app-chat-coding-autopilot",
     "https://www.theverge.com/news/994566/microsoft-humanist-ai-code-of-conduct",
+    "https://www.theverge.com/podcast/1000344/cloudflare-matthew-prince-google-zero-ai-web-advertising",
     "https://www.theverge.com/podcast/996412/microsoft-ai-ceo-mustafa-suleyman-regulation-safety-anthropic-claude",
     "https://www.theverge.com/policy/988228/nyc-ai-restrictions-in-schools-chatbot-ban",
     "https://www.theverge.com/policy/990267/microsoft-openai-new-york-times-authors-lawsuit",
@@ -346,9 +355,19 @@
     "https://www.xataka.com/empresas-y-economia/jensen-huang-ceo-nvidia-no-necesitamos-nuevas-leyes-no-necesitamos-nuevas-regulaciones",
     "https://www.xataka.com/robotica-e-ia/espanola-multiverse-ha-lanzado-modelo-ia-avanzado-europa-todo-apunta-a-que-casi-clon-modelo-chino-glm-5-2",
     "https://www.xataka.com/robotica-e-ia/no-hay-lenguaje-ahi-fuera-atlas-quiere-hacer-mundo-fisico-que-llm-hicieron-internet",
-    "https://www.xataka.com/robotica-e-ia/para-jensen-huang-agi-ha-llegado-gpt-6-astra-problema-que-no-primera-vez-que-dice"
+    "https://www.xataka.com/robotica-e-ia/para-jensen-huang-agi-ha-llegado-gpt-6-astra-problema-que-no-primera-vez-que-dice",
+    "https://www.xataka.com/seguridad/ciberataque-a-renfe-adif-confirma-que-ia-llevaba-meses-avisando-500gb-datos-clientes-quedan-al-descubierto"
   ],
   "ediciones": [
+    {
+      "fecha": "2026-09-27",
+      "titulares": [
+        "OpenAI frena el entrenamiento de sus modelos más potentes tras incidentes de autonomía descontrolada",
+        "Decenas de miles de incidentes confirman que los agentes autónomos ya hackean sistemas por su cuenta",
+        "Arte en pixel art con Claude: el experimento de Simon Willison en su última keynote"
+      ],
+      "total": 10
+    },
     {
       "fecha": "2026-09-26",
       "titulares": [
