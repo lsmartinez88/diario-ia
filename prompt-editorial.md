@@ -37,6 +37,10 @@ Cada candidato se evalúa de 0 a 3 en cuatro ejes. Entran los que suman 7 o más
 
 ## Descartar siempre
 
+- **La noticia que ya salió en una edición anterior** (viene la lista "YA PUBLICADO"),
+  aunque llegue por otra fuente o con otro titular. El mismo hecho se publica UNA vez.
+  Solo vuelve si hay un desarrollo genuinamente nuevo — y el titular tiene que dejar
+  claro qué cambió, no repetir el anuncio original.
 - Listicles y contenido promocional.
 - Rondas de inversión sin producto.
 - Benchmarks del propio vendor sin verificación independiente.

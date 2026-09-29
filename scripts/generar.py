@@ -22,7 +22,7 @@ import os
 import re
 import sys
 import time
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 import requests
@@ -59,6 +59,8 @@ Reglas duras:
 - "en_pocas_palabras": 4 a 8 entradas, noticias menores que no merecen item completo. Puede ir vacío.
 - "items": el volumen total de la edición (items + en_pocas_palabras) es de 14 a 22.
 - Máximo 2 items completos por fuente; el resto de esa fuente va a en_pocas_palabras o se descarta.
+- Si el mensaje trae una lista de "YA PUBLICADO", descartá todo candidato que cuente la misma
+  noticia que un titular de esa lista, aunque el link y la redacción sean distintos.
 - "destacado": true en máximo UN item, y solo si de verdad califica según los criterios. La mayoría de los días ninguno.
 - "aplicacion" solo aparece en items de bloque "clinica".
 - "prompt_del_dia" es opcional: incluilo solo si se te ocurre uno genuinamente útil ligado a las noticias de hoy; si no, null.
@@ -211,17 +213,37 @@ def completar_imagenes(items):
             continue
 
 
+def titulares_recientes(dias=7):
+    """Titulares ya publicados en los últimos `dias`, para no repetir noticias."""
+    estado_path = RAIZ / "state.json"
+    if not estado_path.exists():
+        return []
+    desde = (datetime.now(timezone.utc) - timedelta(days=dias)).date().isoformat()
+    titulares = []
+    for e in json.loads(estado_path.read_text()).get("ediciones", []):
+        if e["fecha"] >= desde:
+            titulares.extend(e.get("titulares", []))
+    return titulares
+
+
 def main():
     candidatos = json.loads((RAIZ / ".out" / "candidatos.json").read_text())["candidatos"]
     editorial = (RAIZ / "prompt-editorial.md").read_text()
     candidatos_por_link = {c["link"]: c for c in candidatos}
 
+    contenido = "Candidatos de hoy:\n" + json.dumps(armar_candidatos_compactos(candidatos), ensure_ascii=False)
+    publicados = titulares_recientes()
+    if publicados:
+        contenido += (
+            "\n\nYA PUBLICADO en los últimos 7 días — NO repitas ninguna de estas noticias"
+            " aunque el candidato venga de otra fuente o con otro titular; una noticia repetida"
+            " solo puede volver si hay un desarrollo genuinamente nuevo y el titular deja claro"
+            " qué cambió:\n" + "\n".join(f"- {t}" for t in publicados)
+        )
+
     mensajes = [
         {"role": "system", "content": editorial + "\n\n" + INSTRUCCIONES},
-        {
-            "role": "user",
-            "content": "Candidatos de hoy:\n" + json.dumps(armar_candidatos_compactos(candidatos), ensure_ascii=False),
-        },
+        {"role": "user", "content": contenido},
     ]
 
     edicion = None

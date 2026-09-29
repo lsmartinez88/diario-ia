@@ -99,7 +99,7 @@ def rss(ediciones):
     for e in ediciones[:20]:
         url = f"{BASE_URL}/ediciones/{e['fecha']}.html"
         titulo = html.escape(f"Diario IA — {fecha_legible(e['fecha'])}")
-        desc = html.escape(" · ".join(e.get("titulares", [])))
+        desc = html.escape(" · ".join(e.get("titulares", [])[:3]))
         pub = format_datetime(datetime.fromisoformat(e["fecha"]).replace(hour=11, tzinfo=timezone.utc))
         items_xml.append(
             f"    <item>\n      <title>{titulo}</title>\n      <link>{url}</link>\n"
@@ -136,7 +136,8 @@ def main():
     links.update(b["link"] for b in edicion.get("en_pocas_palabras", []))
 
     ediciones = [e for e in estado.get("ediciones", []) if e["fecha"] != edicion["fecha"]]
-    titulares = [i["titular"] for i in edicion["items"]][:3]
+    # todos los titulares: generar.py los usa para no repetir noticias entre días
+    titulares = [i["titular"] for i in edicion["items"]]
     ediciones.append({
         "fecha": edicion["fecha"],
         "titulares": titulares,
@@ -159,7 +160,11 @@ def main():
     pagina.write_text(env.get_template("edicion.html").render(**ctx_web))
 
     # 3. portada
-    vista = [dict(e, fecha_legible=fecha_legible(e["fecha"])) for e in ediciones[:30]]
+    # en la portada solo se muestran 3 titulares por edición
+    vista = [
+        dict(e, fecha_legible=fecha_legible(e["fecha"]), titulares=e.get("titulares", [])[:3])
+        for e in ediciones[:30]
+    ]
     (RAIZ / "index.html").write_text(
         env.get_template("index.html").render(ediciones=vista, base_url=BASE_URL)
     )
