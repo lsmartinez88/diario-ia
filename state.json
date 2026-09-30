@@ -3,6 +3,7 @@
     "https://agentsdock.net",
     "https://arstechnica.com/ai/2026/09/agilitys-new-humanoid-robot-will-stop-squat-to-avoid-harming-human-coworkers",
     "https://arstechnica.com/ai/2026/09/ai-was-supposed-to-hit-new-grads-hard-so-far-unemployment-data-says-otherwise",
+    "https://arstechnica.com/ai/2026/09/amd-acquires-world-labs-ai-pioneer-fei-fei-lis-world-models-startup",
     "https://arstechnica.com/ai/2026/09/faa-tees-up-875m-ai-tool-to-help-manage-air-traffic-congestion",
     "https://arstechnica.com/ai/2026/09/four-major-ai-models-suffer-rare-overlapping-downtime",
     "https://arstechnica.com/ai/2026/09/openai-halts-frontier-model-training-amid-string-of-agent-misalignment-incidents",
@@ -20,7 +21,9 @@
     "https://arstechnica.com/tech-policy/2026/09/trump-may-be-forced-to-reveal-secret-rules-feds-use-for-ai-safety-testing",
     "https://arstechnica.com/tech-policy/2026/09/us-government-website-used-chinese-model-the-fbi-called-malicious",
     "https://aws.amazon.com/blogs/machine-learning/accelerate-multimodal-rl-training-with-skyrl-on-amazon-sagemaker-hyperpod",
+    "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-expands-claude-model-availability-to-india-cross-region-inference",
     "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-feature-store-introduces-updaterecord-for-feature-level-writes",
+    "https://aws.amazon.com/blogs/machine-learning/bring-near-astra-intelligence-to-everyday-work-with-gpt-6-1-sol-on-amazon-bedrock",
     "https://aws.amazon.com/blogs/machine-learning/build-a-serverless-pii-redaction-pipeline-with-amazon-bedrock-data-automation",
     "https://aws.amazon.com/blogs/machine-learning/build-interactive-mcp-apps-using-amazon-bedrock-agentcore",
     "https://aws.amazon.com/blogs/machine-learning/connect-an-agentcore-runtime-hosted-mcp-server-to-amazon-quick",
@@ -72,6 +75,7 @@
     "https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B",
     "https://huggingface.co/blog/Hcompany/holo4",
     "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark",
+    "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
     "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
     "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
     "https://huggingface.co/nex-agi/Nex-N2.5-mini",
@@ -221,6 +225,7 @@
     "https://the-decoder.com/openais-gpt-6-astra-hallucinates-less-but-remains-vulnerable-to-hidden-prompt-injections",
     "https://the-decoder.com/openais-gpt-live-1-api-lets-developers-build-apps-that-talk-and-listen-at-the-same-time",
     "https://the-decoder.com/openais-new-agents-api-gives-developers-the-infrastructure-behind-codex-and-chatgpt",
+    "https://the-decoder.com/openais-reveals-a-new-chatgpt-that-looks-less-like-a-chatbot-and-more-like-an-operating-system",
     "https://the-decoder.com/qwen3-8-omni-flash-undercuts-gemini-flash-pricing-while-matching-its-multimodal-benchmarks",
     "https://the-decoder.com/researchers-plug-gpt-6-astra-directly-into-a-robot-and-let-it-clean-up-an-unfamiliar-kitchen",
     "https://the-decoder.com/runway-wants-to-turn-ai-video-generation-into-a-live-stream-you-control-in-real-time",
@@ -244,6 +249,7 @@
     "https://www.404media.co/podcast-we-spoke-to-an-amazon-worker-destroying-books-for-ai",
     "https://www.404media.co/we-did-not-invite-you-citizens-rage-at-town-hall-over-proposed-nuclear-ai-data-center",
     "https://www.autom.dev/blog/google-search-goto-links",
+    "https://www.fiercebiotech.com/biotech/amgen-reveals-6-point-drop-lupus-severity-behind-phase-2-win-horizon-antibody",
     "https://www.fiercebiotech.com/biotech/analysts-extremely-bullish-telix-beams-novartis-territory-165b-itm-acquisition",
     "https://www.fiercebiotech.com/biotech/astrazeneca-scales-summits-pd-1xvegf-strategy-2b-investment-fuel-adc-combinations",
     "https://www.fiercebiotech.com/biotech/axoltis-misses-mark-phase-2-als-study-still-strives-move-towards-clinic",
@@ -318,6 +324,7 @@
     "https://www.statnews.com/2026/09/15/medicare-wiser-ai-prior-authorization-pilot-rushed-launch-delayed-care",
     "https://www.statnews.com/2026/09/17/zocdoc-for-chatbots-and-medicares-access-healh-tech",
     "https://www.statnews.com/2026/09/18/geriatrician-explains-why-ai-for-older-adults-deserves-careful-scrutiny",
+    "https://www.statnews.com/2026/09/29/anthropic-joins-arpa-h-clinical-ai-moonshot-health-tech",
     "https://www.technologyreview.com/2026/09/04/1143452/drone-data-wild-west",
     "https://www.technologyreview.com/2026/09/10/1141649/powering-ai-is-an-architecture-problem",
     "https://www.technologyreview.com/2026/09/14/1144037/ai-agents-blew-whistle-o-cheating-colleagues",
@@ -331,6 +338,7 @@
     "https://www.theverge.com/ai-artificial-intelligence/1001049/openai-training-pause",
     "https://www.theverge.com/ai-artificial-intelligence/1001178/openai-agents-bruteforce-un-website",
     "https://www.theverge.com/ai-artificial-intelligence/1001527/chatgpt-florida-ban-first-person-human-attributes-kids",
+    "https://www.theverge.com/ai-artificial-intelligence/1002033/openai-dots-launch-muse-competitor",
     "https://www.theverge.com/ai-artificial-intelligence/987830/anthropic-claude-fable-mythos-5-1",
     "https://www.theverge.com/ai-artificial-intelligence/990060/altman-apologizes-messy-astra-rollout",
     "https://www.theverge.com/ai-artificial-intelligence/990313/anthropic-class-action-lawsuit-pricing-subscription-plans",
@@ -355,6 +363,7 @@
     "https://www.theverge.com/news/994566/microsoft-humanist-ai-code-of-conduct",
     "https://www.theverge.com/podcast/1000344/cloudflare-matthew-prince-google-zero-ai-web-advertising",
     "https://www.theverge.com/podcast/996412/microsoft-ai-ceo-mustafa-suleyman-regulation-safety-anthropic-claude",
+    "https://www.theverge.com/policy/1002468/trump-ai-superintelligence-executive-order-ai",
     "https://www.theverge.com/policy/988228/nyc-ai-restrictions-in-schools-chatbot-ban",
     "https://www.theverge.com/policy/990267/microsoft-openai-new-york-times-authors-lawsuit",
     "https://www.theverge.com/policy/997516/california-governor-newsom-ai-kill-switch",
@@ -381,6 +390,7 @@
     "https://www.wired.com/story/nvidias-answer-to-rogue-agents-is-an-open-source-ai-security-system",
     "https://www.wired.com/story/openai-agent-hacked-australias-health-service-their-government-found-out-months-later",
     "https://www.wired.com/story/openai-astra-first-ai-model-with-critical-cyber-abilities",
+    "https://www.wired.com/story/openai-sued-over-the-hugging-face-hack",
     "https://www.wired.com/story/popes-ai-advisor-warns-of-cartel-behavior-big-labs",
     "https://www.wired.com/story/the-next-evolution-of-ai-is-learning-from-your-dodgy-gaming-skills",
     "https://www.xataka.com/componentes/disenar-chip-ia-suele-llevar-anos-openai-encontro-atajo-bastante-obvio-usar-su-propia-ia-para-hacerlo",
@@ -392,6 +402,17 @@
     "https://www.xataka.com/seguridad/ciberataque-a-renfe-adif-confirma-que-ia-llevaba-meses-avisando-500gb-datos-clientes-quedan-al-descubierto"
   ],
   "ediciones": [
+    {
+      "fecha": "2026-09-30",
+      "titulares": [
+        "AMD adquiere World Labs por 8.200 millones para competir en modelos del mundo",
+        "OpenAI lanza GPT-6.1 Sol como alternativa económica frente a su gama superior",
+        "Nuevas técnicas de verificación buscan frenar la contaminación entre fuentes en agentes MCP",
+        "OpenAI rediseña ChatGPT para competir de lleno en el segmento de suites de oficina",
+        "Amgen detalla los datos de eficacia de su anticuerpo para lupus en ensayos de fase 2"
+      ],
+      "total": 10
+    },
     {
       "fecha": "2026-09-29",
       "titulares": [
