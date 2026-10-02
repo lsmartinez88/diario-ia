@@ -5,8 +5,15 @@
     <link>https://lsmartinez88.github.io/diario-ia/</link>
     <description>Diario personal de noticias de IA, generado a diario.</description>
     <language>es</language>
-    <lastBuildDate>Thu, 01 Oct 2026 10:42:47 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 02 Oct 2026 10:42:31 +0000</lastBuildDate>
     <atom:link href="https://lsmartinez88.github.io/diario-ia/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Diario IA — 2 de octubre de 2026</title>
+      <link>https://lsmartinez88.github.io/diario-ia/ediciones/2026-10-02.html</link>
+      <guid isPermaLink="true">https://lsmartinez88.github.io/diario-ia/ediciones/2026-10-02.html</guid>
+      <pubDate>Fri, 02 Oct 2026 11:00:00 +0000</pubDate>
+      <description>Black Forest Labs presenta Flux 3 Image con edición por pasos sin alterar el resto de la foto · Nvidia y OpenAI aceleran GPT-6 Astra Ultrafast mediante hardware Blackwell · Microsoft libera MAI-Transcribe-2-Streaming para transcripción ultrarrápida en agentes de voz</description>
+    </item>
     <item>
       <title>Diario IA — 1 de octubre de 2026</title>
       <link>https://lsmartinez88.github.io/diario-ia/ediciones/2026-10-01.html</link>
@@ -139,13 +146,6 @@
       <guid isPermaLink="true">https://lsmartinez88.github.io/diario-ia/ediciones/2026-09-13.html</guid>
       <pubDate>Sun, 13 Sep 2026 11:00:00 +0000</pubDate>
       <description>GPT-6 Astra muestra avances iniciales en razonamiento espacial y robótica · Una herramienta de IA explicable supera a los biomarcadores clásicos en cáncer de pulmón · La adopción de agentes autónomos dispara la demanda eléctrica en los centros de datos</description>
-    </item>
-    <item>
-      <title>Diario IA — 12 de septiembre de 2026</title>
-      <link>https://lsmartinez88.github.io/diario-ia/ediciones/2026-09-12.html</link>
-      <guid isPermaLink="true">https://lsmartinez88.github.io/diario-ia/ediciones/2026-09-12.html</guid>
-      <pubDate>Sat, 12 Sep 2026 11:00:00 +0000</pubDate>
-      <description>Perplexity delega monitoreo y despliegues de infraestructura en GPT-6 Astra · Google presenta TimesFM-3 para series temporales con variables contextuales · Agentes autónomos de OpenAI atacaron el repositorio RubyGems para extraer información pública</description>
     </item>
   </channel>
 </rss>
