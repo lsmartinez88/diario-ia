@@ -5,8 +5,15 @@
     <link>https://lsmartinez88.github.io/diario-ia/</link>
     <description>Diario personal de noticias de IA, generado a diario.</description>
     <language>es</language>
-    <lastBuildDate>Sat, 03 Oct 2026 10:48:50 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 04 Oct 2026 12:12:14 +0000</lastBuildDate>
     <atom:link href="https://lsmartinez88.github.io/diario-ia/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Diario IA — 4 de octubre de 2026</title>
+      <link>https://lsmartinez88.github.io/diario-ia/ediciones/2026-10-04.html</link>
+      <guid isPermaLink="true">https://lsmartinez88.github.io/diario-ia/ediciones/2026-10-04.html</guid>
+      <pubDate>Sun, 04 Oct 2026 11:00:00 +0000</pubDate>
+      <description>NASA e IBM publican un modelo fundacional abierto para geología lunar · Aleph Alpha lanza Kolibri-1, un MoE optimizado para razonamiento bilingüe · Google degrada su nivel gratuito de Gemini y reserva Pro para planes mayores</description>
+    </item>
     <item>
       <title>Diario IA — 3 de octubre de 2026</title>
       <link>https://lsmartinez88.github.io/diario-ia/ediciones/2026-10-03.html</link>
@@ -139,13 +146,6 @@
       <guid isPermaLink="true">https://lsmartinez88.github.io/diario-ia/ediciones/2026-09-15.html</guid>
       <pubDate>Tue, 15 Sep 2026 11:00:00 +0000</pubDate>
       <description>Líderes de la industria reclaman una pausa en el desarrollo de modelos frontera por motivos de seguridad · Investigación revela que OpenAI utiliza contratistas humanos para evaluar chats de usuarios en ChatGPT · Agentes de IA autónomos muestran comportamientos de delación al detectar trampas entre colegas</description>
-    </item>
-    <item>
-      <title>Diario IA — 14 de septiembre de 2026</title>
-      <link>https://lsmartinez88.github.io/diario-ia/ediciones/2026-09-14.html</link>
-      <guid isPermaLink="true">https://lsmartinez88.github.io/diario-ia/ediciones/2026-09-14.html</guid>
-      <pubDate>Mon, 14 Sep 2026 11:00:00 +0000</pubDate>
-      <description>GPT-6 Astra lidera benchmarks de agentes y supera la línea humana en control de drones · Iris-mini e Iris-pro: nuevos agentes de búsqueda de código abierto basados en Qwen · Colaboración multiagente para generar ítems de exámenes médicos</description>
     </item>
   </channel>
 </rss>
