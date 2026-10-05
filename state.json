@@ -81,7 +81,9 @@
     "https://github.com/timgordontg/engrim",
     "https://huggingface.co/Aleph-Alpha/Kolibri-1",
     "https://huggingface.co/Cloudflare/clef",
+    "https://huggingface.co/PSRben/VisionHOPE",
     "https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B",
+    "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
     "https://huggingface.co/blog/Hcompany/holo4",
     "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark",
     "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
@@ -103,6 +105,7 @@
     "https://openai.com/index/introducing-chatgpt-images-2-5",
     "https://openai.com/index/introducing-gpt-6-sol-and-luna",
     "https://openai.com/index/model-misalignment-reporting-framework",
+    "https://openai.com/index/new-chatgpt-ads-format-and-measurement",
     "https://openai.com/index/perplexity-improving-accuracy-with-astra",
     "https://openai.com/index/practical-guide-building-gpt-6",
     "https://openai.com/index/supporting-independent-journalism-in-ukraine",
@@ -230,6 +233,7 @@
     "https://the-decoder.com/google-deepminds-dream-rsi-helps-ai-agents-improve-by-dreaming-about-past-attempts",
     "https://the-decoder.com/google-drops-gems-for-skills-joining-openai-and-anthropic-in-the-shift-to-agent-ready-prompt-formats",
     "https://the-decoder.com/google-launches-gemini-3-8-live-to-take-on-openais-gpt-live-1-at-a-fraction-of-the-cost",
+    "https://the-decoder.com/google-researchers-find-a-way-to-keep-self-improving-ai-agents-from-memorizing-their-tests",
     "https://the-decoder.com/googles-gemini-also-accidentally-hacked-three-real-companies-during-security-testing",
     "https://the-decoder.com/googles-new-ai-model-predicts-the-future-from-sales-data-weather-and-discount-schedules",
     "https://the-decoder.com/googles-new-gemini-tiers-cut-free-users-to-its-weakest-model-and-lock-5-month-subscribers-out-of-pro",
@@ -274,6 +278,7 @@
     "https://the-decoder.com/tens-of-thousands-of-security-probes-show-openais-hugging-face-incident-was-just-the-beginning",
     "https://the-decoder.com/top-ai-spenders-cut-per-employee-costs-by-nearly-10-percent-in-august",
     "https://the-decoder.com/trump-announces-ai-force-and-plans-for-an-ai-czar-as-he-pushes-unchecked-ai-growth",
+    "https://the-decoder.com/trump-launches-super-intelligence-force-that-has-nothing-to-do-with-actual-superintelligence",
     "https://the-decoder.com/two-year-university-study-finds-banning-ai-from-classrooms-leaves-students-worse-off",
     "https://the-decoder.com/un-science-panel-says-there-is-no-assurance-humans-will-keep-control-over-ai-agents",
     "https://the-decoder.com/unity-launches-official-plugins-for-claude-code-and-openai-codex-to-stop-ai-agents-from-using-outdated-tutorials",
@@ -313,6 +318,7 @@
     "https://www.fiercehealthcare.com/health-tech/imprivata-survey-finds-most-health-systems-deploy-some-ai-tools-without-formal-it",
     "https://www.fiercehealthcare.com/payers/cigna-group-openai-team-support-patients-complex-conditions",
     "https://www.fiercehealthcare.com/regulatory/delays-tech-failures-abound-cms-wiser-ai-prior-auth-pilot-documents-show",
+    "https://www.fiercepharma.com/marketing/fda-dings-evolus-blurring-lines-between-botox-rival-and-lipstick",
     "https://www.fiercepharma.com/pharma/astrazeneca-etcamah-flunks-first-line-breast-cancer-trial-adding-oral-serds-failure-record",
     "https://www.latent.space/p/forward-deployed-engineer-best-practices",
     "https://www.latent.space/p/grok-bot",
@@ -333,6 +339,7 @@
     "https://www.nature.com/articles/s41591-026-04673-3",
     "https://www.nature.com/articles/s41591-026-04683-1",
     "https://www.nature.com/articles/s41591-026-04703-0",
+    "https://www.nature.com/articles/s41591-026-04713-y",
     "https://www.nature.com/articles/s41746-026-03108-0",
     "https://www.nature.com/articles/s41746-026-03131-1",
     "https://www.nature.com/articles/s41746-026-03174-4",
@@ -367,6 +374,7 @@
     "https://www.statnews.com/2026/09/17/zocdoc-for-chatbots-and-medicares-access-healh-tech",
     "https://www.statnews.com/2026/09/18/geriatrician-explains-why-ai-for-older-adults-deserves-careful-scrutiny",
     "https://www.statnews.com/2026/09/29/anthropic-joins-arpa-h-clinical-ai-moonshot-health-tech",
+    "https://www.statnews.com/2026/10/05/could-ai-win-nobel-prize-medicine",
     "https://www.technologyreview.com/2026/09/04/1143452/drone-data-wild-west",
     "https://www.technologyreview.com/2026/09/10/1141649/powering-ai-is-an-architecture-problem",
     "https://www.technologyreview.com/2026/09/14/1144037/ai-agents-blew-whistle-o-cheating-colleagues",
@@ -384,6 +392,7 @@
     "https://www.theverge.com/ai-artificial-intelligence/1002033/openai-dots-launch-muse-competitor",
     "https://www.theverge.com/ai-artificial-intelligence/1003756/google-gemini-live-guided-vision",
     "https://www.theverge.com/ai-artificial-intelligence/1003925/suno-speech-ai-voice-feature-beta-availability",
+    "https://www.theverge.com/ai-artificial-intelligence/1004543/openai-gpt-cheat-starcraft",
     "https://www.theverge.com/ai-artificial-intelligence/987830/anthropic-claude-fable-mythos-5-1",
     "https://www.theverge.com/ai-artificial-intelligence/990060/altman-apologizes-messy-astra-rollout",
     "https://www.theverge.com/ai-artificial-intelligence/990313/anthropic-class-action-lawsuit-pricing-subscription-plans",
@@ -456,6 +465,17 @@
     "https://www.xataka.com/seguridad/ciberataque-a-renfe-adif-confirma-que-ia-llevaba-meses-avisando-500gb-datos-clientes-quedan-al-descubierto"
   ],
   "ediciones": [
+    {
+      "fecha": "2026-10-05",
+      "titulares": [
+        "Google frena la memorización de tests en agentes autónomos con un nuevo método de entrenamiento",
+        "Modelos punteros de IA recurren a trampas en StarCraft al no poder superar a los mejores humanos",
+        "Estudio clínico de fase 3 evalúa safiglipron oral frente a dapagliflozin en diabetes tipo 2",
+        "La FDA advierte a Evolus por difuminar los límites regulatorios entre tratamientos estéticos y cosméticos",
+        "El debate sobre la IA en la ciencia abre interrogantes sobre si los sistemas autónomos ganarán un Nobel"
+      ],
+      "total": 9
+    },
     {
       "fecha": "2026-10-04",
       "titulares": [
