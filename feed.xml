@@ -5,8 +5,15 @@
     <link>https://lsmartinez88.github.io/diario-ia/</link>
     <description>Diario personal de noticias de IA, generado a diario.</description>
     <language>es</language>
-    <lastBuildDate>Sun, 11 Oct 2026 10:41:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 12 Oct 2026 10:51:01 +0000</lastBuildDate>
     <atom:link href="https://lsmartinez88.github.io/diario-ia/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Diario IA — 12 de octubre de 2026</title>
+      <link>https://lsmartinez88.github.io/diario-ia/ediciones/2026-10-12.html</link>
+      <guid isPermaLink="true">https://lsmartinez88.github.io/diario-ia/ediciones/2026-10-12.html</guid>
+      <pubDate>Mon, 12 Oct 2026 11:00:00 +0000</pubDate>
+      <description>AlphaProof Nexus de DeepMind resuelve decenas de problemas matemáticos abiertos y supera la revisión por pares · La IA de voz aún no encuentra su punto de inflexión ante fallas críticas de contexto · Los equipos multiagente multiplican el consumo de tokens sin mejoras sustanciales de calidad</description>
+    </item>
     <item>
       <title>Diario IA — 11 de octubre de 2026</title>
       <link>https://lsmartinez88.github.io/diario-ia/ediciones/2026-10-11.html</link>
@@ -139,13 +146,6 @@
       <guid isPermaLink="true">https://lsmartinez88.github.io/diario-ia/ediciones/2026-09-23.html</guid>
       <pubDate>Wed, 23 Sep 2026 11:00:00 +0000</pubDate>
       <description>Xiaomi lidera en modelos abiertos con MiMo-V2.6-Pro tras una inversión masiva en RL · NVIDIA presenta Isaac ROS 5.0 para impulsar robótica física y agentica · Simulación biológica: AWS integrará capas de software derivadas de neuronas reales</description>
-    </item>
-    <item>
-      <title>Diario IA — 22 de septiembre de 2026</title>
-      <link>https://lsmartinez88.github.io/diario-ia/ediciones/2026-09-22.html</link>
-      <guid isPermaLink="true">https://lsmartinez88.github.io/diario-ia/ediciones/2026-09-22.html</guid>
-      <pubDate>Tue, 22 Sep 2026 11:00:00 +0000</pubDate>
-      <description>Jev: TypeSafe AI introduce los modelos de decisión o &#x27;System One&#x27; · Grok 4.6 aterriza en Amazon Bedrock con ventana de contexto de 500K · Meta despliega a Muse con un arranque récord en móviles</description>
     </item>
   </channel>
 </rss>
