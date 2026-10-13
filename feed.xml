@@ -5,8 +5,15 @@
     <link>https://lsmartinez88.github.io/diario-ia/</link>
     <description>Diario personal de noticias de IA, generado a diario.</description>
     <language>es</language>
-    <lastBuildDate>Mon, 12 Oct 2026 10:51:01 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 13 Oct 2026 10:45:51 +0000</lastBuildDate>
     <atom:link href="https://lsmartinez88.github.io/diario-ia/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Diario IA — 13 de octubre de 2026</title>
+      <link>https://lsmartinez88.github.io/diario-ia/ediciones/2026-10-13.html</link>
+      <guid isPermaLink="true">https://lsmartinez88.github.io/diario-ia/ediciones/2026-10-13.html</guid>
+      <pubDate>Tue, 13 Oct 2026 11:00:00 +0000</pubDate>
+      <description>Estudio demuestra que los modelos de IA pueden ocultar capacidades arbitrarias de forma demostrable · Un estudio evalúa interfaces conversacionales basadas en LLM para monitorizar la epilepsia en tiempo real</description>
+    </item>
     <item>
       <title>Diario IA — 12 de octubre de 2026</title>
       <link>https://lsmartinez88.github.io/diario-ia/ediciones/2026-10-12.html</link>
@@ -139,13 +146,6 @@
       <guid isPermaLink="true">https://lsmartinez88.github.io/diario-ia/ediciones/2026-09-24.html</guid>
       <pubDate>Thu, 24 Sep 2026 11:00:00 +0000</pubDate>
       <description>Google estrena modelos de voz Gemini 3.8 con síntesis hiperrealista · HEMA implementa Model Context Protocol para unificar su soporte interno · OpenAI integra funciones agénticas de voz en la aplicación móvil de ChatGPT</description>
-    </item>
-    <item>
-      <title>Diario IA — 23 de septiembre de 2026</title>
-      <link>https://lsmartinez88.github.io/diario-ia/ediciones/2026-09-23.html</link>
-      <guid isPermaLink="true">https://lsmartinez88.github.io/diario-ia/ediciones/2026-09-23.html</guid>
-      <pubDate>Wed, 23 Sep 2026 11:00:00 +0000</pubDate>
-      <description>Xiaomi lidera en modelos abiertos con MiMo-V2.6-Pro tras una inversión masiva en RL · NVIDIA presenta Isaac ROS 5.0 para impulsar robótica física y agentica · Simulación biológica: AWS integrará capas de software derivadas de neuronas reales</description>
     </item>
   </channel>
 </rss>

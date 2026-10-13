@@ -27,6 +27,7 @@
     "https://arstechnica.com/tech-policy/2026/09/lawsuit-demands-openai-halt-unsafe-development-that-caused-hugging-face-hack",
     "https://arstechnica.com/tech-policy/2026/09/trump-may-be-forced-to-reveal-secret-rules-feds-use-for-ai-safety-testing",
     "https://arstechnica.com/tech-policy/2026/09/us-government-website-used-chinese-model-the-fbi-called-malicious",
+    "https://arxiv.org/abs/2610.13928",
     "https://aws.amazon.com/blogs/machine-learning/accelerate-multimodal-rl-training-with-skyrl-on-amazon-sagemaker-hyperpod",
     "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-expands-claude-model-availability-to-india-cross-region-inference",
     "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-feature-store-introduces-updaterecord-for-feature-level-writes",
@@ -280,6 +281,7 @@
     "https://the-decoder.com/claude-can-now-generate-animated-explainer-videos-and-live-data-dashboards-from-text-prompts",
     "https://the-decoder.com/claude-codes-new-mods-system-lets-developers-rewrite-the-ai-coding-tool-from-the-inside",
     "https://the-decoder.com/claude-haiku-5-5-arrives-with-massive-price-cuts-proving-the-ai-pricing-arms-race-is-far-from-over",
+    "https://the-decoder.com/clearing-chat-history-helps-ai-agents-find-better-solutions",
     "https://the-decoder.com/elevenlabs-makes-music-v2-5-available-via-app-and-api-with-free-and-pro-tier-options",
     "https://the-decoder.com/eu-president-warns-ai-agents-escaping-their-environment-are-just-a-preview-of-whats-coming",
     "https://the-decoder.com/ftc-launches-sweeping-probe-into-openai-anthropic-and-other-ai-labs-over-consumer-protection-concerns",
@@ -308,6 +310,7 @@
     "https://the-decoder.com/manus-2-0-lets-users-edit-videos-host-multiplayer-games-and-run-agents-remotely-from-their-phone",
     "https://the-decoder.com/meta-and-microsoft-pull-back-from-claude-as-anthropic-transforms-from-partner-into-competitor",
     "https://the-decoder.com/meta-closes-in-on-the-top-with-muse-spark-1-3-and-undercuts-rivals-on-price",
+    "https://the-decoder.com/metas-new-frontier-model-muse-wonder-full-breaks-into-the-ai-top-tier",
     "https://the-decoder.com/metas-new-real-time-audio-model-is-the-foundation-for-ai-assistants-that-never-stop-listening",
     "https://the-decoder.com/microsoft-ai-releases-new-transcription-and-text-to-speech-models-for-voice-agents",
     "https://the-decoder.com/microsofts-nadella-bows-to-trumps-language-diktat-on-super-intelligence-and-uses-it-to-attack-openai-and-anthropic",
@@ -351,6 +354,7 @@
     "https://the-decoder.com/unity-launches-official-plugins-for-claude-code-and-openai-codex-to-stop-ai-agents-from-using-outdated-tutorials",
     "https://the-decoder.com/us-and-china-experts-push-for-shared-rules-banning-ai-control-over-nuclear-weapons",
     "https://the-decoder.com/us-military-adds-chatgpt-and-grok-to-ai-platform-genai-mil",
+    "https://the-decoder.com/white-house-reverses-course-and-restores-uk-ai-safety-institutes-access-to-frontier-models",
     "https://the-decoder.com/white-house-tells-openai-and-anthropic-to-let-u-s-review-new-models-before-sharing-them-with-british-testers",
     "https://the-decoder.com/xiaomis-affordable-flagship-ai-leads-the-open-models-and-anthropic-says-claude-helped-get-it-there",
     "https://transluce.org/agent-activity",
@@ -416,6 +420,7 @@
     "https://www.nature.com/articles/s41591-026-04657-3",
     "https://www.nature.com/articles/s41591-026-04662-6",
     "https://www.nature.com/articles/s41591-026-04673-3",
+    "https://www.nature.com/articles/s41591-026-04680-4",
     "https://www.nature.com/articles/s41591-026-04683-1",
     "https://www.nature.com/articles/s41591-026-04689-9",
     "https://www.nature.com/articles/s41591-026-04691-1",
@@ -471,6 +476,7 @@
     "https://www.technologyreview.com/2026/09/25/1145144/pentagon-ai-lie-detector",
     "https://www.technologyreview.com/2026/09/28/1145197/whos-liable-when-ai-agents-go-rogue",
     "https://www.technologyreview.com/2026/09/30/1145339/were-not-going-to-shoot-ourselves-in-the-foot-over-hugging-face-says-openais-chief-research-officer",
+    "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models",
     "https://www.theregister.com/devops/2026/09/18/microsoft-agentically-ports-copilot-runtime-to-rust-for-120k/5297549",
     "https://www.theverge.com/ai-artificial-intelligence/1000116/google-gemini-business-phone-calls",
     "https://www.theverge.com/ai-artificial-intelligence/1000644/irregular-rogue-ai-cyberattacks-hacking-openai-meta-anthropic-google",
@@ -512,6 +518,7 @@
     "https://www.theverge.com/entertainment/1009309/distrokid-take-down-songs-umg-lawsuit",
     "https://www.theverge.com/games/1004418/capcom-ai-game-development",
     "https://www.theverge.com/news/1000532/microsoft-copilot-super-app-chat-coding-autopilot",
+    "https://www.theverge.com/news/1009465/microsoft-maia-300-chip-improvements-rollout",
     "https://www.theverge.com/news/994566/microsoft-humanist-ai-code-of-conduct",
     "https://www.theverge.com/podcast/1000344/cloudflare-matthew-prince-google-zero-ai-web-advertising",
     "https://www.theverge.com/podcast/996412/microsoft-ai-ceo-mustafa-suleyman-regulation-safety-anthropic-claude",
@@ -569,6 +576,14 @@
     "https://www.xataka.com/servicios/web-abierta-se-diseno-para-humanos-agentes-ia-acaban-demostrarle-a-wikipedia-que-ese-pacto-se-ha-roto"
   ],
   "ediciones": [
+    {
+      "fecha": "2026-10-13",
+      "titulares": [
+        "Estudio demuestra que los modelos de IA pueden ocultar capacidades arbitrarias de forma demostrable",
+        "Un estudio evalúa interfaces conversacionales basadas en LLM para monitorizar la epilepsia en tiempo real"
+      ],
+      "total": 7
+    },
     {
       "fecha": "2026-10-12",
       "titulares": [
