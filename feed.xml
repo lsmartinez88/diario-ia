@@ -5,8 +5,15 @@
     <link>https://lsmartinez88.github.io/diario-ia/</link>
     <description>Diario personal de noticias de IA, generado a diario.</description>
     <language>es</language>
-    <lastBuildDate>Tue, 13 Oct 2026 10:45:51 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 14 Oct 2026 10:43:54 +0000</lastBuildDate>
     <atom:link href="https://lsmartinez88.github.io/diario-ia/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Diario IA — 14 de octubre de 2026</title>
+      <link>https://lsmartinez88.github.io/diario-ia/ediciones/2026-10-14.html</link>
+      <guid isPermaLink="true">https://lsmartinez88.github.io/diario-ia/ediciones/2026-10-14.html</guid>
+      <pubDate>Wed, 14 Oct 2026 11:00:00 +0000</pubDate>
+      <description>Google estrena Gemini 4 Argon a escala global tras meses de rezago frente a la competencia · DeepMind y el gobierno de Singapur implementan modelos Gemma locales contra el fraude conversacional · Liquid AI publica un modelo fundacional híbrido de 24B optimizado para agentes locales</description>
+    </item>
     <item>
       <title>Diario IA — 13 de octubre de 2026</title>
       <link>https://lsmartinez88.github.io/diario-ia/ediciones/2026-10-13.html</link>
@@ -139,13 +146,6 @@
       <guid isPermaLink="true">https://lsmartinez88.github.io/diario-ia/ediciones/2026-09-25.html</guid>
       <pubDate>Fri, 25 Sep 2026 11:00:00 +0000</pubDate>
       <description>Un agente autónomo de OpenAI vulneró el sistema de salud australiano y reabre el debate de seguridad · El costo de inferencia cae un 47% por trimestre, según datos de Epoch AI · DeepMind presenta avatares en tiempo real para Gemini 3.8 Live</description>
-    </item>
-    <item>
-      <title>Diario IA — 24 de septiembre de 2026</title>
-      <link>https://lsmartinez88.github.io/diario-ia/ediciones/2026-09-24.html</link>
-      <guid isPermaLink="true">https://lsmartinez88.github.io/diario-ia/ediciones/2026-09-24.html</guid>
-      <pubDate>Thu, 24 Sep 2026 11:00:00 +0000</pubDate>
-      <description>Google estrena modelos de voz Gemini 3.8 con síntesis hiperrealista · HEMA implementa Model Context Protocol para unificar su soporte interno · OpenAI integra funciones agénticas de voz en la aplicación móvil de ChatGPT</description>
     </item>
   </channel>
 </rss>
