@@ -19,6 +19,7 @@
     "https://arstechnica.com/security/2026/09/ai-text-watermarking-can-make-models-more-vulnerable-to-adversarial-prompts",
     "https://arstechnica.com/security/2026/09/microsoft-disrupts-ai-assisted-platform-that-compromised-12000",
     "https://arstechnica.com/security/2026/09/microsoft-patches-a-record-972-vulnerabilities-112-of-them-critical",
+    "https://arstechnica.com/security/2026/10/anthropic-warns-small-ai-models-could-self-replicate-through-iot-devices",
     "https://arstechnica.com/security/2026/10/openai-agents-tried-to-hack-wikipedia-tools-and-flooded-it-with-traffic",
     "https://arstechnica.com/security/2026/10/vulnerability-in-agents-from-google-and-others-exposes-structural-flaw-in-mcp",
     "https://arstechnica.com/tech-policy/2026/08/zlibrary-my-beloved-anthropic-staff-chats-extolling-piracy-cited-in-sony-suit",
@@ -28,6 +29,7 @@
     "https://arstechnica.com/tech-policy/2026/09/trump-may-be-forced-to-reveal-secret-rules-feds-use-for-ai-safety-testing",
     "https://arstechnica.com/tech-policy/2026/09/us-government-website-used-chinese-model-the-fbi-called-malicious",
     "https://arstechnica.com/tech-policy/2026/10/disney-offers-20m-for-character-ais-scandal-plagued-chatbot-tech",
+    "https://arstechnica.com/tech-policy/2026/10/openai-google-pushing-new-ai-models-easily-tricked-into-making-nudes-researchers-say",
     "https://arxiv.org/abs/2610.13928",
     "https://aws.amazon.com/blogs/machine-learning/accelerate-multimodal-rl-training-with-skyrl-on-amazon-sagemaker-hyperpod",
     "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-expands-claude-model-availability-to-india-cross-region-inference",
@@ -248,6 +250,8 @@
     "https://techcrunch.com/2026/10/10/microsofts-satya-nadella-says-ai-models-need-an-emergency-brake",
     "https://techcrunch.com/2026/10/11/these-execs-think-voice-ai-hasnt-reached-its-chatgpt-moment-yet",
     "https://techcrunch.com/2026/10/13/science-corporation-implants-its-vision-restoring-chip-in-its-first-stargardt-disease-patient",
+    "https://techcrunch.com/2026/10/14/apate-sends-ai-agents-undercover-to-get-scammed-so-they-can-gather-fraud-intelligence",
+    "https://techcrunch.com/2026/10/14/figma-announces-new-features-to-define-how-agents-work-on-its-platform",
     "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust",
     "https://the-decoder.com/406-scientists-demand-ai-models-be-cut-off-from-the-internet-immediately",
     "https://the-decoder.com/a-tiny-software-layer-from-lab-grown-neurons-promises-faster-cheaper-ai-video",
@@ -260,6 +264,7 @@
     "https://the-decoder.com/ai-agents-overstate-their-results-and-remain-far-from-autonomous-research-study-finds",
     "https://the-decoder.com/ai-conference-iclr-is-drowning-in-abstracts-with-roughly-50000-submissions-before-the-deadline",
     "https://the-decoder.com/ai-designed-drug-appears-to-turn-back-the-bodys-biological-clock-in-early-trial",
+    "https://the-decoder.com/ai-guardrails-designed-to-stop-hackers-are-now-blocking-defenders-and-orion-1-aims-to-fill-the-gap",
     "https://the-decoder.com/ai-models-written-reasoning-steps-correspond-to-distinct-internal-patterns-a-new-study-finds",
     "https://the-decoder.com/ai-performance-costs-are-falling-faster-than-those-of-any-previous-technology",
     "https://the-decoder.com/aleph-alpha-releases-kolibri-an-open-weight-model-that-makes-the-case-for-european-ai-sovereignty",
@@ -347,6 +352,7 @@
     "https://the-decoder.com/reflections-beam-becomes-the-most-capable-open-weight-model-built-outside-china",
     "https://the-decoder.com/reka-ais-omni-model-rho-1-handles-text-images-video-and-robot-control-in-a-single-model",
     "https://the-decoder.com/researchers-plug-gpt-6-astra-directly-into-a-robot-and-let-it-clean-up-an-unfamiliar-kitchen",
+    "https://the-decoder.com/researchers-tracked-down-a-rogue-fleet-of-chinese-ai-agents-in-the-wild-and-actually-talked-to-it",
     "https://the-decoder.com/runway-wants-to-turn-ai-video-generation-into-a-live-stream-you-control-in-real-time",
     "https://the-decoder.com/sam-altman-calls-for-pacing-ai-development-but-promises-rapid-progress-will-continue",
     "https://the-decoder.com/simulated-students-that-make-realistic-mistakes-help-ai-tutors-learn-faster",
@@ -373,6 +379,7 @@
     "https://www.autom.dev/blog/google-search-goto-links",
     "https://www.fiercebiotech.com/biotech/amgen-reveals-6-point-drop-lupus-severity-behind-phase-2-win-horizon-antibody",
     "https://www.fiercebiotech.com/biotech/analysts-extremely-bullish-telix-beams-novartis-territory-165b-itm-acquisition",
+    "https://www.fiercebiotech.com/biotech/astrazeneca-inks-15b-insitro-deal-ai-enabled-target-discovery",
     "https://www.fiercebiotech.com/biotech/astrazeneca-scales-summits-pd-1xvegf-strategy-2b-investment-fuel-adc-combinations",
     "https://www.fiercebiotech.com/biotech/axoltis-misses-mark-phase-2-als-study-still-strives-move-towards-clinic",
     "https://www.fiercebiotech.com/biotech/beacon-lights-path-fda-approval-pivotal-trial-win-rare-vision-loss-gene-therapy",
@@ -399,6 +406,7 @@
     "https://www.fiercehealthcare.com/ai-and-machine-learning/openevidence-partners-anthropic-and-penn-medicine-expand-medical-ai",
     "https://www.fiercehealthcare.com/ai-and-machine-learning/oracle-health-extends-clinical-ai-agent-inpatient-nurses",
     "https://www.fiercehealthcare.com/ai-and-machine-learning/teladoc-health-unveils-2-new-ai-capabilities-within-solo-platform",
+    "https://www.fiercehealthcare.com/ai-and-machine-learning/zodoc-acquires-health-tech-company-sohar-health-automated-benefits",
     "https://www.fiercehealthcare.com/finance/scancom-raises-220m-build-largest-medical-imaging-network-us",
     "https://www.fiercehealthcare.com/health-tech/forus-secures-150m-series-c-3b-valuation",
     "https://www.fiercehealthcare.com/health-tech/imprivata-survey-finds-most-health-systems-deploy-some-ai-tools-without-formal-it",
@@ -509,6 +517,7 @@
     "https://www.theverge.com/ai-artificial-intelligence/1009051/privacy-ai-agent-promises-openai-meta-muse-dots",
     "https://www.theverge.com/ai-artificial-intelligence/1009406/silicon-valley-is-falling-in-line-with-trumps-attempt-to-rename-ai",
     "https://www.theverge.com/ai-artificial-intelligence/1009862/google-releases-gemini-4-argon",
+    "https://www.theverge.com/ai-artificial-intelligence/1011369/youtube-music-ai-label",
     "https://www.theverge.com/ai-artificial-intelligence/987830/anthropic-claude-fable-mythos-5-1",
     "https://www.theverge.com/ai-artificial-intelligence/990060/altman-apologizes-messy-astra-rollout",
     "https://www.theverge.com/ai-artificial-intelligence/990313/anthropic-class-action-lawsuit-pricing-subscription-plans",
@@ -535,6 +544,7 @@
     "https://www.theverge.com/news/1000532/microsoft-copilot-super-app-chat-coding-autopilot",
     "https://www.theverge.com/news/1009465/microsoft-maia-300-chip-improvements-rollout",
     "https://www.theverge.com/news/1010365/shopify-opens-its-catalog-up-to-more-ai-agents",
+    "https://www.theverge.com/news/1011654/mckinsey-ai-client-interview",
     "https://www.theverge.com/news/994566/microsoft-humanist-ai-code-of-conduct",
     "https://www.theverge.com/podcast/1000344/cloudflare-matthew-prince-google-zero-ai-web-advertising",
     "https://www.theverge.com/podcast/996412/microsoft-ai-ceo-mustafa-suleyman-regulation-safety-anthropic-claude",
@@ -594,6 +604,17 @@
     "https://www.xataka.com/servicios/web-abierta-se-diseno-para-humanos-agentes-ia-acaban-demostrarle-a-wikipedia-que-ese-pacto-se-ha-roto"
   ],
   "ediciones": [
+    {
+      "fecha": "2026-10-15",
+      "titulares": [
+        "Investigadores detectan en la naturaleza una flota autónoma de agentes maliciosos operando en la nube",
+        "Artemis Security lanza Orion-1, un modelo especializado en ciberdefensa corporativa",
+        "Apate despliega agentes encubiertos para interactuar con estafadores y extraer inteligencia",
+        "AstraZeneca acuerda una alianza de 1.500 millones con insitro para descubrimiento de fármacos",
+        "Zocdoc adquiere Sohar Health para automatizar la elegibilidad de seguros médicos"
+      ],
+      "total": 10
+    },
     {
       "fecha": "2026-10-14",
       "titulares": [
