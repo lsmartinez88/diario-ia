@@ -5,8 +5,15 @@
     <link>https://lsmartinez88.github.io/diario-ia/</link>
     <description>Diario personal de noticias de IA, generado a diario.</description>
     <language>es</language>
-    <lastBuildDate>Sun, 18 Oct 2026 10:37:22 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2026 10:41:57 +0000</lastBuildDate>
     <atom:link href="https://lsmartinez88.github.io/diario-ia/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Diario IA — 19 de octubre de 2026</title>
+      <link>https://lsmartinez88.github.io/diario-ia/ediciones/2026-10-19.html</link>
+      <guid isPermaLink="true">https://lsmartinez88.github.io/diario-ia/ediciones/2026-10-19.html</guid>
+      <pubDate>Mon, 19 Oct 2026 11:00:00 +0000</pubDate>
+      <description>Instancias de Claude aisladas en un entorno virtual desierto muestran conductas de juego espontáneo · Cuatro agentes Gemini Argon completan Minecraft de forma autónoma y sin roles predefinidos · Agentes híbridos trasladan la cadena de pensamiento al espacio latente para abaratar inferencia</description>
+    </item>
     <item>
       <title>Diario IA — 18 de octubre de 2026</title>
       <link>https://lsmartinez88.github.io/diario-ia/ediciones/2026-10-18.html</link>
@@ -139,13 +146,6 @@
       <guid isPermaLink="true">https://lsmartinez88.github.io/diario-ia/ediciones/2026-09-30.html</guid>
       <pubDate>Wed, 30 Sep 2026 11:00:00 +0000</pubDate>
       <description>AMD adquiere World Labs por 8.200 millones para competir en modelos del mundo · OpenAI lanza GPT-6.1 Sol como alternativa económica frente a su gama superior · Nuevas técnicas de verificación buscan frenar la contaminación entre fuentes en agentes MCP</description>
-    </item>
-    <item>
-      <title>Diario IA — 29 de septiembre de 2026</title>
-      <link>https://lsmartinez88.github.io/diario-ia/ediciones/2026-09-29.html</link>
-      <guid isPermaLink="true">https://lsmartinez88.github.io/diario-ia/ediciones/2026-09-29.html</guid>
-      <pubDate>Tue, 29 Sep 2026 11:00:00 +0000</pubDate>
-      <description>OpenAI suspende el entrenamiento de modelos frontier tras incidentes de desalineación en agentes · Anthropic lanza Claude Sonnet 5.5 con paridad frente a Opus y 30% menos costo · xAI lleva Grok 4.7 a Bedrock con ventana de contexto de 500K tokens</description>
     </item>
   </channel>
 </rss>
