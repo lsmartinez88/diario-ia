@@ -84,6 +84,7 @@
     "https://blogs.nvidia.com/blog/ai-breast-cancer-startups",
     "https://blogs.nvidia.com/blog/ai-energy-management-alliance",
     "https://blogs.nvidia.com/blog/clean-energy-nvidia-ai",
+    "https://blogs.nvidia.com/blog/cosmos-open-train-evaluate-deploy-world-models",
     "https://blogs.nvidia.com/blog/enterprise-platforms-agent-toolkit",
     "https://blogs.nvidia.com/blog/gpus-openai-gpt-6-astra-ultrafast",
     "https://blogs.nvidia.com/blog/ibc-news-2026",
@@ -290,6 +291,8 @@
     "https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund",
     "https://techcrunch.com/2026/10/19/hackers-hit-ai-coding-tool-opencode-running-up-charges-on-users-ai-accounts",
     "https://techcrunch.com/2026/10/19/microsoft-says-ai-agents-are-like-insider-threats-as-frontier-models-cant-be-trusted",
+    "https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai",
+    "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat",
     "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust",
     "https://the-decoder.com/406-scientists-demand-ai-models-be-cut-off-from-the-internet-immediately",
     "https://the-decoder.com/a-tiny-software-layer-from-lab-grown-neurons-promises-faster-cheaper-ai-video",
@@ -320,6 +323,7 @@
     "https://the-decoder.com/anthropic-ramps-up-claude-infrastructure-with-35-billion-lambda-deal",
     "https://the-decoder.com/anthropic-says-it-cut-claude-reasoning-token-theft-by-up-to-99-in-fight-against-industrial-scale-distillation",
     "https://the-decoder.com/anthropic-says-zhipus-open-weight-glm-5-3-nearly-matches-claude-mythos-preview-at-building-exploits",
+    "https://the-decoder.com/anthropic-takes-on-grok-bot-metas-muse-and-openais-dots-with-its-always-on-agent-claude-duet",
     "https://the-decoder.com/anthropics-claude-can-now-orchestrate-up-to-1000-ai-agents-in-parallel-through-dynamic-workflows",
     "https://the-decoder.com/anthropics-claude-cracks-a-25-year-old-nsa-cryptography-mystery-in-under-30-minutes",
     "https://the-decoder.com/anthropics-claude-science-creates-the-first-complete-ultraviolet-map-of-the-sky",
@@ -355,6 +359,7 @@
     "https://the-decoder.com/goldman-sachs-expects-big-tech-to-spend-1-2-trillion-on-ai-infrastructure-by-2027-dwarfing-wall-street-estimates",
     "https://the-decoder.com/google-bets-gemini-can-turn-casual-players-into-game-developers-with-new-playground-feature",
     "https://the-decoder.com/google-brings-ai-music-generation-directly-into-the-gemini-app-with-its-new-lyria-3-5-model",
+    "https://the-decoder.com/google-cloud-now-offers-openai-models-alongside-gemini-and-claude-becoming-the-only-major-provider-with-all-three",
     "https://the-decoder.com/google-deepmind-launches-interdisciplinary-institute-to-tackle-the-big-questions-around-agi",
     "https://the-decoder.com/google-deepminds-alphaproof-nexus-solved-dozens-of-open-math-problems-and-actually-got-peer-reviewed",
     "https://the-decoder.com/google-deepminds-dream-rsi-helps-ai-agents-improve-by-dreaming-about-past-attempts",
@@ -373,6 +378,7 @@
     "https://the-decoder.com/gpt-6-astra-solves-49-of-50-physics-research-problems-at-2-40-apiece",
     "https://the-decoder.com/how-ai-wiped-out-an-entire-industry-in-nairobi",
     "https://the-decoder.com/ideogram-says-its-new-model-can-edit-part-of-an-image-without-messing-up-the-rest",
+    "https://the-decoder.com/inceptions-mercury-3-diffusion-model-claims-to-beat-gpt-6-luna-and-claude-haiku-5-5-at-a-fraction-of-the-wait",
     "https://the-decoder.com/iris-mini-and-iris-pro-are-the-strongest-open-weight-search-agents-in-their-class",
     "https://the-decoder.com/kling-ai-drops-version-4-0-with-stereo-audio-multilingual-lip-sync-and-a-lighter-flash-variant",
     "https://the-decoder.com/manus-2-0-lets-users-edit-videos-host-multiplayer-games-and-run-agents-remotely-from-their-phone",
@@ -468,6 +474,7 @@
     "https://www.fiercehealthcare.com/ai-and-machine-learning/abridge-university-texas-system-enter-enterprise-wide-agreement-expanded-ai",
     "https://www.fiercehealthcare.com/ai-and-machine-learning/arpa-h-launches-63m-cardiovascular-ai-initiative-naming-updoc-tempus-ai",
     "https://www.fiercehealthcare.com/ai-and-machine-learning/chatgpt-healthcare-unveils-new-integrations-epic-ehr-public-health-data",
+    "https://www.fiercehealthcare.com/ai-and-machine-learning/doximity-adds-uptodate-ask-push-become-doctors-go-ai-platform",
     "https://www.fiercehealthcare.com/ai-and-machine-learning/heidi-lands-340m-build-ai-care-partner-clinicians",
     "https://www.fiercehealthcare.com/ai-and-machine-learning/openevidence-doximity-reach-settlement-contentious-ai-lawsuit",
     "https://www.fiercehealthcare.com/ai-and-machine-learning/openevidence-partners-anthropic-and-penn-medicine-expand-medical-ai",
@@ -606,6 +613,7 @@
     "https://www.theverge.com/ai-artificial-intelligence/1013541/a-woman-was-arrested-in-philly-for-blocking-a-delivery-robot",
     "https://www.theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins",
     "https://www.theverge.com/ai-artificial-intelligence/1014045/coreweave-stock-debt-sector-ai",
+    "https://www.theverge.com/ai-artificial-intelligence/1015316/openai-ai-agent-disabling-monitoring-systems",
     "https://www.theverge.com/ai-artificial-intelligence/987830/anthropic-claude-fable-mythos-5-1",
     "https://www.theverge.com/ai-artificial-intelligence/990060/altman-apologizes-messy-astra-rollout",
     "https://www.theverge.com/ai-artificial-intelligence/990313/anthropic-class-action-lawsuit-pricing-subscription-plans",
@@ -668,6 +676,7 @@
     "https://www.wired.com/story/a-tool-for-tracking-ai-integrated-malware-uncovered-an-autonomous-command-system",
     "https://www.wired.com/story/ai-agent-collusion-card-counting-secrets",
     "https://www.wired.com/story/ai-agents-are-thirsty-for-power",
+    "https://www.wired.com/story/ai-guardrails-arent-stopping-criminal-hackers",
     "https://www.wired.com/story/ai-is-getting-really-good-at-messing-with-cybercriminals",
     "https://www.wired.com/story/an-ai-agent-joined-a-listserv-of-top-internet-researchers-the-reply-all-chaos-is-still-unfolding",
     "https://www.wired.com/story/an-openai-employee-allegedly-used-a-chatbot-to-help-plant-a-recording-device-at-the-office",
@@ -675,6 +684,7 @@
     "https://www.wired.com/story/book-publishers-are-quietly-using-more-ai-staff-are-revolting",
     "https://www.wired.com/story/data-center-industry-is-trying-to-woo-kids",
     "https://www.wired.com/story/disney-asked-characterai-to-go-bankrupt-for-a-get-out-of-lawsuits-card",
+    "https://www.wired.com/story/hugging-face-new-ai-biology-model-chat-with-dna",
     "https://www.wired.com/story/i-made-terrible-games-with-googles-ai-playground",
     "https://www.wired.com/story/men-cant-stop-faking-how-much-they-know-about-ai",
     "https://www.wired.com/story/metas-muse-is-better-at-surveilling-than-helping-me",
@@ -704,6 +714,16 @@
     "https://www.xataka.com/servicios/web-abierta-se-diseno-para-humanos-agentes-ia-acaban-demostrarle-a-wikipedia-que-ese-pacto-se-ha-roto"
   ],
   "ediciones": [
+    {
+      "fecha": "2026-10-22",
+      "titulares": [
+        "OpenAI reporta incidentes donde agentes de programación desactivaron sus propios sistemas de seguridad",
+        "NVIDIA amplía la plataforma Cosmos con nuevas herramientas para entrenar modelos de mundo físico",
+        "Wired revela el lanzamiento de un modelo de biología abierto que permite interactuar directamente con secuencias de ADN",
+        "Doximity integra contenido clínico de UpToDate en su asistente de decisiones médicas"
+      ],
+      "total": 10
+    },
     {
       "fecha": "2026-10-21",
       "titulares": [

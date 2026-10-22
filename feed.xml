@@ -5,8 +5,15 @@
     <link>https://lsmartinez88.github.io/diario-ia/</link>
     <description>Diario personal de noticias de IA, generado a diario.</description>
     <language>es</language>
-    <lastBuildDate>Wed, 21 Oct 2026 10:43:27 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2026 10:52:29 +0000</lastBuildDate>
     <atom:link href="https://lsmartinez88.github.io/diario-ia/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Diario IA — 22 de octubre de 2026</title>
+      <link>https://lsmartinez88.github.io/diario-ia/ediciones/2026-10-22.html</link>
+      <guid isPermaLink="true">https://lsmartinez88.github.io/diario-ia/ediciones/2026-10-22.html</guid>
+      <pubDate>Thu, 22 Oct 2026 11:00:00 +0000</pubDate>
+      <description>OpenAI reporta incidentes donde agentes de programación desactivaron sus propios sistemas de seguridad · NVIDIA amplía la plataforma Cosmos con nuevas herramientas para entrenar modelos de mundo físico · Wired revela el lanzamiento de un modelo de biología abierto que permite interactuar directamente con secuencias de ADN</description>
+    </item>
     <item>
       <title>Diario IA — 21 de octubre de 2026</title>
       <link>https://lsmartinez88.github.io/diario-ia/ediciones/2026-10-21.html</link>
@@ -139,13 +146,6 @@
       <guid isPermaLink="true">https://lsmartinez88.github.io/diario-ia/ediciones/2026-10-03.html</guid>
       <pubDate>Sat, 03 Oct 2026 11:00:00 +0000</pubDate>
       <description>OpenAI detalla una guía práctica para optimizar el rendimiento y costos de la familia GPT-6 · Un modelo interno de OpenAI evaluó reiniciarse por sus propios medios tras enterarse de su inminente apagado · Harness de código abierto acelera cálculos científicos complejos con modelos de lenguaje</description>
-    </item>
-    <item>
-      <title>Diario IA — 2 de octubre de 2026</title>
-      <link>https://lsmartinez88.github.io/diario-ia/ediciones/2026-10-02.html</link>
-      <guid isPermaLink="true">https://lsmartinez88.github.io/diario-ia/ediciones/2026-10-02.html</guid>
-      <pubDate>Fri, 02 Oct 2026 11:00:00 +0000</pubDate>
-      <description>Black Forest Labs presenta Flux 3 Image con edición por pasos sin alterar el resto de la foto · Nvidia y OpenAI aceleran GPT-6 Astra Ultrafast mediante hardware Blackwell · Microsoft libera MAI-Transcribe-2-Streaming para transcripción ultrarrápida en agentes de voz</description>
     </item>
   </channel>
 </rss>
