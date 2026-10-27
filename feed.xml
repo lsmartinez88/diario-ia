@@ -5,8 +5,15 @@
     <link>https://lsmartinez88.github.io/diario-ia/</link>
     <description>Diario personal de noticias de IA, generado a diario.</description>
     <language>es</language>
-    <lastBuildDate>Mon, 26 Oct 2026 10:48:29 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 27 Oct 2026 10:44:58 +0000</lastBuildDate>
     <atom:link href="https://lsmartinez88.github.io/diario-ia/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Diario IA — 27 de octubre de 2026</title>
+      <link>https://lsmartinez88.github.io/diario-ia/ediciones/2026-10-27.html</link>
+      <guid isPermaLink="true">https://lsmartinez88.github.io/diario-ia/ediciones/2026-10-27.html</guid>
+      <pubDate>Tue, 27 Oct 2026 11:00:00 +0000</pubDate>
+      <description>OpenAI lanza GPT-6.1 Terra, enfocado en bajo costo y automatización de escritorio · Cloudflare remedia una fuga de memoria compartida en su infraestructura de inferencia · Identifican los patrones sintácticos que vuelven fatigante la lectura de prosa generada por IA</description>
+    </item>
     <item>
       <title>Diario IA — 26 de octubre de 2026</title>
       <link>https://lsmartinez88.github.io/diario-ia/ediciones/2026-10-26.html</link>
@@ -139,13 +146,6 @@
       <guid isPermaLink="true">https://lsmartinez88.github.io/diario-ia/ediciones/2026-10-08.html</guid>
       <pubDate>Thu, 08 Oct 2026 11:00:00 +0000</pubDate>
       <description>Claude Haiku 5.5 debuta con recortes agresivos de tarifas y saltos de rendimiento · Auditoría independiente califica de alto riesgo las salvaguardas para menores en ChatGPT · Una startup traslada su sistema de predicción de riesgo de cáncer de mama directamente a los pacientes</description>
-    </item>
-    <item>
-      <title>Diario IA — 7 de octubre de 2026</title>
-      <link>https://lsmartinez88.github.io/diario-ia/ediciones/2026-10-07.html</link>
-      <guid isPermaLink="true">https://lsmartinez88.github.io/diario-ia/ediciones/2026-10-07.html</guid>
-      <pubDate>Wed, 07 Oct 2026 11:00:00 +0000</pubDate>
-      <description>OpenAI publica cientos de soluciones matemáticas generadas por un modelo interno · OpenAI lanza la Decisions API para integrar modelos de toma de decisiones · Reflection presenta Beam, un modelo de mezcla de expertos de código abierto</description>
     </item>
   </channel>
 </rss>
