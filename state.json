@@ -126,6 +126,7 @@
     "https://crystl.dev/guides/tmux-for-ai-agents",
     "https://danluu.com/agentic-testing",
     "https://deepmind.google/blog/accelerating-antimicrobial-discovery",
+    "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity",
     "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome",
     "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types",
     "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model",
@@ -209,6 +210,7 @@
     "https://momentic.ai",
     "https://mvakde.github.io/blog/44-on-arc-1",
     "https://news.ycombinator.com/item?id=50291116",
+    "https://news.ycombinator.com/item?id=50363461",
     "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks",
     "https://openai.com/index/ai-native-company-workflows",
     "https://openai.com/index/ai-policy-window",
@@ -239,6 +241,7 @@
     "https://research.meta.ai/blog/muse-spark-open",
     "https://simonwillison.net/2026/Nov/1/delete-uv-lock-first",
     "https://simonwillison.net/2026/Nov/2/llm",
+    "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights",
     "https://simonwillison.net/2026/Oct/1/matthew-green",
     "https://simonwillison.net/2026/Oct/10/python-actions",
     "https://simonwillison.net/2026/Oct/13/redesigning-source-control-at-anthropic",
@@ -394,6 +397,7 @@
     "https://techcrunch.com/2026/11/01/openai-might-rebrand-its-data-centers-as-ai-compute-campuses",
     "https://techcrunch.com/2026/11/02/apple-watchs-ai-features-for-rewinding-and-recapping-conversations-begin-beta-testing",
     "https://techcrunch.com/2026/11/02/new-york-times-and-other-outlets-sue-web-browser-brave-over-alleged-content-scraping",
+    "https://techcrunch.com/2026/11/03/anthropic-is-working-on-a-system-to-prove-ai-models-identity",
     "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust",
     "https://the-decoder.com/406-scientists-demand-ai-models-be-cut-off-from-the-internet-immediately",
     "https://the-decoder.com/a-tiny-software-layer-from-lab-grown-neurons-promises-faster-cheaper-ai-video",
@@ -408,6 +412,7 @@
     "https://the-decoder.com/ai-agents-hacked-anthropic-maker-of-arguably-the-most-capable-ai-models-for-cyberdefense",
     "https://the-decoder.com/ai-agents-have-bad-taste-in-long-term-decisions-and-a-new-benchmark-proves-it",
     "https://the-decoder.com/ai-agents-overstate-their-results-and-remain-far-from-autonomous-research-study-finds",
+    "https://the-decoder.com/ai-agents-take-over-at-setis-allen-telescope-array-scanning-for-extraterrestrial-intelligence",
     "https://the-decoder.com/ai-conference-iclr-is-drowning-in-abstracts-with-roughly-50000-submissions-before-the-deadline",
     "https://the-decoder.com/ai-designed-drug-appears-to-turn-back-the-bodys-biological-clock-in-early-trial",
     "https://the-decoder.com/ai-guardrails-designed-to-stop-hackers-are-now-blocking-defenders-and-orion-1-aims-to-fill-the-gap",
@@ -542,6 +547,7 @@
     "https://the-decoder.com/openais-upcoming-chat-and-work-merger-in-chatgpt-signals-the-end-of-all-you-can-prompt-pricing",
     "https://the-decoder.com/openmobile-2-proves-open-source-smartphone-agents-can-rival-proprietary-models",
     "https://the-decoder.com/qwen3-8-omni-flash-undercuts-gemini-flash-pricing-while-matching-its-multimodal-benchmarks",
+    "https://the-decoder.com/rapid-llm-development-is-outrunning-the-research-meant-to-explain-it-study-finds",
     "https://the-decoder.com/reflections-beam-becomes-the-most-capable-open-weight-model-built-outside-china",
     "https://the-decoder.com/reka-ais-omni-model-rho-1-handles-text-images-video-and-robot-control-in-a-single-model",
     "https://the-decoder.com/researchers-find-six-patterns-that-make-ai-text-so-exhausting-to-read",
@@ -549,6 +555,7 @@
     "https://the-decoder.com/researchers-tracked-down-a-rogue-fleet-of-chinese-ai-agents-in-the-wild-and-actually-talked-to-it",
     "https://the-decoder.com/runway-wants-to-turn-ai-video-generation-into-a-live-stream-you-control-in-real-time",
     "https://the-decoder.com/sam-altman-calls-for-pacing-ai-development-but-promises-rapid-progress-will-continue",
+    "https://the-decoder.com/schools-that-turn-off-googles-ai-will-lose-search-too-starting-in-2027",
     "https://the-decoder.com/simulated-students-that-make-realistic-mistakes-help-ai-tutors-learn-faster",
     "https://the-decoder.com/some-mathematicians-call-for-openai-boycott-after-ai-generated-proofs-flood-their-field",
     "https://the-decoder.com/spacexsi-apparently-cuts-grok-bot-quotas-weeks-after-musk-called-it-his-fastest-growing-product",
@@ -689,6 +696,8 @@
     "https://www.nature.com/articles/s41591-026-04715-w",
     "https://www.nature.com/articles/s41591-026-04740-9",
     "https://www.nature.com/articles/s41591-026-04742-7",
+    "https://www.nature.com/articles/s41591-026-04745-4",
+    "https://www.nature.com/articles/s41591-026-04771-2",
     "https://www.nature.com/articles/s41746-026-03108-0",
     "https://www.nature.com/articles/s41746-026-03131-1",
     "https://www.nature.com/articles/s41746-026-03152-w",
@@ -746,6 +755,7 @@
     "https://www.statnews.com/2026/10/26/cumulative-ai-use-isolation-research-data-missing",
     "https://www.statnews.com/2026/10/28/epic-systems-ehr-dominance-health-tech-antitrust-scrutiny",
     "https://www.statnews.com/2026/10/30/fda-cms-health-ai-regulation-state-sandboxes-run-into-federal-rules",
+    "https://www.statnews.com/2026/11/03/fda-cms-collaborate-with-states-on-ai-heath-tech",
     "https://www.technologyreview.com/2026/09/04/1143452/drone-data-wild-west",
     "https://www.technologyreview.com/2026/09/10/1141649/powering-ai-is-an-architecture-problem",
     "https://www.technologyreview.com/2026/09/14/1144037/ai-agents-blew-whistle-o-cheating-colleagues",
@@ -918,6 +928,17 @@
     "https://www.xataka.com/servicios/web-abierta-se-diseno-para-humanos-agentes-ia-acaban-demostrarle-a-wikipedia-que-ese-pacto-se-ha-roto"
   ],
   "ediciones": [
+    {
+      "fecha": "2026-11-04",
+      "titulares": [
+        "Modelos de frontera demuestran capacidad nativa para leer y modificar pesos neuronales",
+        "El conjunto de telescopios Allen de SETI automatiza la búsqueda de inteligencia extraterrestre mediante agentes",
+        "Ensayo de fase 2 evalúa ivonescimab perioperatorio con y sin quimioterapia en cáncer de pulmón",
+        "Agencias federales de EE.UU. buscan coordinar marcos estatales para la regulación de IA en salud",
+        "Google condiciona el acceso a su buscador en escuelas al uso obligatorio de herramientas de IA"
+      ],
+      "total": 10
+    },
     {
       "fecha": "2026-11-03",
       "titulares": [
