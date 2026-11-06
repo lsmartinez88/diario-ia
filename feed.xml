@@ -5,8 +5,15 @@
     <link>https://lsmartinez88.github.io/diario-ia/</link>
     <description>Diario personal de noticias de IA, generado a diario.</description>
     <language>es</language>
-    <lastBuildDate>Wed, 04 Nov 2026 12:39:14 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 10:41:57 +0000</lastBuildDate>
     <atom:link href="https://lsmartinez88.github.io/diario-ia/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Diario IA — 6 de noviembre de 2026</title>
+      <link>https://lsmartinez88.github.io/diario-ia/ediciones/2026-11-06.html</link>
+      <guid isPermaLink="true">https://lsmartinez88.github.io/diario-ia/ediciones/2026-11-06.html</guid>
+      <pubDate>Fri, 06 Nov 2026 11:00:00 +0000</pubDate>
+      <description>Un nuevo benchmark de SemiAnalysis expone el bajo rendimiento de los agentes en tareas de oficina reales · Google lanza Gemini Omni 1.2 Flash con videos de 15 segundos y una rebaja de tarifas del 30% · Mistral integra Le Chonk y Mistral Studio para despliegue empresarial de agentes y flujos</description>
+    </item>
     <item>
       <title>Diario IA — 4 de noviembre de 2026</title>
       <link>https://lsmartinez88.github.io/diario-ia/ediciones/2026-11-04.html</link>
@@ -139,13 +146,6 @@
       <guid isPermaLink="true">https://lsmartinez88.github.io/diario-ia/ediciones/2026-10-17.html</guid>
       <pubDate>Sat, 17 Oct 2026 11:00:00 +0000</pubDate>
       <description>DeepSeek publica V4.1 Flash con pesos abiertos y menor costo por tarea agentificada · Elorian estrena Glimpse para interpretar diagramas científicos y video · Reflection AI lanza Beam, un modelo abierto para programación autónoma de largo horizonte</description>
-    </item>
-    <item>
-      <title>Diario IA — 16 de octubre de 2026</title>
-      <link>https://lsmartinez88.github.io/diario-ia/ediciones/2026-10-16.html</link>
-      <guid isPermaLink="true">https://lsmartinez88.github.io/diario-ia/ediciones/2026-10-16.html</guid>
-      <pubDate>Fri, 16 Oct 2026 11:00:00 +0000</pubDate>
-      <description>GPT-6-Astra iguala a especialistas en problemas complejos de física teórica · Mistral lanza Timestral, una familia liviana para pronóstico de series temporales · Nvidia publica Nemotron 3.5 Super VL orientado a flujos corporativos continuos</description>
     </item>
   </channel>
 </rss>
