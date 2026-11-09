@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Diario IA — 9 de noviembre de 2026</title>
+<meta name="description" content="Edición del 9 de noviembre de 2026 del Diario IA: noticias de inteligencia artificial en español, seleccionadas y resumidas a diario.">
+<meta property="og:title" content="Diario IA — 9 de noviembre de 2026">
+<meta property="og:description" content="Noticias de IA seleccionadas y resumidas: modelos, agentes, herramientas, salud y futuro.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://lsmartinez88.github.io/diario-ia/ediciones/2026-11-09.html">
+<meta property="og:image" content="https://cdn-thumbnails.huggingface.co/social-thumbnails/models/NousResearch/Arete-27B.png">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="stylesheet" href="../estilo.css">
+<link rel="alternate" type="application/rss+xml" title="Diario IA" href="../feed.xml">
+</head>
+<body>
+<div class="contenedor contenedor-ancho">
+
+  <header class="cabecera">
+    <a class="logo" href="../index.html">Diario <span>IA</span></a>
+    <div class="fecha-mono">
+      Edición Nº 069 · 2026-11-09
+       · 20 items · 11 fuentes
+    </div>
+  </header>
+
+  <nav class="nav-bloques" aria-label="Secciones de la edición">
+    <a href="#breves">En pocas palabras</a>
+    <a href="#modelos">Modelos y avances</a><a href="#agentes">Agentes de IA</a><a href="#herramientas">Herramientas para probar</a><a href="#clinica">IA en ensayos clínicos y salud</a><a href="#futuro">Futuro de la IA</a>
+    <a href="#prompt">Prompt del día</a>
+  </nav>
+
+  
+  <section class="region-apertura">
+
+    <article class="panel lead">
+      
+      <div class="lead-img"><img src="https://cdn-thumbnails.huggingface.co/social-thumbnails/models/NousResearch/Arete-27B.png" alt="" referrerpolicy="no-referrer" onerror="this.closest('.lead').classList.add('lead-sinimg'); this.parentNode.remove()"></div>
+      
+      <div class="lead-cuerpo">
+        <div class="titulo-bloque">Modelos y avances</div>
+        <div class="titular"><a href="https://huggingface.co/NousResearch/Arete-27B">Nous Research publica Arete-27B para neutralizar el sesgo político en modelos abiertos chinos</a></div>
+        <p class="resumen">El laboratorio tomó como base Qwen3.8-27B de Alibaba y aplicó un post-entrenamiento específico para remover respuestas alineadas con el Partido Comunista Chino. El proyecto busca evitar que el peso cultural y político de origen limite las preferencias del usuario final en modelos abiertos.</p>
+        <p class="importa"><strong>Por qué importa</strong> — Inaugura una vía práctica para que terceros reentrenen modelos fundacionales de alto rendimiento adaptándolos a diferentes marcos regulatorios y éticos.</p>
+        <div class="pie-item">HF Modelos en tendencia · 2026-11-09 · <a href="https://huggingface.co/NousResearch/Arete-27B">fuente</a></div>
+      </div>
+    </article>
+
+    
+    <aside class="panel aside-breves" id="breves">
+      <div class="titulo-bloque">En pocas palabras</div>
+      <ul class="breves">
+        
+        <li><span class="marca">▸</span>Herederos de Elvis Presley y la editora de Eminem demandan a Suno por clonar estilos y obras protegidas sin autorización. <a href="https://www.theverge.com/ai-artificial-intelligence/1029533/elvis-eminem-suno-ai-music-clone-lawsuit" class="fuente-brev">[The Verge AI]</a></li>
+        
+        <li><span class="marca">▸</span>NVIDIA publica recetas de optimización con Dynamo para desplegar en producción modelos abiertos líderes de Corea del Sur. <a href="https://blogs.nvidia.com/blog/nvidia-dynamo-korea-open-models" class="fuente-brev">[NVIDIA Blog]</a></li>
+        
+        <li><span class="marca">▸</span>Valneva reporta resultados positivos de fase 2 en su vacuna contra Shigella al reducir infecciones intestinales. <a href="https://www.fiercebiotech.com/biotech/valneva-sees-limmatech-vaccine-reduce-shigella-infections-phase-2-test" class="fuente-brev">[Fierce Biotech]</a></li>
+        
+        <li><span class="marca">▸</span>The New York Times incorpora un asistente de IA en su app de cocina para sustituir ingredientes y ajustar recetas al vuelo. <a href="https://www.wired.com/story/nyt-cooking-new-ai-powered-recipe-modifier-is-pretty-good" class="fuente-brev">[Wired AI]</a></li>
+        
+        <li><span class="marca">▸</span>Stanford rediseña su curso CS146S para enseñar ingeniería nativa de IA cuando los agentes resuelven las tareas tradicionales en un prompt. <a href="https://latent.space/p/cs146s" class="fuente-brev">[Latent Space]</a></li>
+        
+        <li><span class="marca">▸</span>Investigadores en neurociencia cuestionan en Nature la metáfora del cerebro como computadora para zanjar el debate sobre consciencia e IA. <a href="https://the-decoder.com/the-brain-as-computer-metaphor-shaped-modern-ai-but-may-be-misleading-the-consciousness-debate" class="fuente-brev">[The Decoder]</a></li>
+        
+      </ul>
+    </aside>
+    
+
+  </section>
+  
+
+  
+  <section class="banda" id="modelos">
+    <div class="titulo-bloque titulo-banda">Modelos y avances</div>
+    <div class="grilla">
+      
+      <article class="panel tarjeta tarjeta-principal">
+        
+        <div class="titular"><span class="numero">01</span><a href="https://arxiv.org/abs/2610.14162">Next-Concept Modeling propone generación de texto paralela de grueso a fino</a></div>
+        <p class="resumen">Un nuevo trabajo teórico introduce una arquitectura de generación que abandona la predicción secuencial token por token. Al predecir conceptos globales en paralelo y luego refinarlos sintácticamente, el sistema acelera la inferencia manteniendo coherencia semántica en ventanas extensas.</p>
+        <p class="importa"><strong>Por qué importa</strong> — Cuestiona la hegemonía del decodificador autorregresivo tradicional como único camino para el modelado del lenguaje.</p>
+        <div class="pie-item">Hacker News (portada) · 2026-11-09 · <a href="https://arxiv.org/abs/2610.14162">fuente</a></div>
+      </article>
+      
+    </div>
+  </section>
+  
+  <section class="banda" id="agentes">
+    <div class="titulo-bloque titulo-banda">Agentes de IA</div>
+    <div class="grilla">
+      
+      <article class="panel tarjeta tarjeta-principal">
+        
+        <div class="tarjeta-img"><img src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/Siri-AI-Being-invoked-3.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.727837220746%2C100%2C78.544325558509&amp;w=1200" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.remove()"></div>
+        
+        <div class="titular"><span class="numero">02</span><a href="https://www.theverge.com/ai-artificial-intelligence/1029552/apple-siri-ai-agentic">Apple apura a sus equipos para convertir a Siri en un agente autónomo competitivo</a></div>
+        <p class="resumen">La cúpula de Apple presiona al área de IA para acelerar el desarrollo de capacidades agénticas en Siri y evitar quedar rezagada frente a los agentes de Meta y OpenAI. El rediseño apunta a que el asistente ejecute secuencias complejas entre aplicaciones sin requerir intervención manual constante.</p>
+        <p class="importa"><strong>Por qué importa</strong> — Marca el giro definitivo de los asistentes virtuales de consumo masivo hacia la ejecución autónoma de tareas en el sistema operativo.</p>
+        <div class="pie-item">The Verge AI · 2026-11-08 · <a href="https://www.theverge.com/ai-artificial-intelligence/1029552/apple-siri-ai-agentic">fuente</a></div>
+      </article>
+      
+      <article class="panel tarjeta">
+        
+        <div class="titular"><span class="numero">03</span><a href="https://blogs.nvidia.com/blog/korea-secure-agentic-ai">NVIDIA y la industria surcoreana prueban entornos de ejecución aislados para agentes corporativos</a></div>
+        <p class="resumen">Hyundai y la firma AIM Intelligence comenzaron a implementar los entornos OpenShell y NemoClaw de NVIDIA para blindar la ejecución de agentes. El esquema busca controlar permisos, auditar llamadas a herramientas y evitar fugas de credenciales en flujos de trabajo internos de empresas.</p>
+        <p class="importa"><strong>Por qué importa</strong> — La seguridad a nivel de runtime se consolida como la capa crítica que frena o habilita el despliegue de agentes en corporaciones reales.</p>
+        <div class="pie-item">NVIDIA Blog · 2026-11-09 · <a href="https://blogs.nvidia.com/blog/korea-secure-agentic-ai">fuente</a></div>
+      </article>
+      
+    </div>
+  </section>
+  
+  <section class="banda" id="herramientas">
+    <div class="titulo-bloque titulo-banda">Herramientas para probar</div>
+    <div class="grilla">
+      
+      <article class="panel tarjeta tarjeta-principal">
+        
+        <div class="titular"><span class="numero">04</span><a href="https://news.ycombinator.com/item?id=50422628">ChatGPT Desktop reenvía el agente SSH local hacia entornos remotos</a></div>
+        <p class="resumen">Un debate en la comunidad de desarrolladores evidenció que el cliente de escritorio de ChatGPT puede propagar las credenciales del agente SSH hacia instancias externas sin aviso explícito. Esta configuración permite que procesos ejecutados por el agente empujen código a repositorios privados sin autenticación adicional.</p>
+        <p class="importa"><strong>Por qué importa</strong> — Subraya los riesgos operacionales y de seguridad al conceder acceso a la terminal local a herramientas de asistencia por IA.</p>
+        <div class="pie-item">Hacker News (portada) · 2026-11-09 · <a href="https://news.ycombinator.com/item?id=50422628">fuente</a></div>
+      </article>
+      
+      <article class="panel tarjeta">
+        
+        <div class="titular"><span class="numero">05</span><a href="https://github.com/OmniJev/Flide">Flide optimiza hasta 9,5 veces la inferencia en modelos de decisión tipo Jev</a></div>
+        <p class="resumen">Un nuevo motor de inferencia exacto de código abierto fue diseñado específicamente para arquitecturas de toma de decisiones, superando en velocidad a motores consolidados como vLLM y SGLang. La herramienta prioriza la baja latencia en entornos donde el modelo evalúa ramificaciones probabilísticas.</p>
+        <p class="importa"><strong>Por qué importa</strong> — La especialización de motores de ejecución fuera del texto puro empieza a desbloquear aplicaciones agénticas en tiempo real.</p>
+        <div class="pie-item">Hacker News (portada) · 2026-11-09 · <a href="https://github.com/OmniJev/Flide">fuente</a></div>
+      </article>
+      
+      <article class="panel tarjeta">
+        
+        <div class="titular"><span class="numero">06</span><a href="https://simonwillison.net/2026/Nov/9/details-summary">Etiquetas de colapso en Git para mitigar la saturación de texto generada por agentes</a></div>
+        <p class="resumen">Simon Willison documenta un patrón de trabajo ante el auge de PRs automáticos abiertos por Claude Code o Codex: plegar las extensas descripciones sintéticas dentro de etiquetas HTML desplegables. El objetivo es preservar la visibilidad del diff y las notas humanas sin perder el registro exhaustivo del agente.</p>
+        <p class="importa"><strong>Por qué importa</strong> — Resuelve la sobrecarga cognitiva que sufren los revisores humanos frente a la verborragia de los asistentes de código.</p>
+        <div class="pie-item">Simon Willison · 2026-11-09 · <a href="https://simonwillison.net/2026/Nov/9/details-summary">fuente</a></div>
+      </article>
+      
+      <article class="panel tarjeta">
+        
+        <div class="titular"><span class="numero">07</span><a href="https://the-decoder.com/andrej-karpathy-built-a-curated-video-platform-in-a-weekend-using-claude-and-20-years-of-hacker-news">Karpathy procesa 20 años de comentarios de Hacker News para curar recomendaciones de video</a></div>
+        <p class="resumen">Andrej Karpathy utilizó Claude Opus 5.5 para analizar y filtrar 43 millones de comentarios históricos de Hacker News, compilando un catálogo curado de 6.454 videos técnicos. La prueba muestra cómo un LLM de frontera puede extraer valor estructurado de archivos masivos no estructurados en cuestión de horas.</p>
+        <p class="importa"><strong>Por qué importa</strong> — Demuestra la viabilidad de reemplazar algoritmos tradicionales de recomendación basados en engagement por filtrado cualitativo con LLMs.</p>
+        <div class="pie-item">The Decoder · 2026-11-08 · <a href="https://the-decoder.com/andrej-karpathy-built-a-curated-video-platform-in-a-weekend-using-claude-and-20-years-of-hacker-news">fuente</a></div>
+      </article>
+      
+    </div>
+  </section>
+  
+  <section class="banda" id="clinica">
+    <div class="titulo-bloque titulo-banda">IA en ensayos clínicos y salud</div>
+    <div class="grilla">
+      
+      <article class="panel tarjeta tarjeta-principal">
+        
+        <div class="tarjeta-img"><img src="https://media.springernature.com/m685/springer-static/image/art%3A10.1038%2Fs41591-026-04741-8/MediaObjects/41591_2026_4741_Fig1_HTML.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.remove()"></div>
+        
+        <div class="titular"><span class="numero">08</span><a href="https://www.nature.com/articles/s41591-026-04741-8">Nature Medicine define endotipos de colitis ulcerosa a partir de trayectorias reportadas por pacientes</a></div>
+        <p class="resumen">Un estudio longitudinal analizó las respuestas sintomáticas registradas directamente por pacientes tratados con vedolizumab para redefinir subgrupos clínicos de la enfermedad. El agrupamiento matemático identificó perfiles de evolución diferenciados que escapan a los biomarcadores estáticos habituales.</p>
+        <p class="importa"><strong>Por qué importa</strong> — Demuestra que los datos reportados por pacientes (PRO) tienen poder clasificatorio robusto para estratificar patologías complejas.</p>
+        <div class="pie-item">Nature Medicine · 2026-11-09 · <a href="https://www.nature.com/articles/s41591-026-04741-8">fuente</a></div>
+      </article>
+      
+      <article class="panel tarjeta">
+        
+        <div class="titular"><span class="numero">09</span><a href="https://www.fiercebiotech.com/biotech/argenx-inks-115b-unnatural-products-buyout-expand-oral-peptides">Argenx adquiere Unnatural Products por 1.150 millones para sumar péptidos orales sintéticos</a></div>
+        <p class="resumen">La biotecnológica cerró un acuerdo millonario para absorber la plataforma de diseño molecular de Unnatural Products, respaldada previamente por Merck y Novartis. La tecnología combina modelado computacional y química macrocíclica para convertir dianas intracelulares difíciles en tratamientos orales.</p>
+        <p class="importa"><strong>Por qué importa</strong> — Confirma la consolidación de compras millonarias sobre plataformas biotecnológicas que resuelven biodisponibilidad mediante diseño digital de fármacos.</p>
+        <div class="pie-item">Fierce Biotech · 2026-11-09 · <a href="https://www.fiercebiotech.com/biotech/argenx-inks-115b-unnatural-products-buyout-expand-oral-peptides">fuente</a></div>
+      </article>
+      
+      <article class="panel tarjeta">
+        
+        <div class="titular"><span class="numero">10</span><a href="https://www.statnews.com/2026/11/09/ai-chatbots-can-overcome-mental-health-barriers-in-men">Chatbots de salud mental reducen las barreras de apertura emocional en población masculina</a></div>
+        <p class="resumen">Un análisis publicado por STAT News aborda cómo los sistemas conversacionales automatizados logran que pacientes masculinos admitan síntomas de vulnerabilidad psicológica que evitan ante profesionales humanos. La ausencia de juicio percibido facilita una primera verbalización de cuadros de ansiedad o depresión.</p>
+        <p class="importa"><strong>Por qué importa</strong> — Plantea a la interfaz de IA como una puerta de entrada diagnóstica y de triaje previo a la consulta clínica tradicional.</p>
+        <div class="pie-item">STAT News Health Tech · 2026-11-09 · <a href="https://www.statnews.com/2026/11/09/ai-chatbots-can-overcome-mental-health-barriers-in-men">fuente</a></div>
+      </article>
+      
+    </div>
+  </section>
+  
+  <section class="banda" id="futuro">
+    <div class="titulo-bloque titulo-banda">Futuro de la IA</div>
+    <div class="grilla">
+      
+      <article class="panel tarjeta tarjeta-principal">
+        
+        <div class="tarjeta-img"><img src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gettyimages-2285784039.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.remove()"></div>
+        
+        <div class="titular"><span class="numero">11</span><a href="https://www.theverge.com/ai-artificial-intelligence/1029595/full-text-jensen-huang-affair-memo-nvidia">El directorio de NVIDIA investiga a Jensen Huang tras admitir una relación con una ejecutiva señalada como espía</a></div>
+        <p class="resumen">El consejo de administración de NVIDIA abrió una investigación formal luego de que su CEO admitiera internamente una relación personal con Alice Huang, directiva de Megaspeed vinculada a los servicios de inteligencia chinos. El caso encendió alarmas sobre seguridad nacional y eventual filtración de propiedad intelectual de semiconductores.</p>
+        <p class="importa"><strong>Por qué importa</strong> — Pone en duda la continuidad del liderazgo de la empresa más valiosa del sector de IA en pleno conflicto geopolítico por el control de chips.</p>
+        <div class="pie-item">The Verge AI · 2026-11-08 · <a href="https://www.theverge.com/ai-artificial-intelligence/1029595/full-text-jensen-huang-affair-memo-nvidia">fuente</a></div>
+      </article>
+      
+      <article class="panel tarjeta">
+        
+        <div class="titular"><span class="numero">12</span><a href="https://www.wired.com/story/bug-activists-and-biker-gang-members-are-teaming-up-to-protest-data-centers">Alianzas vecinales y ambientalistas frenan un nuevo centro de datos de Google en Reino Unido</a></div>
+        <p class="resumen">Comunidades locales al este de Londres coordinan protestas para detener la construcción de una megainstalación de centros de datos de Google, alertando sobre el consumo de agua, presión energética y daño a la biodiversidad local. El movimiento replica la creciente resistencia social registrada en otras ciudades europeas.</p>
+        <p class="importa"><strong>Por qué importa</strong> — La disponibilidad física y la licencia social en torno a recursos energéticos se convierten en el cuello de botella inmediato para la expansión de infraestructura de IA.</p>
+        <div class="pie-item">Wired AI · 2026-11-09 · <a href="https://www.wired.com/story/bug-activists-and-biker-gang-members-are-teaming-up-to-protest-data-centers">fuente</a></div>
+      </article>
+      
+      <article class="panel tarjeta">
+        
+        <div class="titular"><span class="numero">13</span><a href="https://the-decoder.com/the-inventor-of-the-bitter-lesson-has-a-bitter-lesson-for-llm-scaling-enthusiasts">Richard Sutton advierte sobre los límites del escalado ciego en modelos de lenguaje</a></div>
+        <p class="resumen">El creador de la tesis de &#39;The Bitter Lesson&#39; sostuvo que aumentar cómputo en arquitecturas autorregresivas no será suficiente para alcanzar inteligencia general genuina sin nuevos métodos de aprendizaje. Investigadores de frontera coinciden en que la fuerza bruta sin razonamiento adaptativo muestra rendimientos decrecientes.</p>
+        <p class="importa"><strong>Por qué importa</strong> — El propio formulador del principio del cómputo masivo aclara que la computación sin algoritmos de aprendizaje activo toca un techo estructural.</p>
+        <div class="pie-item">The Decoder · 2026-11-08 · <a href="https://the-decoder.com/the-inventor-of-the-bitter-lesson-has-a-bitter-lesson-for-llm-scaling-enthusiasts">fuente</a></div>
+      </article>
+      
+    </div>
+  </section>
+  
+
+  
+  <section class="panel" id="prompt">
+    <div class="titulo-bloque">Prompt del día</div>
+    <div class="titular">Limpieza de resúmenes de PR generados por agentes</div>
+    <div class="prompt-texto">Actuá como un tech lead revisor de código. Tomá el siguiente texto generado automáticamente por un agente para un Pull Request y: 1) Extraé en 3 viñetas concisas los cambios funcionales reales; 2) Listá los archivos modificados con mayor impacto; 3) Envolvé el detalle técnico exhaustivo original dentro de un bloque HTML &#39;&lt;details&gt;&lt;summary&gt;Detalle de ejecución del agente&lt;/summary&gt;\n...\n&lt;/details&gt;&#39;. Texto del PR: [insertar descripción]</div>
+  </section>
+  
+
+  <nav class="nav-ediciones" aria-label="Otras ediciones">
+    
+    <a href="2026-11-08.html">← 8 de noviembre de 2026</a>
+    
+    <a href="../index.html">Todas las ediciones</a>
+  </nav>
+
+  <footer class="pie">
+    Generado automáticamente desde fuentes RSS · <a href="../index.html">Ediciones anteriores</a> · <a href="../feed.xml">RSS</a>
+  </footer>
+
+</div>
+</body>
+</html>

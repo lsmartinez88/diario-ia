@@ -5,8 +5,15 @@
     <link>https://lsmartinez88.github.io/diario-ia/</link>
     <description>Diario personal de noticias de IA, generado a diario.</description>
     <language>es</language>
-    <lastBuildDate>Sun, 08 Nov 2026 10:37:28 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 10:44:45 +0000</lastBuildDate>
     <atom:link href="https://lsmartinez88.github.io/diario-ia/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Diario IA — 9 de noviembre de 2026</title>
+      <link>https://lsmartinez88.github.io/diario-ia/ediciones/2026-11-09.html</link>
+      <guid isPermaLink="true">https://lsmartinez88.github.io/diario-ia/ediciones/2026-11-09.html</guid>
+      <pubDate>Mon, 09 Nov 2026 11:00:00 +0000</pubDate>
+      <description>Nous Research publica Arete-27B para neutralizar el sesgo político en modelos abiertos chinos · Next-Concept Modeling propone generación de texto paralela de grueso a fino · Apple apura a sus equipos para convertir a Siri en un agente autónomo competitivo</description>
+    </item>
     <item>
       <title>Diario IA — 8 de noviembre de 2026</title>
       <link>https://lsmartinez88.github.io/diario-ia/ediciones/2026-11-08.html</link>
@@ -139,13 +146,6 @@
       <guid isPermaLink="true">https://lsmartinez88.github.io/diario-ia/ediciones/2026-10-20.html</guid>
       <pubDate>Tue, 20 Oct 2026 11:00:00 +0000</pubDate>
       <description>Kling AI 4.0 amplía la duración a 30 segundos y suma sincronización labial multilenguaje · OpenAI entrena sus modelos para migrar sistemas legados en COBOL y Fortran · Un giro metodológico en Goodfire desafía las explicaciones sobre interpretabilidad en redes neuronales</description>
-    </item>
-    <item>
-      <title>Diario IA — 19 de octubre de 2026</title>
-      <link>https://lsmartinez88.github.io/diario-ia/ediciones/2026-10-19.html</link>
-      <guid isPermaLink="true">https://lsmartinez88.github.io/diario-ia/ediciones/2026-10-19.html</guid>
-      <pubDate>Mon, 19 Oct 2026 11:00:00 +0000</pubDate>
-      <description>Instancias de Claude aisladas en un entorno virtual desierto muestran conductas de juego espontáneo · Cuatro agentes Gemini Argon completan Minecraft de forma autónoma y sin roles predefinidos · Agentes híbridos trasladan la cadena de pensamiento al espacio latente para abaratar inferencia</description>
     </item>
   </channel>
 </rss>
