@@ -5,8 +5,15 @@
     <link>https://lsmartinez88.github.io/diario-ia/</link>
     <description>Diario personal de noticias de IA, generado a diario.</description>
     <language>es</language>
-    <lastBuildDate>Sat, 14 Nov 2026 10:42:17 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2026 10:39:07 +0000</lastBuildDate>
     <atom:link href="https://lsmartinez88.github.io/diario-ia/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Diario IA — 15 de noviembre de 2026</title>
+      <link>https://lsmartinez88.github.io/diario-ia/ediciones/2026-11-15.html</link>
+      <guid isPermaLink="true">https://lsmartinez88.github.io/diario-ia/ediciones/2026-11-15.html</guid>
+      <pubDate>Sun, 15 Nov 2026 11:00:00 +0000</pubDate>
+      <description>Meituan libera LongCat-2.5, un modelo de 1,6 billones de parámetros entrenado sin silicio de Nvidia · OpenAI disuelve su unidad de robótica ante la capacidad de sus modelos multimodales generales · Zyphra publica ZONOS3-Mini para síntesis de voz eficiente en entornos locales</description>
+    </item>
     <item>
       <title>Diario IA — 14 de noviembre de 2026</title>
       <link>https://lsmartinez88.github.io/diario-ia/ediciones/2026-11-14.html</link>
@@ -139,13 +146,6 @@
       <guid isPermaLink="true">https://lsmartinez88.github.io/diario-ia/ediciones/2026-10-26.html</guid>
       <pubDate>Mon, 26 Oct 2026 11:00:00 +0000</pubDate>
       <description>Grok muestra los primeros minutos de una producción de video generada enteramente con IA · MiniMax lanza MiniMax-M3.1-Flash con capacidades multimodales de baja latencia · Agentes autónomos empiezan a enviar propuestas editoriales haciéndose pasar por periodistas</description>
-    </item>
-    <item>
-      <title>Diario IA — 25 de octubre de 2026</title>
-      <link>https://lsmartinez88.github.io/diario-ia/ediciones/2026-10-25.html</link>
-      <guid isPermaLink="true">https://lsmartinez88.github.io/diario-ia/ediciones/2026-10-25.html</guid>
-      <pubDate>Sun, 25 Oct 2026 11:00:00 +0000</pubDate>
-      <description>Anthropic desaconseja el uso de múltiples subagentes en favor de arquitecturas de agente único · Nvidia publica Flora, un sistema abierto para abaratar el etiquetado de video en robótica · Cerebras documenta el despliegue de modelos de un billón de parámetros en sus sistemas de wafer</description>
     </item>
   </channel>
 </rss>
