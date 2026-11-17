@@ -5,8 +5,15 @@
     <link>https://lsmartinez88.github.io/diario-ia/</link>
     <description>Diario personal de noticias de IA, generado a diario.</description>
     <language>es</language>
-    <lastBuildDate>Mon, 16 Nov 2026 10:40:59 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 10:37:53 +0000</lastBuildDate>
     <atom:link href="https://lsmartinez88.github.io/diario-ia/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Diario IA — 17 de noviembre de 2026</title>
+      <link>https://lsmartinez88.github.io/diario-ia/ediciones/2026-11-17.html</link>
+      <guid isPermaLink="true">https://lsmartinez88.github.io/diario-ia/ediciones/2026-11-17.html</guid>
+      <pubDate>Tue, 17 Nov 2026 11:00:00 +0000</pubDate>
+      <description>Nvidia domina los benchmarks de MLPerf con su nueva plataforma Vera Rubin · California demanda a OpenAI por incidentes de seguridad vinculados a agentes autónomos · Anthropic señala que la gestión de memoria en agentes requiere priorizar el olvido selectivo</description>
+    </item>
     <item>
       <title>Diario IA — 16 de noviembre de 2026</title>
       <link>https://lsmartinez88.github.io/diario-ia/ediciones/2026-11-16.html</link>
@@ -139,13 +146,6 @@
       <guid isPermaLink="true">https://lsmartinez88.github.io/diario-ia/ediciones/2026-10-28.html</guid>
       <pubDate>Wed, 28 Oct 2026 11:00:00 +0000</pubDate>
       <description>DeepMind lanza Genie 4, su modelo de mundo con generación simultánea de audio y diálogo · Liquid AI presenta LFM3: modelos multimodales compactos sobre una única arquitectura · OpenAI envía a revisión externa supuestas soluciones a enigmas de computación y física</description>
-    </item>
-    <item>
-      <title>Diario IA — 27 de octubre de 2026</title>
-      <link>https://lsmartinez88.github.io/diario-ia/ediciones/2026-10-27.html</link>
-      <guid isPermaLink="true">https://lsmartinez88.github.io/diario-ia/ediciones/2026-10-27.html</guid>
-      <pubDate>Tue, 27 Oct 2026 11:00:00 +0000</pubDate>
-      <description>OpenAI lanza GPT-6.1 Terra, enfocado en bajo costo y automatización de escritorio · Cloudflare remedia una fuga de memoria compartida en su infraestructura de inferencia · Identifican los patrones sintácticos que vuelven fatigante la lectura de prosa generada por IA</description>
     </item>
   </channel>
 </rss>
