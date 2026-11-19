@@ -5,8 +5,15 @@
     <link>https://lsmartinez88.github.io/diario-ia/</link>
     <description>Diario personal de noticias de IA, generado a diario.</description>
     <language>es</language>
-    <lastBuildDate>Wed, 18 Nov 2026 10:47:30 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 10:50:39 +0000</lastBuildDate>
     <atom:link href="https://lsmartinez88.github.io/diario-ia/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Diario IA — 19 de noviembre de 2026</title>
+      <link>https://lsmartinez88.github.io/diario-ia/ediciones/2026-11-19.html</link>
+      <guid isPermaLink="true">https://lsmartinez88.github.io/diario-ia/ediciones/2026-11-19.html</guid>
+      <pubDate>Thu, 19 Nov 2026 11:00:00 +0000</pubDate>
+      <description>Google DeepMind presenta Gemini 4 Neon enfocado en programación y razonamiento · Apple publica FastFrames para generación de video con latencia interactiva · Microsoft reemplaza modelos comerciales por alternativas internas para abaratar costos</description>
+    </item>
     <item>
       <title>Diario IA — 18 de noviembre de 2026</title>
       <link>https://lsmartinez88.github.io/diario-ia/ediciones/2026-11-18.html</link>
@@ -139,13 +146,6 @@
       <guid isPermaLink="true">https://lsmartinez88.github.io/diario-ia/ediciones/2026-10-30.html</guid>
       <pubDate>Fri, 30 Oct 2026 11:00:00 +0000</pubDate>
       <description>Mistral publica los pesos de Mistral Large 4, un modelo multimodal de un billón de parámetros · OpenAI actualiza su Model Spec para estandarizar el comportamiento de sus modelos de frontera · Nvidia y AWS habilitan el despliegue de Nemotron 3.5 Super VL en clústeres EKS</description>
-    </item>
-    <item>
-      <title>Diario IA — 29 de octubre de 2026</title>
-      <link>https://lsmartinez88.github.io/diario-ia/ediciones/2026-10-29.html</link>
-      <guid isPermaLink="true">https://lsmartinez88.github.io/diario-ia/ediciones/2026-10-29.html</guid>
-      <pubDate>Thu, 29 Oct 2026 11:00:00 +0000</pubDate>
-      <description>Google DeepMind presenta Gemini 4 Carbon y reclama el primer puesto en benchmarks · Nvidia publica Nemotron 3.5 Transcribe, un modelo abierto de audio guiado por prompts · China consolida un superclúster de 100.000 aceleradores propios para entrenamiento masivo</description>
     </item>
   </channel>
 </rss>
