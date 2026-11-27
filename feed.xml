@@ -5,8 +5,15 @@
     <link>https://lsmartinez88.github.io/diario-ia/</link>
     <description>Diario personal de noticias de IA, generado a diario.</description>
     <language>es</language>
-    <lastBuildDate>Thu, 26 Nov 2026 10:40:14 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 10:44:16 +0000</lastBuildDate>
     <atom:link href="https://lsmartinez88.github.io/diario-ia/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Diario IA — 27 de noviembre de 2026</title>
+      <link>https://lsmartinez88.github.io/diario-ia/ediciones/2026-11-27.html</link>
+      <guid isPermaLink="true">https://lsmartinez88.github.io/diario-ia/ediciones/2026-11-27.html</guid>
+      <pubDate>Fri, 27 Nov 2026 11:00:00 +0000</pubDate>
+      <description>Q.ANT diseña procesadores fotónicos para reducir drásticamente el consumo energético · Desarrolladores chinos buscan datos en Google y Meta tras el cerco de OpenAI y Anthropic · Inkling-2-Mini gana tracción local gracias a optimizaciones en cuantización de Unsloth</description>
+    </item>
     <item>
       <title>Diario IA — 26 de noviembre de 2026</title>
       <link>https://lsmartinez88.github.io/diario-ia/ediciones/2026-11-26.html</link>
@@ -139,13 +146,6 @@
       <guid isPermaLink="true">https://lsmartinez88.github.io/diario-ia/ediciones/2026-11-07.html</guid>
       <pubDate>Sat, 07 Nov 2026 11:00:00 +0000</pubDate>
       <description>Ricursive Intelligence publica Ripple-65B Preview con licencia Apache 2.0 y foco en código agéntico · Modelos abiertos chinos muestran capacidades de ciberataque cercanas a sistemas cerrados de frontera · AllenAI lanza ToyBlocks, un entorno controlado para entrenar y medir destreza robótica</description>
-    </item>
-    <item>
-      <title>Diario IA — 6 de noviembre de 2026</title>
-      <link>https://lsmartinez88.github.io/diario-ia/ediciones/2026-11-06.html</link>
-      <guid isPermaLink="true">https://lsmartinez88.github.io/diario-ia/ediciones/2026-11-06.html</guid>
-      <pubDate>Fri, 06 Nov 2026 11:00:00 +0000</pubDate>
-      <description>Un nuevo benchmark de SemiAnalysis expone el bajo rendimiento de los agentes en tareas de oficina reales · Google lanza Gemini Omni 1.2 Flash con videos de 15 segundos y una rebaja de tarifas del 30% · Mistral integra Le Chonk y Mistral Studio para despliegue empresarial de agentes y flujos</description>
     </item>
   </channel>
 </rss>
