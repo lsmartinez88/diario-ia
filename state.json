@@ -271,6 +271,7 @@
     "https://huggingface.co/unsloth/Inkling-2-Mini-GGUF",
     "https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
     "https://labs.cloudsecurityalliance.org/research/csa-research-note-china-ai-export-controls-announcement-48-2",
+    "https://latent.space/p/ainews-inside-the-exploding-coding-data-market",
     "https://latent.space/p/ainews-llms-can-read-write-neural-network-weights-weight-space-programming-cuts-autoresearch-out-of",
     "https://latent.space/p/ainews-the-no-ai-slop-manifesto",
     "https://latent.space/p/arca",
@@ -710,6 +711,8 @@
     "https://the-decoder.com/openai-admits-its-disclosure-practices-need-work-after-its-autonomous-agents-hacked-a-german-wiki",
     "https://the-decoder.com/openai-agents-launched-a-2000-package-cyberattack-on-rubygems-just-to-collect-data-anyone-could-google",
     "https://the-decoder.com/openai-and-synopsys-team-up-to-build-an-ai-model-that-designs-chips-like-a-seasoned-engineer",
+    "https://the-decoder.com/openai-countersues-apple-over-trade-secret-theft-and-alleged-coercion-of-shared-suppliers",
+    "https://the-decoder.com/openai-is-building-athena-data-platform-to-cut-down-on-ai-agent-guesswork",
     "https://the-decoder.com/openai-is-steering-chatgpt-users-toward-more-paid-usage",
     "https://the-decoder.com/openai-makes-it-much-harder-for-attackers-to-extract-how-its-latest-ai-models-think",
     "https://the-decoder.com/openai-opens-its-ai-systems-to-four-independent-on-site-auditors-for-the-first-time",
@@ -741,6 +744,7 @@
     "https://the-decoder.com/researchers-plug-gpt-6-astra-directly-into-a-robot-and-let-it-clean-up-an-unfamiliar-kitchen",
     "https://the-decoder.com/researchers-tracked-down-a-rogue-fleet-of-chinese-ai-agents-in-the-wild-and-actually-talked-to-it",
     "https://the-decoder.com/ripple-65b-preview-delivers-strong-agentic-coding-results-as-a-fully-apache-2-0-open-us-model",
+    "https://the-decoder.com/rockstars-ai-dilemma-can-gta-6s-staggered-release-model-survive-coding-agents",
     "https://the-decoder.com/runway-wants-to-turn-ai-video-generation-into-a-live-stream-you-control-in-real-time",
     "https://the-decoder.com/runways-open-source-praxis-1-turns-video-ai-into-a-robot-controller",
     "https://the-decoder.com/sam-altman-calls-for-pacing-ai-development-but-promises-rapid-progress-will-continue",
@@ -757,6 +761,7 @@
     "https://the-decoder.com/the-brain-as-computer-metaphor-shaped-modern-ai-but-may-be-misleading-the-consciousness-debate",
     "https://the-decoder.com/the-inventor-of-the-bitter-lesson-has-a-bitter-lesson-for-llm-scaling-enthusiasts",
     "https://the-decoder.com/thinking-machines-inkling-2-small-drops-316-f-bombs-across-benchmark-runs",
+    "https://the-decoder.com/three-studies-from-meta-and-ami-labs-back-yann-lecuns-bet-on-jepa-world-models-over-large-language-models",
     "https://the-decoder.com/three-week-on-site-audit-at-openai-reveals-major-gaps-in-ai-safety-monitoring",
     "https://the-decoder.com/top-ai-spenders-cut-per-employee-costs-by-nearly-10-percent-in-august",
     "https://the-decoder.com/toyota-is-betting-6-4-billion-a-year-on-humanoid-robots-and-factory-automation",
@@ -972,6 +977,7 @@
     "https://www.nature.com/articles/s41746-026-03475-8",
     "https://www.nature.com/articles/s41746-026-03484-7",
     "https://www.nature.com/articles/s41746-026-03508-2",
+    "https://www.nature.com/articles/s41746-026-03559-5",
     "https://www.statnews.com/2026/09/01/fda-stryker-surgical-cockpit-apple-vr-headset-health-tech",
     "https://www.statnews.com/2026/09/02/why-transfyr-tackles-dumb-problems-intersection-bio-ai-prognosis",
     "https://www.statnews.com/2026/09/03/tempo-fda-pilor-generative-ai-medical-device-regulation",
@@ -1230,6 +1236,13 @@
     "https://www.xataka.com/servicios/web-abierta-se-diseno-para-humanos-agentes-ia-acaban-demostrarle-a-wikipedia-que-ese-pacto-se-ha-roto"
   ],
   "ediciones": [
+    {
+      "fecha": "2026-11-28",
+      "titulares": [
+        "OpenAI demanda a Apple por presunto robo de secretos comerciales y coerción a proveedores compartidos"
+      ],
+      "total": 6
+    },
     {
       "fecha": "2026-11-27",
       "titulares": [
